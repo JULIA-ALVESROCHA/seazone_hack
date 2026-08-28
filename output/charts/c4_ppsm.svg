@@ -1,0 +1,287 @@
+<svg class="chart" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 785.028156 338.650656" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-28T22:13:36.229954</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 338.650656 
+L 785.028156 338.650656 
+L 785.028156 0 
+L 0 0 
+L 0 338.650656 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 144.588156 275.976 
+L 780.708156 275.976 
+L 780.708156 4.32 
+L 144.588156 4.32 
+L 144.588156 275.976 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="144.588156" y="287.461312" transform="rotate(-0 144.588156 287.461312)">0 mil</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="298.684189" y="287.461312" transform="rotate(-0 298.684189 287.461312)">5 mil</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="452.780222" y="287.461312" transform="rotate(-0 452.780222 287.461312)">10 mil</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="606.876256" y="287.461312" transform="rotate(-0 606.876256 287.461312)">15 mil</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="760.972289" y="287.461312" transform="rotate(-0 760.972289 287.461312)">20 mil</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="462.648156" y="302.186859" transform="rotate(-0 462.648156 302.186859)">Preço pedido por m² (R$)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6"/>
+     <g id="text_7">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="260.099374" transform="rotate(-0 141.088156 260.099374)">Meia Praia · interior · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7"/>
+     <g id="text_8">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="236.845137" transform="rotate(-0 141.088156 236.845137)">Morretes · 3 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8"/>
+     <g id="text_9">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="213.590899" transform="rotate(-0 141.088156 213.590899)">Tabuleiro dos Oliveiras · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9"/>
+     <g id="text_10">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="190.336662" transform="rotate(-0 141.088156 190.336662)">Morretes · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_10"/>
+     <g id="text_11">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="167.082425" transform="rotate(-0 141.088156 167.082425)">Meia Praia · orla · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_11"/>
+     <g id="text_12">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="143.828187" transform="rotate(-0 141.088156 143.828187)">Centro · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_12"/>
+     <g id="text_13">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="120.57395" transform="rotate(-0 141.088156 120.57395)">Meia Praia · interior · 3 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_13"/>
+     <g id="text_14">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="97.319713" transform="rotate(-0 141.088156 97.319713)">Meia Praia · orla · 3 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_14"/>
+     <g id="text_15">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="74.065476" transform="rotate(-0 141.088156 74.065476)">Centro · 3 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_15"/>
+     <g id="text_16">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="50.811238" transform="rotate(-0 141.088156 50.811238)">Centro · 1 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_16"/>
+     <g id="text_17">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="27.557001" transform="rotate(-0 141.088156 27.557001)">Meia Praia · orla · 4 dorm</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 144.588156 275.976 
+L 780.708156 275.976 
+" style="fill: none; stroke: #dae0db; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 144.588156 263.628 
+L 496.807661 263.628 
+L 496.807661 249.210373 
+L 144.588156 249.210373 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 144.588156 240.373763 
+L 497.688209 240.373763 
+L 497.688209 225.956136 
+L 144.588156 225.956136 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 144.588156 217.119525 
+L 505.613148 217.119525 
+L 505.613148 202.701898 
+L 144.588156 202.701898 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 144.588156 193.865288 
+L 505.759779 193.865288 
+L 505.759779 179.447661 
+L 144.588156 179.447661 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 144.588156 170.611051 
+L 546.242816 170.611051 
+L 546.242816 156.193424 
+L 144.588156 156.193424 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #1baf7a"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 144.588156 147.356814 
+L 557.167858 147.356814 
+L 557.167858 132.939186 
+L 144.588156 132.939186 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 144.588156 124.102576 
+L 565.878228 124.102576 
+L 565.878228 109.684949 
+L 144.588156 109.684949 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 144.588156 100.848339 
+L 602.925075 100.848339 
+L 602.925075 86.430712 
+L 144.588156 86.430712 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 144.588156 77.594102 
+L 631.207208 77.594102 
+L 631.207208 63.176475 
+L 144.588156 63.176475 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 144.588156 54.339864 
+L 669.886538 54.339864 
+L 669.886538 39.922237 
+L 144.588156 39.922237 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #eb6834"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 144.588156 31.085627 
+L 692.967467 31.085627 
+L 692.967467 16.668 
+L 144.588156 16.668 
+z
+" clip-path="url(#p2d407d9cd0)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="503.896078" y="259.192249" transform="rotate(-0 503.896078 259.192249)">R$ 11.429</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="504.776627" y="235.938012" transform="rotate(-0 504.776627 235.938012)">R$ 11.457</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="512.701566" y="212.683774" transform="rotate(-0 512.701566 212.683774)">R$ 11.714</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 600; font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="512.848196" y="189.488037" transform="rotate(-0 512.848196 189.488037)">R$ 11.719</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 600; font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="553.331234" y="166.2338" transform="rotate(-0 553.331234 166.2338)">R$ 13.033</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="564.256275" y="142.921062" transform="rotate(-0 564.256275 142.921062)">R$ 13.387</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="572.966646" y="119.666825" transform="rotate(-0 572.966646 119.666825)">R$ 13.670</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="610.013493" y="96.412588" transform="rotate(-0 610.013493 96.412588)">R$ 14.872</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="638.295626" y="73.158351" transform="rotate(-0 638.295626 73.158351)">R$ 15.789</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 600; font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="676.974956" y="49.962613" transform="rotate(-0 676.974956 49.962613)">R$ 17.045</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="700.055884" y="26.649876" transform="rotate(-0 700.055884 26.649876)">R$ 17.793</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 574.749531 112.441892 
+Q 538.157765 58.996175 472.243592 47.465313 
+" style="fill: none; stroke: #eb6834; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 600; font-size: 10.8px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #eb6834" transform="translate(523.512761 123.676695)">o m² mais caro da cidade é</text>
+    <text style="font-weight: 600; font-size: 10.8px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #eb6834" transform="translate(517.220073 134.468595)">justamente o de 1 dormitório</text>
+   </g>
+  </g>
+  <g id="text_30">
+   <text style="font-size: 9.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7c8681" x="41.988156" y="332.697844" transform="rotate(-0 41.988156 332.697844)">Mediana do preço pedido por m² entre as unidades prontas à venda em cada segmento (VivaReal, jan/2025).</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2d407d9cd0">
+   <rect x="144.588156" y="4.32" width="636.12" height="271.656"/>
+  </clipPath>
+ </defs>
+</svg>

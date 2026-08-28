@@ -1,0 +1,431 @@
+{
+ "title": "Itapema · Tese de Investimento",
+ "subtitle": "Onde a Seazone deveria comprar, e por quê",
+ "meta": {
+  "date": "Agosto de 2026",
+  "source": "Airbnb + VivaReal · snapshot de janeiro de 2025",
+  "scope": "6408 apartamentos prontos à venda · 1.005 anúncios com calendário"
+ },
+ "slides": [
+  {
+   "id": "resumo",
+   "section": "Resumo executivo",
+   "headline": "Comprar 2 dormitórios compactos em Morretes — e não studios no Centro",
+   "layout": "kpi",
+   "standfirst": "Apartamentos de 2 dormitórios, 69 m², capacidade para 5 a 6 pessoas, na faixa de R$ 690 mil a R$ 850 mil. Retorno líquido de caixa de 6,4% ao ano, com uma parcela na orla da Meia Praia como seguro de liquidez.",
+   "kpis": [
+    {
+     "label": "Retorno líquido de caixa",
+     "value": "6,4%",
+     "note": "sobre o custo total, após taxa de administração, condomínio, IPTU e reservas"
+    },
+    {
+     "label": "Retorno bruto",
+     "value": "11,8%",
+     "note": "receita de reservas sobre o custo total"
+    },
+    {
+     "label": "Payback",
+     "value": "16 anos",
+     "note": "sem alavancagem e sem valorização"
+    },
+    {
+     "label": "Seleção disciplinada",
+     "value": "9,7%",
+     "note": "carteira de 25 unidades triadas uma a uma"
+    },
+    {
+     "label": "Estoque alocável",
+     "value": "R$ 733,71 mi",
+     "note": "unidades prontas anunciadas no perfil recomendado"
+    }
+   ],
+   "verdict": {
+    "kind": "reject",
+    "title": "A hipótese interna não se sustenta",
+    "body": "“Studios e 1 dormitório no Centro” cai por três motivos independentes: não existe um único studio à venda na base; 1 dormitório é 2,0% da oferta e apenas 18 unidades no Centro; e o retorno do segmento é 4,5%, 6º entre 11 segmentos. A intuição está meio certa — pequeno é eficiente — mas o mercado já cobrou por isso."
+   },
+   "notes": "Abrir pela decisão, não pelo método. Se perguntarem “por que não o Centro”, a resposta curta é: não há produto para comprar e o m² já está caro. O detalhe vem no slide 6."
+  },
+  {
+   "id": "mercado",
+   "section": "Panorama do mercado",
+   "chart": "c1_market",
+   "headline": "R$ 14.721,90 mi anunciados em Itapema — 90% em unidades grandes, que rendem menos",
+   "bullets": [
+    "6.408 apartamentos prontos à venda em 11 segmentos com evidência suficiente dos dois lados do mercado.",
+    "Os quatro maiores segmentos por capital anunciado rendem entre 3,2% e 4,5% — são os piores da cidade.",
+    "O perfil recomendado concentra R$ 733,71 mi de estoque pronto: capital suficiente para uma tese, não uma raridade."
+   ],
+   "notes": "O ponto desta lâmina é a inversão: o mercado anuncia o que rende menos. É aí que está a oportunidade."
+  },
+  {
+   "id": "demanda",
+   "section": "Demanda · Airbnb",
+   "charts": [
+    "c2_season",
+    "c3_curve"
+   ],
+   "headline": "A ocupação é observada, não arbitrada — e a receita cai pela metade em onze semanas",
+   "bullets": [
+    "O arquivo de preços do Airbnb só traz linha quando a diária está disponível: as datas ausentes são noites indisponíveis.",
+    "Três capturas do calendário enxergam a mesma estadia em horizontes diferentes, o que permite corrigir a disponibilidade vista com antecedência.",
+    "Base observada: 105 noites, de 06/jan a 20/abr/2025. Os outros oito meses entram como premissa declarada, não como dado."
+   ],
+   "notes": "Se um diretor questionar a ocupação, esta é a lâmina. Ocupação de 73% na alta temporada com corte de 10% para bloqueios do proprietário. O que não temos é o inverno, e isso está dito."
+  },
+  {
+   "id": "precos",
+   "section": "Imóveis e preços",
+   "chart": "c4_ppsm",
+   "headline": "O metro quadrado mais caro da cidade é o de 1 dormitório",
+   "bullets": [
+    "R$ 17.045/m² no Centro e R$ 18.900/m² na Meia Praia para 1 dormitório, contra R$ 11.719/m² num 2 dormitórios compacto em Morretes.",
+    "A eficiência do imóvel pequeno é real — ele rende mais por m² — mas já está integralmente no preço.",
+    "Somente 136 unidades de 1 dormitório e 0 studios à venda em toda a cidade."
+   ],
+   "notes": "Esta lâmina é o cerne da refutação. O erro da hipótese não é a intuição, é ignorar o lado do custo."
+  },
+  {
+   "id": "oportunidade",
+   "section": "Onde está a oportunidade",
+   "chart": "c5_frontier",
+   "headline": "A receita se compra em capacidade de dormir por m², não em endereço",
+   "bullets": [
+    "Elasticidade da diária em relação à capacidade: +0,55. Cada 1% de capacidade a mais vale 0,55% na diária.",
+    "Distância do mar: a receita cai 6% a cada dobra de distância; o preço pedido cai 9%. Uma quadra para dentro é acretivo.",
+    "Operação profissional vale +27% na diária — mais do que qualquer escolha fina de localização."
+   ],
+   "notes": "Se sobrar tempo em uma só lâmina, é esta. As diagonais são retorno bruto constante: subir e ir para a esquerda é o objetivo."
+  },
+  {
+   "id": "perfil",
+   "section": "Perfil recomendado",
+   "layout": "profile",
+   "headline": "2 dormitórios · 69 m² · duas suítes · 6 hóspedes · Morretes",
+   "spec": [
+    [
+     "Tipologia",
+     "Apartamento, 2 dormitórios (ambos suíte)"
+    ],
+    [
+     "Área útil",
+     "60 a 72 m² — mediana de 69 m²"
+    ],
+    [
+     "Capacidade",
+     "5 a 6 hóspedes, com sofá-cama na sala"
+    ],
+    [
+     "Localização",
+     "Morretes e Tabuleiro dos Oliveiras, 300 a 800 m da Meia Praia"
+    ],
+    [
+     "Faixa de preço",
+     "R$ 690 mil a R$ 850 mil de pedido"
+    ],
+    [
+     "Condomínio",
+     "até R$ 400 por mês — acima disso o retorno some"
+    ],
+    [
+     "Prédio",
+     "piscina e elevador; uma vaga de garagem"
+    ],
+    [
+     "Evitar",
+     "3 e 4 dormitórios na orla e no Centro; unidades sem vaga"
+    ]
+   ],
+   "compare": [
+    {
+     "label": "Morretes · 2 dorm",
+     "yield_": 0.0636406671248109,
+     "tag": "recomendado"
+    },
+    {
+     "label": "Meia Praia · orla · 2 dorm",
+     "yield_": 0.0578894899022295,
+     "tag": "parcela de liquidez"
+    },
+    {
+     "label": "Centro · 1 dorm",
+     "yield_": 0.045332988764587,
+     "tag": "a hipótese"
+    },
+    {
+     "label": "Meia Praia · orla · 4 dorm",
+     "yield_": 0.0327206393439766,
+     "tag": "evitar"
+    }
+   ],
+   "notes": "Este é o briefing de compra que vai para o time de originação. Números redondos, critérios operáveis."
+  },
+  {
+   "id": "hospede",
+   "section": "Quem é o hóspede",
+   "layout": "segments",
+   "headline": "Itapema é família e grupo em semana de férias — não é negócios, nem fim de semana",
+   "standfirst": "Não observamos hóspedes: observamos como cada unidade é configurada e a demanda que essa configuração alcança. Os segmentos abaixo são preferência revelada, não persona.",
+   "rows": [
+    {
+     "seg": "Alto padrão e frente-mar",
+     "n": 120,
+     "guests": "8",
+     "dorm": "3",
+     "adr": "R$ 1.221",
+     "occ": "75%",
+     "rev": "R$ 176 mil",
+     "season": "42%"
+    },
+    {
+     "seg": "Grupos e amigos",
+     "n": 217,
+     "guests": "8",
+     "dorm": "3",
+     "adr": "R$ 683",
+     "occ": "85%",
+     "rev": "R$ 108 mil",
+     "season": "57%"
+    },
+    {
+     "seg": "Famílias",
+     "n": 407,
+     "guests": "6",
+     "dorm": "2",
+     "adr": "R$ 554",
+     "occ": "83%",
+     "rev": "R$ 87 mil",
+     "season": "59%"
+    },
+    {
+     "seg": "Casais e escapadas curtas",
+     "n": 167,
+     "guests": "4",
+     "dorm": "1",
+     "adr": "R$ 499",
+     "occ": "70%",
+     "rev": "R$ 70 mil",
+     "season": "64%"
+    }
+   ],
+   "evidence": [
+    [
+     "DADO",
+     "Viagem de negócios aparece em 1,9% dos anúncios e estadia mensal em 0,1%. Não são segmentos deste mercado — não vamos inventá-los."
+    ],
+    [
+     "DADO",
+     "A diária de sexta e sábado é igual à de meio de semana em praticamente toda a cidade. A demanda é de semana inteira de férias, não de escapada de fim de semana."
+    ],
+    [
+     "DADO",
+     "55% dos anúncios aceitam animais — sinal de viagem de carro em família, coerente com o público do Sul do país."
+    ],
+    [
+     "HIPÓTESE",
+     "A origem provável é rodoviária (Curitiba, Porto Alegre, interior de SC). A base não traz origem do hóspede; isso precisa ser confirmado com dados internos da Seazone."
+    ]
+   ],
+   "notes": "Se perguntarem por corporativo ou aluguel mensal: a base diz que não existe aqui. Vale dizer que testamos e descartamos, em vez de omitir."
+  },
+  {
+   "id": "matriz",
+   "section": "Investimento → local → cliente",
+   "layout": "matrix",
+   "headline": "Cada perfil tem uma área e um cliente — e só um deles junta retorno, evidência e escala",
+   "cols": [
+    "Perfil",
+    "Área",
+    "Cliente predominante",
+    "Diária",
+    "Ocupação",
+    "Receita/ano",
+    "Pedido",
+    "Retorno",
+    "Evidência"
+   ],
+   "rows": [
+    {
+     "cells": [
+      "3 dorm",
+      "Morretes",
+      "Alto padrão e frente-mar (40%)",
+      "R$ 724",
+      "85%",
+      "R$ 123 mil",
+      "R$ 850 mil",
+      "7,9%",
+      "fina"
+     ],
+     "tone": ""
+    },
+    {
+     "cells": [
+      "2 dorm",
+      "Tabuleiro dos Oliveiras",
+      "Famílias (83%)",
+      "R$ 462",
+      "82%",
+      "R$ 77 mil",
+      "R$ 780 mil",
+      "6,9%",
+      "fina"
+     ],
+     "tone": ""
+    },
+    {
+     "cells": [
+      "2 dorm",
+      "Morretes",
+      "Famílias (59%)",
+      "R$ 491",
+      "77%",
+      "R$ 71 mil",
+      "R$ 790 mil",
+      "6,4%",
+      "forte"
+     ],
+     "tone": "rec"
+    },
+    {
+     "cells": [
+      "2 dorm",
+      "Meia Praia · orla",
+      "Famílias (86%)",
+      "R$ 515",
+      "87%",
+      "R$ 84 mil",
+      "R$ 1,10 mi",
+      "5,8%",
+      "forte"
+     ],
+     "tone": "slv"
+    },
+    {
+     "cells": [
+      "2 dorm",
+      "Meia Praia · interior",
+      "Famílias (82%)",
+      "R$ 507",
+      "78%",
+      "R$ 70 mil",
+      "R$ 996 mil",
+      "5,5%",
+      "forte"
+     ],
+     "tone": ""
+    },
+    {
+     "cells": [
+      "1 dorm",
+      "Centro",
+      "Casais e escapadas curtas (100%)",
+      "R$ 489",
+      "66%",
+      "R$ 70 mil",
+      "R$ 895 mil",
+      "4,5%",
+      "forte"
+     ],
+     "tone": "hyp"
+    },
+    {
+     "cells": [
+      "2 dorm",
+      "Centro",
+      "Famílias (75%)",
+      "R$ 621",
+      "74%",
+      "R$ 84 mil",
+      "R$ 1,15 mi",
+      "4,4%",
+      "forte"
+     ],
+     "tone": ""
+    }
+   ],
+   "chain": [
+    [
+     "Compra",
+     "2 dorm compacto, 69 m², R$ 790 mil"
+    ],
+    [
+     "Local",
+     "Morretes, 300–800 m da Meia Praia"
+    ],
+    [
+     "Cliente",
+     "Família de 5–6 em semana de férias"
+    ],
+    [
+     "Demanda",
+     "Ocupação de 77% na alta, sem prêmio de fim de semana"
+    ],
+    [
+     "Retorno",
+     "6,4% líquido · payback de 16 anos"
+    ]
+   ],
+   "notes": "A linha de baixo é a tese em cinco caixas. Morretes 3 dorm rende mais, mas se apoia em 10 comparáveis; a orla tem evidência forte e menos retorno. O 2 dorm em Morretes é o único com os três."
+  },
+  {
+   "id": "financeiro",
+   "section": "Análise financeira",
+   "chart": "c7_bridge",
+   "headline": "De R$ 100 mil de receita a R$ 54 mil de resultado — 6,4% sobre R$ 854 mil",
+   "secondary": "c6_yields",
+   "bullets": [
+    "Custo total = pedido menos 7% de negociação. mais 5% de fechamento. mais R$ 1.200/m² de mobília e enxoval.",
+    "A diferença entre bruto (11,8%) e líquido (6,4%) é de 5,4%. Qualquer retorno prometido nessa faixa é bruto vestido de líquido.",
+    "Custos fixos pesam desproporcionalmente em unidades pequenas — a segunda razão pela qual o studio não fecha."
+   ],
+   "notes": "O número para levar: 11,8% bruto, 6,4% líquido. Se alguém citar “13% a 23% ao ano”, é bruto ou inclui valorização — e vale dizer isso na reunião."
+  },
+  {
+   "id": "riscos",
+   "section": "Riscos e sensibilidades",
+   "charts": [
+    "c8_tornado",
+    "c9_distance"
+   ],
+   "headline": "Nenhuma premissa isolada derruba a tese — a única ameaça real é geográfica",
+   "bullets": [
+    "2.187 combinações de premissas: os três primeiros segmentos mantêm a ordem em todas. O pior caso de qualquer premissa isolada é 5,2%.",
+    "O VivaReal não traz coordenadas. Se o estoque fora da orla estiver mais longe do mar do que os comparáveis do Airbnb, a receita está superestimada.",
+    "A parcela na orla existe exatamente para isso: custa cerca de 60 pontos-base de retorno e elimina a única incerteza capaz de inverter a ordem."
+   ],
+   "limits": [
+    "Oito meses do ano não são observados — sazonalidade é premissa declarada, com sensibilidade.",
+    "Preços são pedidos, não transações. Valorização e imposto de renda estão fora.",
+    "Apenas 1.005 dos 4.441 anúncios têm calendário, e o subconjunto pende para anúncios profissionais."
+   ],
+   "notes": "Não esconder o risco geográfico. Apresentá-lo antes que perguntem é o que compra credibilidade."
+  },
+  {
+   "id": "recomendacao",
+   "section": "Recomendação e próximos passos",
+   "chart": "c10_portfolio",
+   "headline": "R$ 19,59 mi em 25 unidades — 9,7% líquido, payback de 10,3 anos",
+   "steps": [
+    [
+     "Validar em campo",
+     "Visitar as 25 unidades da lista triada. São os m² mais baratos das suas células — é onde também moram anúncio velho e área errada."
+    ],
+    [
+     "Confirmar condomínio e IPTU",
+     "Valores declarados em apenas 43% dos anúncios. Acima de R$ 400/mês a tese muda."
+    ],
+    [
+     "Testar a premissa de baixa temporada",
+     "É a premissa mais sensível da análise. Um mês de dados reais de maio resolve."
+    ],
+    [
+     "Fechar a primeira tranche",
+     "6 a 8 unidades em Morretes, cerca de R$ 5,00 mi, para validar a operação antes de escalar."
+    ]
+   ],
+   "notes": "Terminar pedindo uma decisão concreta: autorização da primeira tranche, não do plano inteiro."
+  }
+ ]
+}

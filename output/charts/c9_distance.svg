@@ -1,0 +1,274 @@
+<svg class="chart" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 679.282109 306.493313" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-28T22:13:36.730695</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 306.493313 
+L 679.282109 306.493313 
+L 679.282109 0 
+L 0 0 
+L 0 306.493313 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 75.42 248.256 
+L 516.24 248.256 
+L 516.24 4.32 
+L 75.42 4.32 
+L 75.42 248.256 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 141.952787 248.256 
+L 516.24 248.256 
+L 516.24 4.32 
+L 141.952787 4.32 
+z
+" clip-path="url(#p83f1d3a759)" style="fill: #eb6834; opacity: 0.06; stroke: #eb6834; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 85.915714 248.256 
+L 85.915714 4.32 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="85.915714" y="259.741312" transform="rotate(-0 85.915714 259.741312)">1,0×</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 138.394286 248.256 
+L 138.394286 4.32 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="138.394286" y="259.741312" transform="rotate(-0 138.394286 259.741312)">1,2×</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 190.872857 248.256 
+L 190.872857 4.32 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="190.872857" y="259.741312" transform="rotate(-0 190.872857 259.741312)">1,5×</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 243.351429 248.256 
+L 243.351429 4.32 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="243.351429" y="259.741312" transform="rotate(-0 243.351429 259.741312)">1,8×</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 295.83 248.256 
+L 295.83 4.32 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="295.83" y="259.741312" transform="rotate(-0 295.83 259.741312)">2,0×</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 348.308571 248.256 
+L 348.308571 4.32 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_6">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="348.308571" y="259.741312" transform="rotate(-0 348.308571 259.741312)">2,2×</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 400.787143 248.256 
+L 400.787143 4.32 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14"/>
+     <g id="text_7">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="400.787143" y="259.741312" transform="rotate(-0 400.787143 259.741312)">2,5×</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 453.265714 248.256 
+L 453.265714 4.32 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16"/>
+     <g id="text_8">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="453.265714" y="259.741312" transform="rotate(-0 453.265714 259.741312)">2,8×</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <path d="M 505.744286 248.256 
+L 505.744286 4.32 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18"/>
+     <g id="text_9">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="505.744286" y="259.741312" transform="rotate(-0 505.744286 259.741312)">3,0×</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(163.196367 273.579203)">Quanto mais longe do mar o estoque à venda pode estar</text>
+     <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(220.350469 285.649172)">(múltiplo da distância assumida)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_19">
+      <path d="M 75.42 213.933826 
+L 516.24 213.933826 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20"/>
+     <g id="text_11">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="71.92" y="217.926483" transform="rotate(-0 71.92 217.926483)">4,0%</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_21">
+      <path d="M 75.42 171.945623 
+L 516.24 171.945623 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22"/>
+     <g id="text_12">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="71.92" y="175.938279" transform="rotate(-0 71.92 175.938279)">4,5%</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_23">
+      <path d="M 75.42 129.95742 
+L 516.24 129.95742 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24"/>
+     <g id="text_13">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="71.92" y="133.950076" transform="rotate(-0 71.92 133.950076)">5,0%</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_25">
+      <path d="M 75.42 87.969217 
+L 516.24 87.969217 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26"/>
+     <g id="text_14">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="71.92" y="91.961873" transform="rotate(-0 71.92 91.961873)">5,5%</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_27">
+      <path d="M 75.42 45.981014 
+L 516.24 45.981014 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28"/>
+     <g id="text_15">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="71.92" y="49.97367" transform="rotate(-0 71.92 49.97367)">6,0%</text>
+     </g>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="43.318984" y="126.288" transform="rotate(-90 43.318984 126.288)">Retorno líquido — Morretes 2 dorm</text>
+    </g>
+   </g>
+   <g id="line2d_29">
+    <path d="M 75.42 63.704319 
+L 516.24 63.704319 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #1baf7a; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 75.42 248.256 
+L 516.24 248.256 
+" style="fill: none; stroke: #dae0db; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_30">
+    <path d="M 85.915714 15.408 
+L 190.872857 52.916865 
+L 295.83 78.444475 
+L 400.787143 97.647171 
+L 505.744286 112.95967 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke: #2a78d6; stroke-width: 2.3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_31">
+    <path d="M 85.915714 15.408 
+L 190.872857 105.866752 
+L 295.83 163.692662 
+L 400.787143 205.232329 
+L 505.744286 237.168 
+" clip-path="url(#p83f1d3a759)" style="fill: none; stroke-dasharray: 11.5,6.9; stroke-dashoffset: 0; stroke: #2a78d6; stroke-width: 2.3"/>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 600; font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1baf7a" x="509.942571" y="51.168355" transform="rotate(-0 509.942571 51.168355)">Meia Praia · orla · 2 dorm  5,8%</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 600; font-size: 10.2px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #eb6834" x="329.096394" y="238.178831" transform="rotate(-0 329.096394 238.178831)">entre 1,3× e 1,7× de distância a mais, a orla passa à frente</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_32">
+     <path d="M 360.197813 16.910625 
+L 370.197813 16.910625 
+L 380.197813 16.910625 
+" style="fill: none; stroke: #2a78d6; stroke-width: 2.3; stroke-linecap: square"/>
+    </g>
+    <g id="text_19">
+     <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #535d59" x="388.197813" y="20.410625" transform="rotate(-0 388.197813 20.410625)">elasticidade estimada (−0,12)</text>
+    </g>
+    <g id="line2d_33">
+     <path d="M 360.197813 30.835625 
+L 370.197813 30.835625 
+L 380.197813 30.835625 
+" style="fill: none; stroke-dasharray: 11.5,6.9; stroke-dashoffset: 0; stroke: #2a78d6; stroke-width: 2.3"/>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #535d59" x="388.197813" y="34.335625" transform="rotate(-0 388.197813 34.335625)">cenário pessimista (−0,30)</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_21">
+   <text style="font-size: 9.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7c8681" x="4.32" y="300.5405" transform="rotate(-0 4.32 300.5405)">O VivaReal não traz coordenadas: esta é a única incerteza capaz de inverter a ordem dos segmentos. É exatamente por isso que a recomendação carrega uma parcela na orla.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p83f1d3a759">
+   <rect x="75.42" y="4.32" width="440.82" height="243.936"/>
+  </clipPath>
+ </defs>
+</svg>

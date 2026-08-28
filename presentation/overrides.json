@@ -1,0 +1,4 @@
+{
+  "_comment": "Revise textos do deck sem tocar em código. Chaves espelham output/deck_spec.json; slides sao indexados por posicao.",
+  "slides": {}
+}

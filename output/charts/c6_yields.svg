@@ -1,0 +1,389 @@
+<svg class="chart" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 785.028156 357.573375" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-28T22:13:36.501217</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 357.573375 
+L 785.028156 357.573375 
+L 785.028156 0 
+L 0 0 
+L 0 357.573375 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 144.588156 292.608 
+L 780.708156 292.608 
+L 780.708156 4.32 
+L 144.588156 4.32 
+L 144.588156 292.608 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="144.588156" y="304.093313" transform="rotate(-0 144.588156 304.093313)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="256.188156" y="304.093313" transform="rotate(-0 256.188156 304.093313)">2%</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="367.788156" y="304.093313" transform="rotate(-0 367.788156 304.093313)">4%</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="479.388156" y="304.093313" transform="rotate(-0 479.388156 304.093313)">6%</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="590.988156" y="304.093313" transform="rotate(-0 590.988156 304.093313)">8%</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="702.588156" y="304.093313" transform="rotate(-0 702.588156 304.093313)">10%</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="462.648156" y="317.931203" transform="rotate(-0 462.648156 317.931203)">Retorno líquido de caixa ao ano · e payback</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7"/>
+     <g id="text_8">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="275.766829" transform="rotate(-0 141.088156 275.766829)">Centro · 3 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8"/>
+     <g id="text_9">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="251.042301" transform="rotate(-0 141.088156 251.042301)">Meia Praia · orla · 4 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9"/>
+     <g id="text_10">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="226.317772" transform="rotate(-0 141.088156 226.317772)">Meia Praia · interior · 3 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10"/>
+     <g id="text_11">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="201.593244" transform="rotate(-0 141.088156 201.593244)">Meia Praia · orla · 3 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11"/>
+     <g id="text_12">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="176.868716" transform="rotate(-0 141.088156 176.868716)">Centro · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_12"/>
+     <g id="text_13">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="152.144187" transform="rotate(-0 141.088156 152.144187)">Centro · 1 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_13"/>
+     <g id="text_14">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="127.419659" transform="rotate(-0 141.088156 127.419659)">Meia Praia · interior · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_14"/>
+     <g id="text_15">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="102.695131" transform="rotate(-0 141.088156 102.695131)">Meia Praia · orla · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_15"/>
+     <g id="text_16">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="77.970603" transform="rotate(-0 141.088156 77.970603)">Morretes · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_16"/>
+     <g id="text_17">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="53.246074" transform="rotate(-0 141.088156 53.246074)">Tabuleiro dos Oliveiras · 2 dorm</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_17"/>
+     <g id="text_18">
+      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="141.088156" y="28.521546" transform="rotate(-0 141.088156 28.521546)">Morretes · 3 dorm</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 144.588156 292.608 
+L 780.708156 292.608 
+" style="fill: none; stroke: #dae0db; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 144.588156 279.504 
+L 320.451062 279.504 
+L 320.451062 264.669283 
+L 144.588156 264.669283 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 144.588156 254.779472 
+L 327.169324 254.779472 
+L 327.169324 239.944755 
+L 144.588156 239.944755 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 144.588156 230.054943 
+L 357.41629 230.054943 
+L 357.41629 215.220226 
+L 144.588156 215.220226 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 144.588156 205.330415 
+L 367.344728 205.330415 
+L 367.344728 190.495698 
+L 144.588156 190.495698 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 144.588156 180.605887 
+L 390.25206 180.605887 
+L 390.25206 165.77117 
+L 144.588156 165.77117 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 144.588156 155.881358 
+L 397.546234 155.881358 
+L 397.546234 141.046642 
+L 144.588156 141.046642 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #eb6834"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 144.588156 131.15683 
+L 452.83985 131.15683 
+L 452.83985 116.322113 
+L 144.588156 116.322113 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 144.588156 106.432302 
+L 467.61151 106.432302 
+L 467.61151 91.597585 
+L 144.588156 91.597585 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #1baf7a"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 144.588156 81.707774 
+L 499.703079 81.707774 
+L 499.703079 66.873057 
+L 144.588156 66.873057 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 144.588156 56.983245 
+L 527.374228 56.983245 
+L 527.374228 42.148528 
+L 144.588156 42.148528 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 144.588156 32.258717 
+L 586.954733 32.258717 
+L 586.954733 17.424 
+L 144.588156 17.424 
+z
+" clip-path="url(#pc9bd0fe1f8)" style="fill: #9aa5a0"/>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="339.512221" y="274.83304" transform="rotate(-0 339.512221 274.83304)">3,2%   ·   32 anos</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="336.203699" y="250.108512" transform="rotate(-0 336.203699 250.108512)">3,3%   ·   31 anos</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="370.66909" y="225.383983" transform="rotate(-0 370.66909 225.383983)">3,8%   ·   26 anos</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="379.797257" y="200.659455" transform="rotate(-0 379.797257 200.659455)">4,0%   ·   25 anos</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="423.982242" y="175.934927" transform="rotate(-0 423.982242 175.934927)">4,4%   ·   23 anos</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 600; font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="471.907257" y="151.268336" transform="rotate(-0 471.907257 151.268336)">4,5%   ·   22 anos</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="477.03495" y="126.48587" transform="rotate(-0 477.03495 126.48587)">5,5%   ·   18 anos</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 600; font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="502.328694" y="101.819279" transform="rotate(-0 502.328694 101.819279)">5,8%   ·   17 anos</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 600; font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="514.342264" y="77.094751" transform="rotate(-0 514.342264 77.094751)">6,4%   ·   16 anos</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="567.530797" y="52.312285" transform="rotate(-0 567.530797 52.312285)">6,9%   ·   15 anos</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 10.3px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #101816" x="637.867197" y="27.587757" transform="rotate(-0 637.867197 27.587757)">7,9%   ·   13 anos</text>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 312.168129 272.086642 
+L 331.700221 272.086642 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 322.004334 247.362113 
+L 328.391699 247.362113 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 353.938411 222.637585 
+L 362.85709 222.637585 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 364.545209 197.913057 
+L 371.985257 197.913057 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 362.373315 173.188528 
+L 416.170242 173.188528 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 314.094679 148.464 
+L 464.095257 148.464 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 442.781842 123.739472 
+L 469.22295 123.739472 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 452.172886 99.014943 
+L 494.516694 99.014943 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 491.189806 74.290415 
+L 506.530264 74.290415 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 511.375212 49.565887 
+L 559.718797 49.565887 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 554.953837 24.841358 
+L 630.055197 24.841358 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 312.168129 276.042566 
+L 312.168129 268.130717 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 322.004334 251.318038 
+L 322.004334 243.406189 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 353.938411 226.593509 
+L 353.938411 218.68166 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 364.545209 201.868981 
+L 364.545209 193.957132 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 362.373315 177.144453 
+L 362.373315 169.232604 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 314.094679 152.419925 
+L 314.094679 144.508075 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 442.781842 127.695396 
+L 442.781842 119.783547 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 452.172886 102.970868 
+L 452.172886 95.059019 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 491.189806 78.24634 
+L 491.189806 70.334491 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 511.375212 53.521811 
+L 511.375212 45.609962 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 554.953837 28.797283 
+L 554.953837 20.885434 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+   </g>
+   <g id="LineCollection_3">
+    <path d="M 331.700221 276.042566 
+L 331.700221 268.130717 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 328.391699 251.318038 
+L 328.391699 243.406189 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 362.85709 226.593509 
+L 362.85709 218.68166 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 371.985257 201.868981 
+L 371.985257 193.957132 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 416.170242 177.144453 
+L 416.170242 169.232604 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 464.095257 152.419925 
+L 464.095257 144.508075 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 469.22295 127.695396 
+L 469.22295 119.783547 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 494.516694 102.970868 
+L 494.516694 95.059019 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 506.530264 78.24634 
+L 506.530264 70.334491 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 559.718797 53.521811 
+L 559.718797 45.609962 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+    <path d="M 630.055197 28.797283 
+L 630.055197 20.885434 
+" clip-path="url(#pc9bd0fe1f8)" style="fill: none; stroke: #535d59; stroke-width: 1.6"/>
+   </g>
+  </g>
+  <g id="text_30">
+   <text style="font-size: 9.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7c8681" x="41.988156" y="351.620563" transform="rotate(-0 41.988156 351.620563)">Barras: retorno líquido sob premissas base. Traço: intervalo de confiança de 90% por bootstrap sobre os anúncios de cada célula. Payback sem alavancagem e sem valorização.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc9bd0fe1f8">
+   <rect x="144.588156" y="4.32" width="636.12" height="288.288"/>
+  </clipPath>
+ </defs>
+</svg>

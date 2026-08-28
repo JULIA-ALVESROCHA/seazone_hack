@@ -1,0 +1,160 @@
+<svg class="chart" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 765.327648 226.533375" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-08-28T22:13:36.800917</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 226.533375 
+L 765.327648 226.533375 
+L 765.327648 0 
+L 0 0 
+L 0 226.533375 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 106.92 181.728 
+L 743.04 181.728 
+L 743.04 4.32 
+L 106.92 4.32 
+L 106.92 181.728 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="106.92" y="193.213313" transform="rotate(-0 106.92 193.213313)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="265.95" y="193.213313" transform="rotate(-0 265.95 193.213313)">5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="424.98" y="193.213313" transform="rotate(-0 424.98 193.213313)">10</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="584.01" y="193.213313" transform="rotate(-0 584.01 193.213313)">15</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="743.04" y="193.213313" transform="rotate(-0 743.04 193.213313)">20</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="424.98" y="207.477063" transform="rotate(-0 424.98 207.477063)">Capital alocado (R$ milhões)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 106.92 181.728 
+L 743.04 181.728 
+" style="fill: none; stroke: #dae0db; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 106.92 81.936 
+L 381.027923 81.936 
+L 381.027923 26.496 
+L 106.92 26.496 
+z
+" clip-path="url(#pffb44e53dd)" style="fill: #2a78d6; stroke: #fbfcfa; stroke-width: 2.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 381.027923 81.936 
+L 555.117149 81.936 
+L 555.117149 26.496 
+L 381.027923 26.496 
+z
+" clip-path="url(#pffb44e53dd)" style="fill: #1baf7a; stroke: #fbfcfa; stroke-width: 2.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 555.117149 81.936 
+L 681.918463 81.936 
+L 681.918463 26.496 
+L 555.117149 26.496 
+z
+" clip-path="url(#pffb44e53dd)" style="fill: #1baf7a; stroke: #fbfcfa; stroke-width: 2.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 681.918463 81.936 
+L 706.020573 81.936 
+L 706.020573 26.496 
+L 681.918463 26.496 
+z
+" clip-path="url(#pffb44e53dd)" style="fill: #9aa5a0; stroke: #fbfcfa; stroke-width: 2.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 693.969518 118.967479 
+Q 693.969518 101.453018 693.969518 83.938557 
+" style="fill: none; stroke: #b9c3bd; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(637.693268 129.6276)">Meia Praia · interior · 3 dorm</text>
+    <text style="font-size: 9.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(650.936768 139.1733)">1 un · R$ 0,8 mi · 9,4%</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 706.020573 81.936 
+L 729.929223 81.936 
+L 729.929223 26.496 
+L 706.020573 26.496 
+z
+" clip-path="url(#pffb44e53dd)" style="fill: #9aa5a0; stroke: #fbfcfa; stroke-width: 2.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 717.974898 118.967479 
+Q 717.974898 101.453018 717.974898 83.938557 
+" style="fill: none; stroke: #b9c3bd; stroke-linecap: round"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(687.230148 129.6276)">Centro · 3 dorm</text>
+    <text style="font-size: 9.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(674.942148 139.1733)">1 un · R$ 0,8 mi · 9,8%</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #ffffff" transform="translate(206.118493 51.942406)">Morretes · 2 dorm</text>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #ffffff" transform="translate(193.409899 61.934906)">15 un · R$ 8,6 mi · 10,2%</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #ffffff" transform="translate(415.515505 51.942406)">Meia Praia · orla · 4 dorm</text>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #ffffff" transform="translate(422.577224 61.934906)">4 un · R$ 5,5 mi · 9,2%</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #ffffff" transform="translate(565.960775 51.942406)">Meia Praia · orla · 3 dorm</text>
+    <text style="font-weight: 600; font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #ffffff" transform="translate(573.022494 61.934906)">4 un · R$ 4,0 mi · 9,4%</text>
+   </g>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 9.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7c8681" x="4.32" y="220.580563" transform="rotate(-0 4.32 220.580563)">Alocação gulosa sobre os anúncios reais da base, com teto de 45% por segmento e 30% por corretor, após descarte de outliers de preço e deságio de qualidade.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pffb44e53dd">
+   <rect x="106.92" y="4.32" width="636.12" height="177.408"/>
+  </clipPath>
+ </defs>
+</svg>
