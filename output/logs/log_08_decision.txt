@@ -1,0 +1,76 @@
+
+log-odds occupancy: R2=0.104
+   centro             +0.025 [-0.144,+0.319]  
+   compact            -0.148 [-0.630,+0.002]  
+   centro_x_compact   -0.077 [-0.353,+0.268]  
+   log_dist           -0.104 [-0.222,+0.011]  
+   log_guests         -0.008 [-0.278,+0.156]  
+   prof               -0.218 [-0.505,-0.041] *
+   star               -0.041 [-0.629,+0.124]  
+
+log ADR: R2=0.372
+   centro             +0.024 [-0.047,+0.088]  
+   compact            +0.034 [-0.054,+0.146]  
+   centro_x_compact   -0.009 [-0.120,+0.107]  
+   log_dist           -0.125 [-0.154,-0.095] *
+   log_guests         +0.555 [+0.472,+0.648] *
+   prof               +0.271 [+0.214,+0.341] *
+   star               +0.269 [+0.122,+0.471] *
+
+=== deployable stock: listed, ready-to-use apartments (asking-price value) ===
+                                    n_listed  med_price  stock_value_Rmi
+micro_zone              bed_bucket                                      
+Meia Praia (beach band) 4               1162  3500000.0           4546.0
+                        3               1567  1881800.0           3266.0
+Centro                  4                357  3807202.0           1697.0
+Meia Praia (inland)     3                731  1694830.0           1281.0
+                        4                318  2708850.0           1015.0
+Centro                  3                410  2100000.0            957.0
+Morretes                2                827   790000.0            653.0
+Meia Praia (beach band) 2                229  1099200.0            262.0
+Morretes                4                 48  5998940.0            260.0
+                        3                141   849560.0            172.0
+Canto da Praia          3                 64  1795000.0            128.0
+Meia Praia (inland)     2                121   996142.0            123.0
+Centro                  2                 78  1145000.0             94.0
+Tabuleiro dos Oliveiras 2                103   780000.0             80.0
+Jardim Praia Mar        2                 80   731500.0             58.0
+Meia Praia (beach band) 1                 42   877500.0             39.0
+Morretes                1                 39   705243.0             25.0
+Varzea                  2                 28   649900.0             19.0
+Alto Sao Bento          2                 28   588113.0             17.0
+Centro                  1                 16   895000.0             16.0
+Casa Branca             2                 19   650000.0             13.0
+
+=== robust buy list: outlier-guarded, ready stock, credible comparables ===
+   102 listings dropped as price outliers vs their own cell
+ listing_id micro_zone  bedrooms  usable_area  sale_price    ppsm  monthly_condo_fee  rev_pred     noi  net_yield  payback_yrs                      advertiser_name
+ 2762836313   Morretes         2           55    420000.0  7636.0              300.0  109855.0 67400.0     0.1416          7.1                            Nei Costa
+ 2669009410   Morretes         2           61    445000.0  7295.0              330.0  109855.0 67024.0     0.1320          7.6 Airton Investimentos Imobiliários BC
+ 2749772401   Morretes         2           58    450000.0  7759.0              270.0  109855.0 66028.0     0.1297          7.7                           RE/MAX Sea
+ 2767581974   Morretes         2           50    495000.0  9900.0              100.0  109855.0 69852.0     0.1286          7.8                          HRM Imóveis
+ 2769186854   Morretes         2           56    459640.0  8208.0                1.0   98165.0 61187.0     0.1186          8.4                      USUÁRIO NEWCORE
+ 2714533420   Morretes         2           53    571143.0 10776.0                1.0  112459.0 72868.0     0.1173          8.5                       Boulevard Imob
+ 2736813751   Morretes         2           57    420000.0  7368.0                NaN   98165.0 55995.0     0.1170          8.5                       Winner Brokers
+ 2676718894     Centro         3           69    685000.0  9928.0              350.0  138495.0 87742.0     0.1167          8.6 Airton Investimentos Imobiliários BC
+ 2690265792   Morretes         2           70    520000.0  7429.0              300.0  112387.0 68461.0     0.1157          8.6                            Nei Costa
+ 2694368874   Morretes         2           70    520001.0  7429.0              300.0  112387.0 68461.0     0.1157          8.6                            Nei Costa
+ 2688011117   Morretes         2           59    450000.0  7627.0              250.0   98165.0 58619.0     0.1149          8.7 Airton Investimentos Imobiliários BC
+ 2752523301   Morretes         2           60    450000.0  7500.0              300.0   98165.0 57409.0     0.1123          8.9                            Nei Costa
+ 2740358908   Morretes         2           68    550000.0  8088.0              415.0  112748.0 67630.0     0.1093          9.1                           PB IMÓVEIS
+ 2750112194   Morretes         2           52    458000.0  8808.0                NaN   98165.0 55642.0     0.1092          9.2    José Junior - Corretor de Imóveis
+ 2692570680   Morretes         2           60    530000.0  8833.0              350.0  109855.0 64324.0     0.1091          9.2            Imobiliária Morada do Sol
+ 2732128414   Morretes         2           59    525000.0  8898.0              416.0  109855.0 63579.0     0.1090          9.2                     Reggiori Imóveis
+ 2673147348   Morretes         2           70    700000.0 10000.0              310.0  130968.0 83319.0     0.1086          9.2            CADORE IMOVEIS LTDA - EPP
+ 2769185218   Morretes         2           72    589280.0  8184.0                1.0  112387.0 71724.0     0.1084          9.2                      USUÁRIO NEWCORE
+ 2677690820   Morretes         2           60    490000.0  8167.0                3.0   98165.0 59508.0     0.1081          9.3     Eraci Eponina Jaques de Oliveira
+ 2614369252   Morretes         2           55    460000.0  8364.0              350.0   98165.0 55623.0     0.1080          9.3     Eraci Eponina Jaques de Oliveira
+
+=== investment cases (Seazone-operated, base assumptions) ===
+                                                      case  area       ask     capex    adr  occ      rev     opex      noi  net_yield  payback  n_listed
+                      RECOMMENDED: compact 2BR, beach band  86.0 1099200.0 1176569.0  515.0 0.78 125224.0  57113.0  68111.0     0.0579     17.3       229
+compact 3BR, Morretes (higher yield, higher location risk)  70.0  849560.0  913595.0  724.0 0.76 125782.0  53355.0  72427.0     0.0793     12.6       141
+                                    compact 2BR, Tabuleiro  69.0  780000.0  844470.0  462.0 0.74 105657.0  47727.0  57930.0     0.0686     14.6       103
+                                 HYPOTHESIS: 1BR in Centro  44.0  895000.0  926168.0  489.0 0.59  86324.0  44339.0  41986.0     0.0453     22.1        16
+                                  standard 3BR, beach band 129.0 1881800.0 1992378.0  716.0 0.75 149444.0  69907.0  79537.0     0.0399     25.0      1567
+                                     large 4BR, beach band 190.0 3500000.0 3645750.0 1157.0 0.76 222606.0 103315.0 119291.0     0.0327     30.6      1162

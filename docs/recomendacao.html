@@ -1,0 +1,558 @@
+<title>Itapema Buy Thesis</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#f2f5f3; --surface:#fbfcfa; --surface-2:#eaefeb; --ink:#101816; --ink-2:#535d59; --ink-3:#7c8681;
+  --line:#dae0db; --line-strong:#b9c3bd; --accent:#0d5b66; --accent-soft:#d7e8e8;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --neutral-mark:#9aa5a0;
+  --good:#1baf7a; --bad:#e34948;
+  --measure:68ch; --wide:1120px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1211; --surface:#151b19; --surface-2:#1c2422; --ink:#e9efeb; --ink-2:#9ba59f; --ink-3:#7a847f;
+  --line:#242d2a; --line-strong:#3a4541; --accent:#5fb8c2; --accent-soft:#16302f;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --neutral-mark:#6c7873;
+  --good:#199e70; --bad:#e66767;
+}}
+:root[data-theme="dark"]{
+  --bg:#0e1211; --surface:#151b19; --surface-2:#1c2422; --ink:#e9efeb; --ink-2:#9ba59f; --ink-3:#7a847f;
+  --line:#242d2a; --line-strong:#3a4541; --accent:#5fb8c2; --accent-soft:#16302f;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --neutral-mark:#6c7873;
+  --good:#199e70; --bad:#e66767;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);
+  font-family:"Newsreader",Georgia,"Times New Roman",serif;font-size:17.5px;line-height:1.62;
+  font-weight:300;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--wide);margin:0 auto;padding:0 24px 96px;display:flex;flex-direction:column;gap:0}
+.col{max-width:var(--measure)}
+h1,h2,h3,.eyebrow,.stat-n,.tag,table,.legend,.note-k{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+h1{font-size:clamp(2.4rem,5.6vw,3.9rem);line-height:1.02;font-weight:700;letter-spacing:-.028em;margin:0;text-wrap:balance}
+h2{font-size:1.55rem;font-weight:700;letter-spacing:-.02em;line-height:1.14;margin:0;text-wrap:balance}
+h3{font-size:1.02rem;font-weight:600;letter-spacing:-.01em;margin:0}
+p{margin:0}
+.eyebrow{font-size:.685rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+a{color:var(--accent)}
+
+/* masthead */
+header.mast{border-bottom:1px solid var(--line-strong);padding:64px 0 34px;display:flex;flex-direction:column;gap:22px}
+.mast .col{max-width:78ch}
+.deck{font-size:1.22rem;color:var(--ink-2);line-height:1.5;max-width:62ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+
+/* verdict */
+.verdict{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--accent);
+  padding:32px 34px;display:flex;flex-direction:column;gap:26px}
+.verdict-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:2px;background:var(--line)}
+.stat{background:var(--surface);padding:16px 18px;display:flex;flex-direction:column;gap:5px}
+.stat-l{font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
+.stat-n{font-size:1.62rem;font-weight:700;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
+.stat-s{font-size:.83rem;color:var(--ink-2);line-height:1.35}
+
+section{padding:60px 0 0;display:flex;flex-direction:column;gap:22px}
+section+section{border-top:1px solid var(--line)}
+.shead{display:flex;gap:18px;align-items:baseline}
+.snum{font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--accent);font-weight:600;
+  padding-top:.28em;min-width:2.1em}
+.sbody{display:flex;flex-direction:column;gap:18px;flex:1;min-width:0}
+.lead{font-size:1.1rem;color:var(--ink);max-width:64ch}
+.muted{color:var(--ink-2)}
+strong{font-weight:600}
+em.k{font-style:normal;font-weight:600;background:var(--accent-soft);padding:.05em .3em;border-radius:2px}
+
+.panel{background:var(--surface);border:1px solid var(--line);padding:22px 22px 16px;display:flex;flex-direction:column;gap:14px}
+.panel-h{display:flex;flex-direction:column;gap:4px}
+.panel-h h3{font-size:.98rem}
+.panel-h p{font-size:.86rem;color:var(--ink-2);line-height:1.42;max-width:70ch}
+.chart-scroll{overflow-x:auto}
+svg{display:block;max-width:100%}
+.legend{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:.76rem;color:var(--ink-2);align-items:center}
+.legend span.sw{width:11px;height:11px;border-radius:2px;display:inline-block;margin-right:7px;vertical-align:-1px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:840px){.two{grid-template-columns:1fr}}
+
+table{width:100%;border-collapse:collapse;font-size:.83rem;font-variant-numeric:tabular-nums}
+th{text-align:left;font-weight:600;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);
+  padding:0 12px 8px 0;border-bottom:1px solid var(--line-strong);white-space:nowrap}
+td{padding:8px 12px 8px 0;border-bottom:1px solid var(--line);color:var(--ink);white-space:nowrap}
+td.num,th.num{text-align:right;font-family:"IBM Plex Mono",monospace}
+tr.hi td{background:var(--accent-soft)}
+tr.dim td{color:var(--ink-2)}
+.tag{display:inline-block;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;
+  padding:2px 7px;border-radius:2px;border:1px solid currentColor}
+.tag.buy{color:var(--good)}.tag.avoid{color:var(--bad)}.tag.watch{color:var(--ink-3)}
+
+ul.clean{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+ul.clean li{padding-left:20px;position:relative;max-width:66ch}
+ul.clean li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:1px;background:var(--line-strong)}
+ol.steps{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:12px}
+ol.steps li{max-width:66ch}
+
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 20px;color:var(--ink);max-width:64ch}
+.caution{border-left:3px solid var(--s2)}
+.note-k{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:4px}
+
+.tt{position:fixed;pointer-events:none;opacity:0;transition:opacity .1s;background:var(--surface);
+  border:1px solid var(--line-strong);padding:8px 11px;font-size:.78rem;line-height:1.45;z-index:50;
+  font-family:"IBM Plex Mono",monospace;box-shadow:0 6px 22px rgba(0,0,0,.14);max-width:260px}
+.tt b{font-family:"Bricolage Grotesque",sans-serif;font-weight:600}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink-3);max-width:74ch}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="col" style="display:flex;flex-direction:column;gap:18px">
+    <p class="eyebrow">Seazone · Itapema (SC) · investment screen</p>
+    <h1>Buy the sleeping capacity, not the address</h1>
+    <p class="deck">Itapema's short-stay market pays for beds, not for postcodes. The sale market prices square metres.
+      The whole return sits in that gap — and it is widest in compact two- and three-bedroom apartments one street
+      back from Meia Praia, not in the studios in Centro we went in expecting to find.</p>
+  </div>
+  <div class="meta">
+    <span>4,441 Airbnb listings</span><span>118,839 calendar rows</span><span>8,329 sale ads</span>
+    <span>Snapshot Jan–Apr 2025</span><span>All figures BRL, unlevered</span>
+  </div>
+</header>
+
+<div class="verdict">
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <p class="eyebrow">The recommendation</p>
+    <p class="lead" style="max-width:70ch">Deploy into <em class="k">compact 2-bedroom apartments of 60–72&nbsp;m² with two suítes,
+      sleeping 5–6, in Morretes and Tabuleiro dos Oliveiras</em> — the inland band 300–800&nbsp;m behind Meia Praia —
+      at asking prices of <strong>R$680k–850k</strong>. Add a smaller beach-band sleeve of compact 2BR at
+      R$0.93–1.2M for brand presence and resale liquidity. Avoid the 3- and 4-bedroom beachfront stock,
+      which is where 70% of the listed capital sits and where returns are worst.</p>
+  </div>
+  <div class="verdict-grid">
+    <div class="stat"><span class="stat-l">Net yield, base</span><span class="stat-n">6.4%</span><span class="stat-s">on all-in cost, after 20% management fee, condo, IPTU, utilities and reserve</span></div>
+    <div class="stat"><span class="stat-l">Gross yield</span><span class="stat-n">11.7%</span><span class="stat-s">booking revenue ÷ all-in cost</span></div>
+    <div class="stat"><span class="stat-l">Payback</span><span class="stat-n">15.7 yrs</span><span class="stat-s">cash-on-cash, no appreciation, no leverage</span></div>
+    <div class="stat"><span class="stat-l">Disciplined screen</span><span class="stat-n">9.7%</span><span class="stat-s">blended net yield of the top 25 individually screened listings — an upper bound, needs verification</span></div>
+    <div class="stat"><span class="stat-l">Deployable stock</span><span class="stat-n">R$733M</span><span class="stat-s">930 ready listings in the two core segments</span></div>
+  </div>
+  <div class="callout caution">
+    <p class="note-k">The internal hypothesis</p>
+    <p>“Compact studios / 1-bedrooms in Centro are the most efficient opportunity” — <strong>rejected as stated.</strong>
+      Not one studio is for sale in the entire dataset; 1-bedrooms are 2.0% of listed apartments and 16 units in Centro.
+      Centro shows no revenue premium once distance to the sea and unit size are controlled, and 1-bedrooms carry
+      the highest price per square metre in the city. The <em>instinct</em> behind the hypothesis is right — small is
+      efficient — but the market has already priced it, and the executable version of that instinct is a compact
+      2BR one street back, not a studio downtown.</p>
+  </div>
+</div>
+
+<section>
+<div class="shead"><span class="snum">01</span><div class="sbody">
+  <h2>What the data can and cannot tell us</h2>
+  <p class="lead muted">Two of the four business questions are answerable with real precision. One is answerable
+    only as a range. One is not answerable at all, and pretending otherwise would be the most expensive error here.</p>
+
+  <div class="two">
+    <div class="panel"><div class="panel-h"><h3>Answerable</h3></div>
+      <ul class="clean" style="font-size:.94rem">
+        <li><strong>Relative revenue</strong> between property profiles and locations. The calendar file is an
+          availability file — a row exists only when a night is bookable — so occupancy is observable, not assumed.</li>
+        <li><strong>Acquisition cost</strong> by segment, from 6,796 cleaned sale ads with area, condo fee and neighbourhood.</li>
+        <li><strong>Which characteristics drive revenue</strong>, with confidence intervals.</li>
+      </ul></div>
+    <div class="panel"><div class="panel-h"><h3>Not answerable</h3></div>
+      <ul class="clean" style="font-size:.94rem">
+        <li><strong>Eight months of the year.</strong> The calendar covers 6 Jan – 20 Apr 2025 only. Annual revenue
+          requires a stated seasonality assumption; we show the sensitivity rather than hide it.</li>
+        <li><strong>Transaction prices.</strong> VivaReal shows asking prices. We apply a 7% negotiation discount and sweep 0–12%.</li>
+        <li><strong>Capital appreciation and tax.</strong> Excluded entirely. Every yield here is a cash yield.</li>
+        <li><strong>Where a sale listing actually is.</strong> VivaReal has no coordinates — only a neighbourhood name.
+          This is the single largest source of error in the analysis, and it is stress-tested in §06.</li>
+      </ul></div>
+  </div>
+</div></div>
+</section>
+
+<section>
+<div class="shead"><span class="snum">02</span><div class="sbody">
+  <h2>Turning a scraped calendar into revenue</h2>
+  <p class="lead muted">Price is not revenue. Availability far in advance is not occupancy. Both corrections
+    change the answer, so both are made explicitly.</p>
+  <p class="col">The file was captured three times — 6, 7 and 20 January 2025 — each time looking about 90 nights
+    forward. Comparing the same stay-date seen at two different lead times isolates how fast a night fills.
+    We fit <span class="mono">logit P(available) = listing + stay-date + lead-time</span> across 209,846
+    listing-nights, then project every listing to a three-day lead: what the calendar will look like once
+    bookings are essentially complete. Nights at zero-to-two days lead are excluded — that drop is the
+    platform's own booking cut-off, not demand.</p>
+
+  <div class="two">
+    <div class="panel">
+      <div class="panel-h"><h3>The booking curve</h3>
+        <p>How much more available a night looks, in log-odds, the further out you look. A night 90 days
+          out appears 3.1 log-odds more open than the same night three days out.</p></div>
+      <div class="chart-scroll"><div id="c-curve"></div></div>
+    </div>
+    <div class="panel">
+      <div class="panel-h"><h3>Revenue per available night, observed</h3>
+        <p>Occupancy × nightly price, by week of stay. Peak Réveillon–Carnaval, then a steady slide into April.
+          This shape is what forces the seasonality assumption for the eight unobserved months.</p></div>
+      <div class="chart-scroll"><div id="c-season"></div></div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p class="note-k">Stated assumptions behind every annual figure</p>
+    <p style="font-size:.95rem">May–September at 50% of the observed April level, October 70%, November 100%,
+      December 110% of January. That yields an annualisation factor of <strong>2.47×</strong> the observed
+      105-night window. 90% of unavailable nights are treated as paid bookings (the rest owner blocks);
+      the host receives 90% of the displayed nightly price. Every one of these is swept in §06 —
+      the segment ranking does not move.</p>
+  </div>
+</div></div>
+</section>
+
+<section>
+<div class="shead"><span class="snum">03</span><div class="sbody">
+  <h2>What actually explains revenue</h2>
+  <p class="lead muted">Capacity and operating quality. Not the neighbourhood, and barely the beach.</p>
+  <div class="chart-scroll"><table>
+    <thead><tr><th>Driver</th><th class="num">Elasticity / effect</th><th class="num">95% CI</th><th>Reading</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>Sleeping capacity (log guests)</td><td class="num">+0.55 on ADR</td><td class="num">+0.47 … +0.65</td><td>The dominant, purchasable driver</td></tr>
+      <tr class="hi"><td>Professionally operated listing</td><td class="num">+27% ADR</td><td class="num">+21% … +34%</td><td>Seazone's own edge, worth more than any location choice</td></tr>
+      <tr><td>Star rating (per point)</td><td class="num">+0.27</td><td class="num">+0.12 … +0.47</td><td>Quality compounds through price, not occupancy</td></tr>
+      <tr><td>Distance to the sea (log km)</td><td class="num">−0.090 on revenue</td><td class="num">s.e. 0.015</td><td>Only −6% per <em>doubling</em> of distance</td></tr>
+      <tr class="dim"><td>Located in Centro</td><td class="num">+2.9%</td><td class="num">−6.7% … +13.1%</td><td>Indistinguishable from zero</td></tr>
+      <tr class="dim"><td>Compact (studio / 1BR)</td><td class="num">+6.0%</td><td class="num">−6.1% … +22.3%</td><td>Indistinguishable from zero</td></tr>
+      <tr class="dim"><td>Centro × compact</td><td class="num">−7.2%</td><td class="num">−21.3% … +8.2%</td><td>The hypothesis' interaction has the wrong sign</td></tr>
+    </tbody></table></div>
+  <p class="col">Two findings are worth stating plainly. First, <strong>occupancy is nearly unexplainable</strong>
+    (R² = 0.10) while price is well explained (R² = 0.37): in Itapema everyone fills the summer, and operators
+    separate themselves on rate, not on nights sold. Professional listings in fact run <em>lower</em> occupancy
+    and materially higher revenue. Second, <strong>proximity to the sand is worth far less than the market assumes</strong>.
+    Revenue falls about 6% per doubling of distance; asking price falls about 9%. Moving one street inland is
+    accretive, not dilutive — and that single fact is what the recommendation is built on.</p>
+</div></div>
+</section>
+
+<section>
+<div class="shead"><span class="snum">04</span><div class="sbody">
+  <h2>The efficiency frontier</h2>
+  <p class="lead muted">Every segment plotted as what you pay per square metre against what that square metre earns.
+    The diagonal is the gross return on the purchase.</p>
+  <div class="panel">
+    <div class="panel-h"><h3>Revenue per m² vs asking price per m², by segment</h3>
+      <p>Bubble area is the number of ready listings on the market. Dashed rays are constant gross yield.
+        Hover any point for its full economics.</p></div>
+    <div class="chart-scroll"><div id="c-frontier"></div></div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--s1)"></span>Recommended</span>
+      <span><span class="sw" style="background:var(--s2)"></span>The hypothesis (1BR, Centro)</span>
+      <span><span class="sw" style="background:var(--neutral-mark)"></span>Other segments</span>
+    </div>
+  </div>
+  <p class="col">Compact 1-bedrooms sit at the top of the chart — they really do earn the most per square metre
+    (R$1,984/m² in Centro against R$1,064/m² for a Centro 3BR). They also sit furthest right: R$17,045/m² against
+    R$11,457/m² for a compact 3BR in Morretes. <strong>The revenue advantage of small units is real and already
+    fully capitalised into the price.</strong> What is not capitalised is capacity density: a 70&nbsp;m² three-suíte
+    apartment in Morretes sleeps eight at R$11,457/m², and that is the cheapest bed in Itapema.</p>
+</div></div>
+</section>
+
+<section>
+<div class="shead"><span class="snum">05</span><div class="sbody">
+  <h2>Segment economics, ranked</h2>
+  <p class="lead muted">Net yield on all-in cost, under Seazone-standard operation, with bootstrap intervals.</p>
+  <div class="panel">
+    <div class="panel-h"><h3>Net yield by segment</h3>
+      <p>All-in cost = asking price less 7% negotiation, plus 5% closing costs, plus R$1,200/m² furnishing.
+        Net operating income is booking revenue less a 20% management fee, condominium, IPTU, utilities at
+        R$45 per occupied night, a fixed R$250/month, and a 0.5% annual maintenance reserve. Whiskers are
+        the 5th–95th bootstrap percentiles over listings.</p></div>
+    <div class="chart-scroll"><div id="c-yield"></div></div>
+  </div>
+  <div class="chart-scroll"><table>
+    <thead><tr><th>Segment</th><th class="num">Ready listings</th><th class="num">Median ask</th><th class="num">Area</th>
+      <th class="num">Revenue p.a.</th><th class="num">NOI p.a.</th><th class="num">Net yield</th><th class="num">Payback</th><th></th></tr></thead>
+    <tbody id="seg-tbody"></tbody></table></div>
+  <p class="col muted" style="font-size:.92rem">Revenue is the model's estimate for a professionally operated unit.
+    Using instead the <em>median existing listing</em> in each cell — an untouched market outcome — every yield
+    drops by roughly 300 basis points but the ordering is unchanged: Morretes 3BR 7.7%, Tabuleiro 2BR 4.1%,
+    Morretes 2BR 3.6%, Centro 1BR 3.2%, beach-band 4BR 2.3%. The gap between those two columns, about 40% of
+    revenue, is the value of Seazone's own operating layer — and it is larger than the gap between the best
+    and worst location in town.</p>
+</div></div>
+</section>
+
+<section>
+<div class="shead"><span class="snum">06</span><div class="sbody">
+  <h2>Would we still buy this if we were wrong?</h2>
+  <p class="lead muted">2,187 combinations of the seven assumptions that matter, plus the one error that could
+    actually overturn the result.</p>
+  <div class="two">
+    <div class="panel"><div class="panel-h"><h3>Assumption sweep</h3>
+      <p>Booked share of blocked nights (0.80–1.00), host take (0.85–1.00), low-season multiplier (0.35–0.65),
+        furnishing (R$800–1,800/m²), management fee (15–25%), negotiation discount (0–12%), utilities
+        (R$30–65/night).</p></div>
+      <ul class="clean" style="font-size:.94rem">
+        <li>Morretes 3BR ranks <strong>#1 in all 2,187</strong> combinations.</li>
+        <li>Tabuleiro 2BR <strong>#2 in all</strong>; Morretes 2BR <strong>#3 in all</strong>.</li>
+        <li>Centro 1BR never rises above 6th; Centro 3BR is last in every run.</li>
+        <li>No assumption in a defensible range makes the hypothesis' segment competitive.</li>
+      </ul></div>
+    <div class="panel"><div class="panel-h"><h3>The error that would matter</h3>
+      <p>VivaReal has no coordinates. If the off-beach sale stock is systematically further from the sea than the
+        Airbnb listings we used as comparables, we have overstated its revenue.</p></div>
+      <ul class="clean" style="font-size:.94rem">
+        <li>At twice the assumed distance: Morretes 3BR still first at 7.0%.</li>
+        <li>At three times: Morretes 3BR 6.6%, beach-band 2BR 5.8% — the two cross.</li>
+        <li>At three times <em>and</em> a distance elasticity 2.5× our estimate: beach-band 2BR takes the lead.</li>
+        <li>This is why the recommendation carries a beach-band sleeve. It is insurance, priced at about
+          80 basis points of yield.</li>
+      </ul></div>
+  </div>
+  <div class="callout caution">
+    <p class="note-k">Honest health warnings</p>
+    <p style="font-size:.95rem">Only 1,005 of 4,441 Airbnb listings carry calendar data, and that subset skews
+      toward professional, apartment, better-photographed listings — so absolute occupancy is likely flattered.
+      Unavailable ≠ booked: owner blocks are handled with a 10% haircut, not measured. Morretes and Tabuleiro rest
+      on 10 and 12 Airbnb comparables respectively; the Morretes 2BR cell, with 51 comparables and 827 ready
+      listings, is the sturdiest of the high-yield segments and is why it, rather than the 3BR, anchors the
+      recommendation.</p>
+  </div>
+</div></div>
+</section>
+
+<section>
+<div class="shead"><span class="snum">07</span><div class="sbody">
+  <h2>If Seazone bought today</h2>
+  <p class="lead muted">A R$20M allocation, built from the actual listings in the file rather than from segment averages.</p>
+  <p class="col">Every ready listing was scored individually: predicted revenue under Seazone operation, all-in cost,
+    condominium fee where disclosed, and a haircut for units priced below their own comparables — a unit asking
+    30% under its cell is usually older or worse positioned, and some of that discount will show up in revenue too.
+    A greedy allocation with a 45% cap per segment and 30% per selling agent produces:</p>
+  <div class="verdict-grid" style="margin:4px 0">
+    <div class="stat"><span class="stat-l">Units</span><span class="stat-n">25</span><span class="stat-s">15 Morretes 2BR, 8 beach-band 3–4BR, 2 other</span></div>
+    <div class="stat"><span class="stat-l">Capital</span><span class="stat-n">R$19.6M</span><span class="stat-s">all-in, including furnishing and closing</span></div>
+    <div class="stat"><span class="stat-l">Blended net yield</span><span class="stat-n">9.7%</span><span class="stat-s">upper bound — conditional on asking prices being real</span></div>
+    <div class="stat"><span class="stat-l">Annual NOI</span><span class="stat-n">R$1.89M</span><span class="stat-s">payback 10.3 years</span></div>
+  </div>
+  <div class="chart-scroll"><table>
+    <thead><tr><th>Listing</th><th>Zone</th><th class="num">BR</th><th class="num">m²</th><th class="num">Ask</th>
+      <th class="num">R$/m²</th><th class="num">Revenue p.a.</th><th class="num">Net yield</th><th class="num">Payback</th></tr></thead>
+    <tbody id="buy-tbody"></tbody></table></div>
+  <p class="col muted" style="font-size:.92rem">These are screen outputs, not buy orders. They are the cheapest
+    credible square metres in their cells, which is precisely where stale ads, misreported areas and unrenovated
+    stock also live. The screen's job is to turn 6,520 listings into twenty-five site visits.</p>
+</div></div>
+</section>
+
+<section>
+<div class="shead"><span class="snum">08</span><div class="sbody">
+  <h2>Answers to the four questions</h2>
+  <ol class="steps">
+    <li><strong>Best property profile.</strong> Apartment, 2 bedrooms (both suítes) or a compact 3, 60–72&nbsp;m²,
+      sleeping 6–8, one parking space, in a building with a pool and elevator, condominium fee under R$400.
+      The design brief is maximum comfortable sleeping capacity per square metre purchased — every additional
+      guest the unit can host is worth roughly 0.55% on nightly rate for every 1% of capacity added, while
+      the purchase price scales with area.</li>
+    <li><strong>Best location by revenue.</strong> In absolute revenue, the Meia Praia beach band
+      (R$1,456/m² a year for a compact 2BR against R$1,064 for Centro's 3-bedroom stock). But revenue per <em>reais invested</em>
+      peaks 300–800&nbsp;m inland, in Morretes and Tabuleiro dos Oliveiras, because the sale market discounts
+      distance faster (−9% per doubling) than the rental market punishes it (−6%). Centro is neither: it is
+      priced like beachfront and performs like inland.</li>
+    <li><strong>Characteristics that explain revenue.</strong> In order: sleeping capacity, professional operation
+      (+27% on rate), guest rating, listing completeness (photo count), sea view, and only then proximity to
+      the beach. Amenities beyond air-conditioning, a grill and parking add little. Note what is missing —
+      occupancy differences across the town are mostly noise.</li>
+    <li><strong>What we would buy.</strong> R$20M across ~25 compact units, weighted 55–60% to Morretes /
+      Tabuleiro 2BR at R$680k–850k and 40–45% to the Meia Praia beach band for liquidity. Expected unlevered
+      net cash yield of 6.4% on segment medians and up to 9.7% on disciplined selection, before any capital
+      appreciation. We would not buy a 4-bedroom beachfront apartment at any price in this dataset:
+      3.3% net, 31-year payback, and R$4.5bn of it is for sale.</li>
+  </ol>
+  <div class="callout">
+    <p class="note-k">One number to keep</p>
+    <p>Gross yield on the recommended segment is <strong>11.7%</strong>; net cash yield is <strong>6.4%</strong>.
+      Any yield promised to an investor in this market that sits between those two numbers is a gross yield
+      wearing a net label. The 5.3-point gap is management fee, condominium, IPTU, utilities and reserve —
+      all of it real, most of it fixed, and disproportionately punishing on small units, which is the second
+      reason the studio thesis fails.</p>
+  </div>
+</div></div>
+</section>
+
+<footer>
+  Built from the Seazone hackathon snapshot: <span class="mono">Details</span>, <span class="mono">Hosts_ids</span>,
+  <span class="mono">Mesh_Ids_Data</span>, <span class="mono">Price_AV</span> and <span class="mono">VivaReal</span>
+  for Itapema, captured January 2025. Reproducible pipeline in nine scripts: availability panel and booking-curve
+  model, sale-market cleaning, coastline and competition features from a KD-tree, segment investment model,
+  driver and hypothesis tests, listing-level screening with a quantile-matched capacity bridge, bootstrap and
+  assumption sweeps, and portfolio allocation. Yields are unlevered nominal cash yields excluding income tax
+  and capital appreciation, and must be judged against the risk-free rate on the day of the decision.
+</footer>
+</div>
+
+<div class="tt" id="tt"></div>
+
+<script>
+const CD=[{"zone":"Morretes","bed":3,"n":141,"ppsm":11457,"revm2":1797,"price":849560,"ny":0.0793,"lo":0.0735,"hi":0.0870,"pay":12.6,"rev":125782,"area":70,"grp":"rec"},
+{"zone":"Tabuleiro dos Oliveiras","bed":2,"n":103,"ppsm":11714,"revm2":1531,"price":780000,"ny":0.0686,"lo":0.0657,"hi":0.0744,"pay":14.6,"rev":105657,"area":69,"grp":"rec"},
+{"zone":"Morretes","bed":2,"n":827,"ppsm":11719,"revm2":1455,"price":790000,"ny":0.0636,"lo":0.0621,"hi":0.0649,"pay":15.7,"rev":100427,"area":69,"grp":"rec"},
+{"zone":"Meia Praia (beach band)","bed":2,"n":229,"ppsm":13033,"revm2":1456,"price":1099200,"ny":0.0579,"lo":0.0551,"hi":0.0627,"pay":17.3,"rev":125224,"area":86,"grp":"rec"},
+{"zone":"Meia Praia (inland)","bed":2,"n":121,"ppsm":11429,"revm2":1319,"price":996142,"ny":0.0552,"lo":0.0534,"hi":0.0582,"pay":18.1,"rev":110807,"area":84,"grp":"oth"},
+{"zone":"Centro","bed":1,"n":16,"ppsm":17045,"revm2":1984,"price":895000,"ny":0.0453,"lo":0.0304,"hi":0.0573,"pay":22.1,"rev":86324,"area":44,"grp":"hyp"},
+{"zone":"Centro","bed":2,"n":78,"ppsm":13387,"revm2":1226,"price":1145000,"ny":0.0440,"lo":0.0390,"hi":0.0487,"pay":22.7,"rev":105398,"area":86,"grp":"oth"},
+{"zone":"Meia Praia (beach band)","bed":3,"n":1567,"ppsm":14872,"revm2":1158,"price":1881800,"ny":0.0399,"lo":0.0394,"hi":0.0408,"pay":25.0,"rev":149444,"area":129,"grp":"oth"},
+{"zone":"Meia Praia (inland)","bed":3,"n":731,"ppsm":13670,"revm2":1066,"price":1694830,"ny":0.0381,"lo":0.0375,"hi":0.0391,"pay":26.2,"rev":132141,"area":124,"grp":"oth"},
+{"zone":"Meia Praia (beach band)","bed":4,"n":1162,"ppsm":17793,"revm2":1172,"price":3500000,"ny":0.0327,"lo":0.0318,"hi":0.0329,"pay":30.6,"rev":222606,"area":190,"grp":"oth"},
+{"zone":"Centro","bed":3,"n":410,"ppsm":15789,"revm2":1064,"price":2100000,"ny":0.0315,"lo":0.0300,"hi":0.0335,"pay":31.7,"rev":139367,"area":131,"grp":"oth"}];
+
+const WEEK=[["6 Jan",691.6],["13 Jan",711.3],["20 Jan",665.5],["27 Jan",567.5],["3 Feb",563.4],["10 Feb",519.2],["17 Feb",488.2],["24 Feb",512.1],["3 Mar",483.6],["10 Mar",396.5],["17 Mar",375.1],["24 Mar",324.9],["31 Mar",318.6],["7 Apr",338.8],["14 Apr",413.5]];
+const CURVE=[[0,-3.123],[3,-1.751],[6,-1.384],[9,-1.173],[12,-1.082],[15,-0.856],[18,-0.668],[21,-0.501],[24,-0.339],[27,-0.365],[30,-0.106],[33,-0.022],[36,0.089],[39,0.216],[42,0.204],[45,0.415],[48,0.453],[51,0.575],[54,0.710],[57,0.743],[60,0.771],[63,0.789],[66,0.992],[69,1.146],[72,1.147],[75,1.196],[78,1.267],[81,1.438],[84,1.330],[87,1.234]];
+const BUY=[["2762836313","Morretes",2,55,420000,7636,109855,0.1416,7.1],["2669009410","Morretes",2,61,445000,7295,109855,0.1320,7.6],["2749772401","Morretes",2,58,450000,7759,109855,0.1297,7.7],["2767581974","Morretes",2,50,495000,9900,109855,0.1286,7.8],["2769186854","Morretes",2,56,459640,8208,98165,0.1186,8.4],["2714533420","Morretes",2,53,571143,10776,112459,0.1173,8.5],["2676718894","Centro",3,69,685000,9928,138495,0.1167,8.6],["2690265792","Morretes",2,70,520000,7429,112387,0.1157,8.6],["2688011117","Morretes",2,59,450000,7627,98165,0.1149,8.7],["2740358908","Morretes",2,68,550000,8088,112748,0.1093,9.1],["2673147348","Morretes",2,70,700000,10000,130968,0.1086,9.2],["2769185218","Morretes",2,72,589280,8184,112387,0.1084,9.2]];
+
+const CSS=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const tt=document.getElementById('tt');
+function show(e,html){tt.innerHTML=html;tt.style.opacity=1;move(e);}
+function move(e){const r=tt.getBoundingClientRect();let x=e.clientX+14,y=e.clientY+14;
+  if(x+r.width>innerWidth-8)x=e.clientX-r.width-14; if(y+r.height>innerHeight-8)y=e.clientY-r.height-14;
+  tt.style.left=x+'px';tt.style.top=y+'px';}
+function hide(){tt.style.opacity=0;}
+const fmt=n=>n>=1e6?'R$'+(n/1e6).toFixed(2)+'M':'R$'+Math.round(n).toLocaleString('pt-BR');
+const NS='http://www.w3.org/2000/svg';
+function el(t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;}
+function name(d){return d.zone.replace(' (beach band)',' · beachfront').replace(' (inland)',' · inland')+' · '+d.bed+'BR';}
+
+/* ---------- frontier scatter ---------- */
+function frontier(){
+  const W=1040,H=470,M={t:18,r:150,b:52,l:66};
+  const s=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img'});
+  const xd=[10000,19000],yd=[900,2150];
+  const X=v=>M.l+(v-xd[0])/(xd[1]-xd[0])*(W-M.l-M.r);
+  const Y=v=>H-M.b-(v-yd[0])/(yd[1]-yd[0])*(H-M.t-M.b);
+  [0.06,0.09,0.12,0.15].forEach(g=>{
+    const pts=[[xd[0],xd[0]*g],[xd[1],xd[1]*g]].filter(p=>p[1]>=yd[0]-400&&p[1]<=yd[1]+600);
+    const x1=xd[0],y1=xd[0]*g,x2=Math.min(xd[1],yd[1]/g),y2=Math.min(yd[1],xd[1]*g);
+    if(y1>yd[1])return;
+    s.appendChild(el('line',{x1:X(x1),y1:Y(Math.max(y1,yd[0])),x2:X(x2),y2:Y(y2),
+      stroke:CSS('--line-strong'),'stroke-width':1,'stroke-dasharray':'3 4',opacity:.85}));
+    const lx=Math.min(xd[1],yd[1]/g), ly=Math.min(yd[1],xd[1]*g);
+    const t=el('text',{x:X(lx)+6,y:Y(ly)+4,fill:CSS('--ink-3'),'font-size':11,'font-family':'IBM Plex Mono, monospace'});
+    t.textContent=(g*100).toFixed(0)+'% gross'; s.appendChild(t);
+  });
+  for(let v=10000;v<=19000;v+=2000){
+    s.appendChild(el('line',{x1:X(v),y1:M.t,x2:X(v),y2:H-M.b,stroke:CSS('--line'),'stroke-width':1}));
+    const t=el('text',{x:X(v),y:H-M.b+20,fill:CSS('--ink-3'),'font-size':11,'text-anchor':'middle','font-family':'IBM Plex Mono, monospace'});
+    t.textContent=(v/1000)+'k'; s.appendChild(t);}
+  for(let v=1000;v<=2000;v+=250){
+    s.appendChild(el('line',{x1:M.l,y1:Y(v),x2:W-M.r,y2:Y(v),stroke:CSS('--line'),'stroke-width':1}));
+    const t=el('text',{x:M.l-10,y:Y(v)+4,fill:CSS('--ink-3'),'font-size':11,'text-anchor':'end','font-family':'IBM Plex Mono, monospace'});
+    t.textContent=v.toLocaleString('pt-BR'); s.appendChild(t);}
+  const ax=el('text',{x:(M.l+W-M.r)/2,y:H-12,fill:CSS('--ink-2'),'font-size':12,'text-anchor':'middle'});
+  ax.textContent='Asking price per m² (R$)'; s.appendChild(ax);
+  const ay=el('text',{x:-(M.t+H-M.b)/2,y:16,fill:CSS('--ink-2'),'font-size':12,'text-anchor':'middle',transform:'rotate(-90)'});
+  ay.textContent='Annual revenue per m² (R$)'; s.appendChild(ay);
+  CD.forEach(d=>{
+    const c={rec:CSS('--s1'),hyp:CSS('--s2'),oth:CSS('--neutral-mark')}[d.grp];
+    const r=Math.max(6,Math.sqrt(d.n)/2.4);
+    const g=el('g',{});
+    g.appendChild(el('circle',{cx:X(d.ppsm),cy:Y(d.revm2),r:r,fill:c,'fill-opacity':.28,stroke:c,'stroke-width':2}));
+    const lab=el('text',{x:X(d.ppsm)+r+7,y:Y(d.revm2)+4,fill:d.grp==='oth'?CSS('--ink-2'):CSS('--ink'),
+      'font-size':11.5,'font-weight':d.grp==='oth'?400:600,'font-family':'Bricolage Grotesque, sans-serif'});
+    lab.textContent=name(d);
+    if(X(d.ppsm)+r+7+name(d).length*6>W-6){lab.setAttribute('x',X(d.ppsm)-r-7);lab.setAttribute('text-anchor','end');}
+    g.appendChild(lab);
+    g.style.cursor='crosshair';
+    g.addEventListener('mousemove',e=>show(e,`<b>${name(d)}</b><br>${d.n} ready listings<br>ask ${fmt(d.price)} · ${d.area} m²<br>revenue ${fmt(d.rev)}/yr<br>R$${d.ppsm.toLocaleString('pt-BR')}/m² paid<br>R$${d.revm2.toLocaleString('pt-BR')}/m² earned<br>net yield ${(d.ny*100).toFixed(1)}%`));
+    g.addEventListener('mouseleave',hide);
+    s.appendChild(g);
+  });
+  document.getElementById('c-frontier').appendChild(s);
+}
+
+/* ---------- yield bars ---------- */
+function yields(){
+  const rows=[...CD].sort((a,b)=>b.ny-a.ny);
+  const W=1040,rowH=34,M={t:26,r:70,b:34,l:250},H=M.t+rows.length*rowH+M.b;
+  const s=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img'});
+  const max=0.095, X=v=>M.l+v/max*(W-M.l-M.r);
+  for(let v=0;v<=0.09;v+=0.03){
+    s.appendChild(el('line',{x1:X(v),y1:M.t-8,x2:X(v),y2:H-M.b+2,stroke:CSS('--line'),'stroke-width':1}));
+    const t=el('text',{x:X(v),y:H-M.b+20,fill:CSS('--ink-3'),'font-size':11,'text-anchor':'middle','font-family':'IBM Plex Mono, monospace'});
+    t.textContent=(v*100).toFixed(0)+'%'; s.appendChild(t);}
+  rows.forEach((d,i)=>{
+    const y=M.t+i*rowH, c={rec:CSS('--s1'),hyp:CSS('--s2'),oth:CSS('--neutral-mark')}[d.grp];
+    const lab=el('text',{x:M.l-14,y:y+18,fill:d.grp==='oth'?CSS('--ink-2'):CSS('--ink'),'font-size':12,
+      'text-anchor':'end','font-weight':d.grp==='oth'?400:600,'font-family':'Bricolage Grotesque, sans-serif'});
+    lab.textContent=name(d); s.appendChild(lab);
+    const g=el('g',{}); g.style.cursor='crosshair';
+    const p=el('path',{d:`M${M.l} ${y+6} H${X(d.ny)-4} a4 4 0 0 1 4 4 v6 a4 4 0 0 1 -4 4 H${M.l} Z`,fill:c});
+    g.appendChild(p);
+    g.appendChild(el('line',{x1:X(d.lo),y1:y+13,x2:X(d.hi),y2:y+13,stroke:CSS('--ink-2'),'stroke-width':1.5}));
+    g.appendChild(el('line',{x1:X(d.lo),y1:y+8,x2:X(d.lo),y2:y+18,stroke:CSS('--ink-2'),'stroke-width':1.5}));
+    g.appendChild(el('line',{x1:X(d.hi),y1:y+8,x2:X(d.hi),y2:y+18,stroke:CSS('--ink-2'),'stroke-width':1.5}));
+    const v=el('text',{x:X(d.hi)+9,y:y+18,fill:CSS('--ink'),'font-size':12,'font-family':'IBM Plex Mono, monospace','font-weight':600});
+    v.textContent=(d.ny*100).toFixed(1)+'%'; g.appendChild(v);
+    g.addEventListener('mousemove',e=>show(e,`<b>${name(d)}</b><br>net yield ${(d.ny*100).toFixed(2)}%<br>90% CI ${(d.lo*100).toFixed(1)}–${(d.hi*100).toFixed(1)}%<br>payback ${d.pay} yrs<br>${d.n} ready listings`));
+    g.addEventListener('mouseleave',hide);
+    s.appendChild(g);
+  });
+  document.getElementById('c-yield').appendChild(s);
+}
+
+/* ---------- line charts ---------- */
+function line(target,data,xlab,ylab,fmtY,fmtT,yPad){
+  const W=470,H=250,M={t:16,r:16,b:44,l:56};
+  const s=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img'});
+  const xs=data.map((d,i)=>i), ys=data.map(d=>d[1]);
+  const y0=Math.min(...ys)-yPad, y1=Math.max(...ys)+yPad;
+  const X=i=>M.l+i/(data.length-1)*(W-M.l-M.r);
+  const Y=v=>H-M.b-(v-y0)/(y1-y0)*(H-M.t-M.b);
+  const ticks=4;
+  for(let k=0;k<=ticks;k++){const v=y0+(y1-y0)*k/ticks;
+    s.appendChild(el('line',{x1:M.l,y1:Y(v),x2:W-M.r,y2:Y(v),stroke:CSS('--line'),'stroke-width':1}));
+    const t=el('text',{x:M.l-8,y:Y(v)+4,fill:CSS('--ink-3'),'font-size':10.5,'text-anchor':'end','font-family':'IBM Plex Mono, monospace'});
+    t.textContent=fmtY(v); s.appendChild(t);}
+  data.forEach((d,i)=>{if(i%Math.ceil(data.length/6)===0||i===data.length-1){
+    const t=el('text',{x:X(i),y:H-M.b+18,fill:CSS('--ink-3'),'font-size':10.5,'text-anchor':'middle','font-family':'IBM Plex Mono, monospace'});
+    t.textContent=d[0]; s.appendChild(t);}});
+  const ax=el('text',{x:(M.l+W-M.r)/2,y:H-8,fill:CSS('--ink-2'),'font-size':11,'text-anchor':'middle'});
+  ax.textContent=xlab; s.appendChild(ax);
+  const ay=el('text',{x:-(M.t+H-M.b)/2,y:13,fill:CSS('--ink-2'),'font-size':11,'text-anchor':'middle',transform:'rotate(-90)'});
+  ay.textContent=ylab; s.appendChild(ay);
+  const dstr='M'+data.map((d,i)=>`${X(i)} ${Y(d[1])}`).join(' L');
+  const area='M'+X(0)+' '+(H-M.b)+' L'+data.map((d,i)=>`${X(i)} ${Y(d[1])}`).join(' L')+` L${X(data.length-1)} ${H-M.b} Z`;
+  s.appendChild(el('path',{d:area,fill:CSS('--s1'),'fill-opacity':.10}));
+  s.appendChild(el('path',{d:dstr,fill:'none',stroke:CSS('--s1'),'stroke-width':2,'stroke-linejoin':'round'}));
+  data.forEach((d,i)=>{
+    const c=el('circle',{cx:X(i),cy:Y(d[1]),r:3.5,fill:CSS('--s1'),stroke:CSS('--surface'),'stroke-width':1.5});
+    const hit=el('circle',{cx:X(i),cy:Y(d[1]),r:12,fill:'transparent'}); hit.style.cursor='crosshair';
+    hit.addEventListener('mousemove',e=>show(e,fmtT(d)));
+    hit.addEventListener('mouseleave',hide);
+    s.appendChild(c); s.appendChild(hit);});
+  document.getElementById(target).appendChild(s);
+}
+
+function tables(){
+  const tb=document.getElementById('seg-tbody');
+  [...CD].sort((a,b)=>b.ny-a.ny).forEach(d=>{
+    const tag=d.grp==='rec'?'<span class="tag buy">Buy</span>':(d.grp==='hyp'?'<span class="tag watch">Hypothesis</span>':(d.ny<0.042?'<span class="tag avoid">Avoid</span>':''));
+    const tr=document.createElement('tr'); tr.className=d.grp==='rec'?'hi':(d.grp==='oth'?'dim':'');
+    tr.innerHTML=`<td>${name(d)}</td><td class="num">${d.n.toLocaleString('pt-BR')}</td><td class="num">${fmt(d.price)}</td>
+      <td class="num">${d.area}</td><td class="num">${fmt(d.rev)}</td><td class="num">${fmt(d.ny*(d.price*0.93*1.05+d.area*1200))}</td>
+      <td class="num">${(d.ny*100).toFixed(1)}%</td><td class="num">${d.pay}</td><td>${tag}</td>`;
+    tb.appendChild(tr);});
+  const bb=document.getElementById('buy-tbody');
+  BUY.forEach(b=>{const tr=document.createElement('tr');
+    tr.innerHTML=`<td class="mono" style="font-size:.76rem">${b[0]}</td><td>${b[1]}</td><td class="num">${b[2]}</td>
+      <td class="num">${b[3]}</td><td class="num">${fmt(b[4])}</td><td class="num">${b[5].toLocaleString('pt-BR')}</td>
+      <td class="num">${fmt(b[6])}</td><td class="num">${(b[7]*100).toFixed(1)}%</td><td class="num">${b[8]}</td>`;
+    bb.appendChild(tr);});
+}
+
+frontier(); yields(); tables();
+line('c-curve',CURVE.map(d=>[d[0]+'d',d[1]]),'Days before the stay','Availability lift (log-odds)',
+  v=>v.toFixed(1),d=>`<b>${d[0]} before arrival</b><br>${d[1]>0?'+':''}${d[1].toFixed(2)} log-odds more available<br>than the same night at 3 days out`,0.3);
+line('c-season',WEEK,'Week of stay, 2025','Revenue per available night (R$)',
+  v=>Math.round(v),d=>`<b>Week of ${d[0]}</b><br>R$${Math.round(d[1])} per available night`,40);
+addEventListener('scroll',hide,{passive:true});
+</script>

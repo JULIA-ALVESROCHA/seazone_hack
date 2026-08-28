@@ -1,0 +1,62 @@
+=== capacity density: what a buyer gets per m2 and per R$ ===
+                   zone  bed  n_ab  n_sale  guests  area  guests_per_m2    ppsm  rev_market  rev_prof  rev_per_m2  price_med  rev_per_m2_over_ppsm
+               Morretes    3    10     141     8.0  70.0          0.114 11457.0    123066.0  125782.0      1797.0   849560.0                0.1568
+Tabuleiro dos Oliveiras    2    12     103     6.0  69.0          0.087 11714.0     76956.0  105657.0      1531.0   780000.0                0.1307
+               Morretes    2    51     827     5.0  69.0          0.072 11719.0     71118.0  100427.0      1455.0   790000.0                0.1242
+                 Centro    1    78      16     4.0  44.0          0.092 17045.0     70345.0   86324.0      1984.0   895000.0                0.1164
+    Meia Praia (inland)    2    55     121     6.0  84.0          0.071 11429.0     70061.0  110807.0      1319.0   996142.0                0.1154
+Meia Praia (beach band)    2   132     229     6.0  86.0          0.070 13033.0     84415.0  125224.0      1456.0  1099200.0                0.1117
+                 Centro    2    65      78     6.0  86.0          0.070 13387.0     84059.0  105398.0      1226.0  1145000.0                0.0915
+    Meia Praia (inland)    3    58     731     8.0 124.0          0.065 13670.0     99679.0  132141.0      1066.0  1694830.0                0.0780
+Meia Praia (beach band)    3   269    1567     8.0 129.0          0.062 14872.0    110013.0  149444.0      1158.0  1881800.0                0.0779
+                 Centro    3    45     410     8.0 131.0          0.061 15789.0    121187.0  139367.0      1064.0  2100000.0                0.0674
+Meia Praia (beach band)    4    57    1162    10.0 190.0          0.053 17793.0    178559.0  222606.0      1172.0  3500000.0                0.0658
+
+=== net yield, Seazone-operated scenario, with bootstrap 90% CI ===
+                           net_yield      lo      hi  payback
+Morretes                3     0.0793  0.0735  0.0870     12.6
+Tabuleiro dos Oliveiras 2     0.0686  0.0657  0.0744     14.6
+Morretes                2     0.0636  0.0621  0.0649     15.7
+Meia Praia (beach band) 2     0.0579  0.0551  0.0627     17.3
+Meia Praia (inland)     2     0.0552  0.0534  0.0582     18.1
+Centro                  1     0.0453  0.0304  0.0573     22.1
+                        2     0.0440  0.0390  0.0487     22.7
+Meia Praia (beach band) 3     0.0399  0.0394  0.0408     25.0
+Meia Praia (inland)     3     0.0381  0.0375  0.0391     26.2
+Meia Praia (beach band) 4     0.0327  0.0318  0.0329     30.6
+Centro                  3     0.0315  0.0300  0.0335     31.7
+
+=== assumption sweep: how often is each segment in the top 3? ===
+(2187 assumption combinations)
+                           top3_freq  mean_rank
+Morretes                3        1.0      1.000
+Tabuleiro dos Oliveiras 2        1.0      2.000
+Morretes                2        1.0      3.000
+Meia Praia (beach band) 2        NaN      4.000
+Meia Praia (inland)     2        NaN      5.000
+Centro                  1        NaN      6.090
+                        2        NaN      6.914
+Meia Praia (beach band) 3        NaN      7.996
+Meia Praia (inland)     3        NaN      9.000
+Meia Praia (beach band) 4        NaN     10.012
+Centro                  3        NaN     10.988
+
+=== stress test: what if the off-beach sale stock is further from the sea
+    than the Airbnb comparables suggest? (elasticity -0.5 on log distance) ===
+  distance x1.0 for off-beach zones -> Morretes 3BR 0.079, Tabuleiro dos  2BR 0.069, Morretes 2BR 0.064, Meia Praia (be 2BR 0.058
+  distance x1.5 for off-beach zones -> Morretes 3BR 0.059, Meia Praia (be 2BR 0.058, Tabuleiro dos  2BR 0.050, Morretes 2BR 0.046
+  distance x2.0 for off-beach zones -> Meia Praia (be 2BR 0.058, Morretes 3BR 0.047, Centro 1BR 0.045, Centro 2BR 0.044
+  distance x3.0 for off-beach zones -> Meia Praia (be 2BR 0.058, Centro 1BR 0.045, Centro 2BR 0.044, Meia Praia (be 3BR 0.040
+
+=== same ranking using the MEDIAN EXISTING listing instead of a professional operator ===
+Morretes                 3    0.0769
+Tabuleiro dos Oliveiras  2    0.0414
+Morretes                 2    0.0362
+Centro                   1    0.0315
+Meia Praia (beach band)  2    0.0301
+Centro                   2    0.0300
+                         3    0.0249
+Meia Praia (inland)      2    0.0249
+Meia Praia (beach band)  3    0.0241
+Meia Praia (inland)      3    0.0237
+Meia Praia (beach band)  4    0.0231

@@ -1,0 +1,89 @@
+GBM CV R2 on log annual revenue: 0.248 (+/- 0.057)
+
+Top revenue drivers (GBM importance):
+dist_beach_km          0.153
+number_of_bedrooms     0.134
+desc_len               0.118
+comp_300m              0.094
+log_reviews            0.084
+cleaning_fee           0.070
+picture_count          0.067
+number_of_bathrooms    0.057
+number_of_guests       0.045
+star                   0.026
+am_ac                  0.021
+years_host             0.019
+is_professional        0.016
+is_superhost           0.015
+am_beachfront          0.014
+am_seaview             0.013
+am_grill               0.007
+am_washer              0.005
+
+Partial effect of key features (median % change in revenue when moved p25 -> p75):
+  number_of_guests           5.00 ->     8.00 :   +2.7%
+  dist_beach_km              0.11 ->     0.34 :  -13.6%
+  star                       4.85 ->     5.00 :   +7.3%
+  log_reviews                2.40 ->     3.50 :  +10.7%
+  is_superhost               0.00 ->     1.00 :   +2.4%
+  is_professional            0.00 ->     1.00 :  +16.4%
+  am_pool                    0.00 ->     1.00 :   -0.4%
+  am_seaview                 0.00 ->     1.00 :   +9.3%
+  picture_count             13.00 ->    30.00 :   +9.7%
+  comp_300m                178.00 ->   363.50 :   +5.8%
+  number_of_bedrooms         2.00 ->     3.00 :  +18.8%
+
+Linear (log-log) elasticities, zone fixed effects, R2=0.282:
+log_guests     0.374
+dist_beach    -0.512
+star           0.108
+log_reviews    0.025
+superhost      0.060
+prof           0.240
+pics           0.003
+baths          0.161
+comp          -0.040
+
+==============================================================================
+H0 test: "compact (studio/1BR) units in Centro are the most efficient investment"
+==============================================================================
+
+[1] Does the product exist on the acquisition market?
+   apartments for sale by bedrooms: {1: 136, 2: 1603, 3: 3034, 4: 2023}
+   studios (0 BR) for sale: 0
+   1BR for sale in Centro: 18 | 1BR city-wide: 136 (2.0% of listed apartments)
+
+[2] Raw revenue and occupancy, Centro vs rest, by bedroom count:
+                        n   occ      adr        rev
+is_centro bed_bucket                               
+0         0             8  0.77   455.55   58792.92
+          1            28  0.79   490.95   70920.68
+          2           268  0.84   496.33   78014.75
+          3           345  0.82   711.77  107794.11
+          4            69  0.79  1152.51  172229.98
+1         1            78  0.66   488.69   70344.60
+          2            65  0.74   620.95   84058.96
+          3            45  0.82   765.40  121187.18
+          4             5  0.91   702.01  141916.71
+
+[3] Centro effect controlling for size, quality, distance and competition:
+   centro               coef +0.029  (bootstrap 95% CI -0.069, +0.123)  => +2.9% revenue
+   compact              coef +0.059  (bootstrap 95% CI -0.063, +0.201)  => +6.0% revenue
+   centro_x_compact     coef -0.075  (bootstrap 95% CI -0.239, +0.079)  => -7.2% revenue
+   dist_beach           coef -0.457  (bootstrap 95% CI -0.651, -0.274)  => -36.7% revenue
+
+[4] Efficiency (gross revenue / acquisition price) by segment, ranked:
+                   zone  bed_bucket  n_ab  n_sale  rev_med     price  rev_to_price  net_yield  payback_yrs
+               Morretes           3    10     151 123066.0  845000.0        0.1566     0.0808         12.4
+Tabuleiro dos Oliveiras           2    12     105  76956.0  780000.0        0.1061     0.0447         22.4
+               Morretes           2    51     871  71118.0  790000.0        0.0968     0.0397         25.2
+            Casa Branca           2    11      20  53030.0  655000.0        0.0871     0.0294         34.0
+                 Centro           1    78      18  70345.0  890000.0        0.0850     0.0352         28.4
+Meia Praia (beach band)           2   132     231  84415.0 1099000.0        0.0826     0.0337         29.7
+                 Centro           2    65      79  84059.0 1150000.0        0.0786     0.0334         29.9
+    Meia Praia (inland)           2    55     123  70061.0  999000.0        0.0754     0.0284         35.2
+    Meia Praia (inland)           3    58     754  99679.0 1692415.0        0.0633     0.0274         36.5
+Meia Praia (beach band)           3   269    1600 110013.0 1880000.0        0.0629     0.0278         36.0
+                 Centro           3    45     424 121187.0 2100000.0        0.0621     0.0288         34.8
+    Meia Praia (inland)           4     8     332 150533.0 2695500.0        0.0600     0.0297         33.7
+Meia Praia (beach band)           4    57    1202 178559.0 3500000.0        0.0549     0.0268         37.4

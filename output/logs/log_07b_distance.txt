@@ -1,0 +1,17 @@
+=== distance-to-sea gradient, product held constant ===
+  Airbnb annual revenue            elasticity -0.090 (se 0.015)
+  Airbnb ADR                       elasticity -0.068 (se 0.011)
+  Airbnb occupancy (log-odds)      elasticity -0.113 (se 0.052)
+  VivaReal asking price per m2     elasticity -0.141 (se 0.008)
+  VivaReal asking price (total)    elasticity -0.141 (se 0.008)
+
+  => revenue falls ~6% and asking price ~9% for each doubling of distance
+
+=== corrected stress test: off-beach sale stock is X times further from the sea
+    than its Airbnb comparables (revenue elasticity -0.12, pessimistic -0.30) ===
+  elast -0.12, distance x1: Morretes 3BR 0.079, Tabuleiro dos 2BR 0.069, Morretes 2BR 0.064, Meia Praia (b 2BR 0.058
+  elast -0.12, distance x2: Morretes 3BR 0.070, Tabuleiro dos 2BR 0.061, Meia Praia (b 2BR 0.058, Morretes 2BR 0.056
+  elast -0.12, distance x3: Morretes 3BR 0.066, Meia Praia (b 2BR 0.058, Tabuleiro dos 2BR 0.056, Morretes 2BR 0.052
+  elast -0.30, distance x1: Morretes 3BR 0.079, Tabuleiro dos 2BR 0.069, Morretes 2BR 0.064, Meia Praia (b 2BR 0.058
+  elast -0.30, distance x2: Morretes 3BR 0.059, Meia Praia (b 2BR 0.058, Tabuleiro dos 2BR 0.050, Morretes 2BR 0.046
+  elast -0.30, distance x3: Meia Praia (b 2BR 0.058, Morretes 3BR 0.048, Centro 1BR 0.045, Centro 2BR 0.044
