@@ -148,4 +148,5 @@ A cadeia completa está em `output/opportunity_matrix.csv`:
 * Recomendação por escrito: [`docs/recomendacao.html`](docs/recomendacao.html) e [`RECOMENDACAO.md`](RECOMENDACAO.md)
 * Log de uso de IA: pasta [`ai-log/`](ai-log/)
 * Link para o vídeo: https://drive.google.com/file/d/1044q9RjTdzGl2FWiPFj1qRW-E46S2RrM/view?usp=sharing
-* Link para a transcrição: https://drive.google.com/file/d/1aO7TpE8jVwnTrmm2PfUL0n3ciE0cnmS6/view?usp=sharing
+
+link para Transcrição: https://drive.google.com/file/d/1aO7TpE8jVwnTrmm2PfUL0n3ciE0cnmS6/view?usp=sharing
