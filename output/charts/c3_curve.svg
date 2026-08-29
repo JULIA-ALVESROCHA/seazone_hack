@@ -1,13 +1,13 @@
-<svg class="chart" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 634.399063 298.957172" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg class="chart" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 785.570781 299.950219" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#ffffff" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-28T22:13:36.139636</dc:date>
+    <dc:date>2026-08-28T21:16:03.111752</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -18,11 +18,11 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 298.957172 
-L 634.399063 298.957172 
-L 634.399063 0 
+   <path d="M 0 299.950219 
+L 785.570781 299.950219 
+L 785.570781 0 
 L 0 0 
-L 0 298.957172 
+L 0 299.950219 
 z
 " style="fill: none"/>
   </g>
@@ -41,59 +41,59 @@ z
      <g id="line2d_1">
       <path d="M 477.523636 242.712 
 L 477.523636 4.32 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_2"/>
      <g id="text_1">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="477.523636" y="254.197312" transform="rotate(-0 477.523636 254.197312)">0</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="477.523636" y="254.950203" transform="rotate(-0 477.523636 254.950203)">0</text>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_3">
       <path d="M 391.850909 242.712 
 L 391.850909 4.32 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_4"/>
      <g id="text_2">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="391.850909" y="254.197312" transform="rotate(-0 391.850909 254.197312)">20</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="391.850909" y="254.950203" transform="rotate(-0 391.850909 254.950203)">20</text>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_5">
       <path d="M 306.178182 242.712 
 L 306.178182 4.32 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_6"/>
      <g id="text_3">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="306.178182" y="254.197312" transform="rotate(-0 306.178182 254.197312)">40</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="306.178182" y="254.950203" transform="rotate(-0 306.178182 254.950203)">40</text>
      </g>
     </g>
     <g id="xtick_4">
      <g id="line2d_7">
       <path d="M 220.505455 242.712 
 L 220.505455 4.32 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_8"/>
      <g id="text_4">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="220.505455" y="254.197312" transform="rotate(-0 220.505455 254.197312)">60</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="220.505455" y="254.950203" transform="rotate(-0 220.505455 254.950203)">60</text>
      </g>
     </g>
     <g id="xtick_5">
      <g id="line2d_9">
       <path d="M 134.832727 242.712 
 L 134.832727 4.32 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_10"/>
      <g id="text_5">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="134.832727" y="254.197312" transform="rotate(-0 134.832727 254.197312)">80</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="134.832727" y="254.950203" transform="rotate(-0 134.832727 254.950203)">80</text>
      </g>
     </g>
     <g id="text_6">
-     <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="284.76" y="268.035203" transform="rotate(-0 284.76 268.035203)">Dias de antecedência em relação à estadia</text>
+     <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="284.76" y="270.36575" transform="rotate(-0 284.76 270.36575)">Dias de antecedência em relação à estadia</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -101,65 +101,65 @@ L 134.832727 4.32
      <g id="line2d_11">
       <path d="M 72.72 226.026448 
 L 496.8 226.026448 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_12"/>
      <g id="text_7">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="69.22" y="230.019104" transform="rotate(-0 69.22 230.019104)">−3</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="69.22" y="230.39555" transform="rotate(-0 69.22 230.39555)">−3</text>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_13">
       <path d="M 72.72 178.50792 
 L 496.8 178.50792 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_14"/>
      <g id="text_8">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="69.22" y="182.500576" transform="rotate(-0 69.22 182.500576)">−2</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="69.22" y="182.877022" transform="rotate(-0 69.22 182.877022)">−2</text>
      </g>
     </g>
     <g id="ytick_3">
      <g id="line2d_15">
       <path d="M 72.72 130.989392 
 L 496.8 130.989392 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_16"/>
      <g id="text_9">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="69.22" y="134.982049" transform="rotate(-0 69.22 134.982049)">−1</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="69.22" y="135.358494" transform="rotate(-0 69.22 135.358494)">−1</text>
      </g>
     </g>
     <g id="ytick_4">
      <g id="line2d_17">
       <path d="M 72.72 83.470865 
 L 496.8 83.470865 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_18"/>
      <g id="text_10">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="69.22" y="87.463521" transform="rotate(-0 69.22 87.463521)">0</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="69.22" y="87.839966" transform="rotate(-0 69.22 87.839966)">0</text>
      </g>
     </g>
     <g id="ytick_5">
      <g id="line2d_19">
       <path d="M 72.72 35.952337 
 L 496.8 35.952337 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #dae0db; stroke-width: 0.9; stroke-linecap: square"/>
      </g>
      <g id="line2d_20"/>
      <g id="text_11">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="69.22" y="39.944993" transform="rotate(-0 69.22 39.944993)">1</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="69.22" y="40.321438" transform="rotate(-0 69.22 40.321438)">1</text>
      </g>
     </g>
     <g id="text_12">
-     <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="51.685937" y="123.516" transform="rotate(-90 51.685937 123.516)">Disponibilidade aparente (log-odds)</text>
+     <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="45.874844" y="123.516" transform="rotate(-90 45.874844 123.516)">Disponibilidade aparente (log-odds)</text>
     </g>
    </g>
    <g id="line2d_21">
     <path d="M 464.672727 242.712 
 L 464.672727 4.32 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #eb6834; stroke-width: 1.6"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #eb6834; stroke-width: 1.6"/>
    </g>
    <g id="patch_3">
     <path d="M 72.72 242.712 
@@ -258,37 +258,37 @@ L 104.847273 24.8425
 L 100.563636 24.195062 
 L 96.28 23.513631 
 L 91.996364 51.800172 
-" clip-path="url(#pc19e814f4d)" style="fill: none; stroke: #0d5b66; stroke-width: 2.4; stroke-linecap: square"/>
+" clip-path="url(#pb82b1a5295)" style="fill: none; stroke: #0d5b66; stroke-width: 2.4; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
-    <path d="M 440.587451 199.883727 
-Q 452.042805 184.084784 463.498158 168.28584 
+    <path d="M 457.652798 196.820657 
+Q 460.936106 182.716904 464.219414 168.613152 
 " style="fill: none; stroke: #eb6834; stroke-linecap: round"/>
    </g>
    <g id="text_13">
-    <text style="font-weight: 600; font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #eb6834" transform="translate(366.149091 210.798135)">projetamos todos os anúncios</text>
-    <text style="font-weight: 600; font-size: 10.4px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #eb6834" transform="translate(366.149091 221.31221)">para 3 dias de antecedência</text>
+    <text style="fill: #eb6834; font: 600 10.4px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif" transform="translate(366.149091 209.086035)">projetamos todos os anúncios</text>
+    <text style="fill: #eb6834; font: 600 10.4px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif" transform="translate(366.149091 221.31221)">para 3 dias de antecedência</text>
    </g>
    <g id="patch_5">
-    <path d="M 474.595417 230.277886 
-Q 474.774436 231.076943 474.953455 231.876 
+    <path d="M 476.68115 230.183226 
+Q 476.530989 230.330352 476.380828 230.477478 
 " style="fill: none; stroke: #7c8681; stroke-linecap: round"/>
    </g>
    <g id="text_14">
-    <text style="font-size: 9.8px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(391.850909 215.003652)">abaixo de 3 dias a queda é o corte</text>
-    <text style="font-size: 9.8px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(391.850909 224.748221)">de reserva da plataforma, não demanda</text>
+    <text style="fill: #535d59; font: 9.8px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif" transform="translate(391.850909 213.574077)">abaixo de 3 dias a queda é o corte</text>
+    <text style="fill: #535d59; font: 9.8px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif" transform="translate(391.850909 224.748221)">de reserva da plataforma, não demanda</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 10.2px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(100.563636 24.97122)">a 90 dias, quase tudo</text>
-    <text style="font-size: 10.2px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #535d59" transform="translate(100.563636 35.113526)">ainda parece disponível</text>
+    <text style="fill: #535d59; font: 10.2px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif" transform="translate(100.563636 25.639001)">a 90 dias, quase tudo</text>
+    <text style="fill: #535d59; font: 10.2px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif" transform="translate(100.563636 37.55037)">ainda parece disponível</text>
    </g>
   </g>
   <g id="text_16">
-   <text style="font-size: 9.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7c8681" x="4.32" y="293.004359" transform="rotate(-0 4.32 293.004359)">Três capturas do calendário (06, 07 e 20/jan/2025) enxergam a mesma data de estadia em horizontes diferentes, o que identifica a curva. 209.846 noites-anúncio.</text>
+   <text style="fill: #7c8681; font: 9.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="4.32" y="293.654516" transform="rotate(-0 4.32 293.654516)">Três capturas do calendário (06, 07 e 20/jan/2025) enxergam a mesma data de estadia em horizontes diferentes, o que identifica a curva. 209.846 noites-anúncio.</text>
   </g>
  </g>
  <defs>
-  <clipPath id="pc19e814f4d">
+  <clipPath id="pb82b1a5295">
    <rect x="72.72" y="4.32" width="424.08" height="238.392"/>
   </clipPath>
  </defs>

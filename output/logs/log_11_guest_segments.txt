@@ -1,0 +1,72 @@
+=== [DADO] o que a base mostra sobre quem procura Itapema ===
+  menções a viagem de negócios no texto dos anúncios : 1.9%
+  menções a estadia longa / mensal                   : 0.1%
+  anúncios que aceitam animais                       : 55.1%
+  anúncios com item infantil (berço, cadeira alta)   : 6.0%
+  => negócios e estadia longa não são segmentos deste mercado; não vamos inventá-los.
+
+=== [DADO] cada segmento tem um padrão de demanda distinto ===
+                             n  guests  dorm     adr    occ       rev  wk_price  wk_occ  season    fee      prof  star
+segment                                                                                                               
+Alto padrão e frente-mar   120     8.0   3.0  1221.0  0.748  176037.0     0.000     0.0   0.416  300.0  0.211864  4.94
+Grupos e amigos            217     8.0   3.0   683.0  0.850  107606.0     0.000     0.0   0.571  300.0  0.050691  4.93
+Famílias                   407     6.0   2.0   554.0  0.830   87289.0     0.000     0.0   0.591  250.0      0.16  4.94
+Casais e escapadas curtas  167     4.0   1.0   499.0  0.696   70092.0     0.043     0.0   0.643  190.0  0.497006  4.92
+
+=== [DADO] onde cada segmento está instalado (share dos anúncios da zona) ===
+segment                  Alto padrão e frente-mar  Casais e escapadas curtas  Famílias  Grupos e amigos
+micro_zone                                                                                             
+Alto Sao Bento                              0.000                      1.000     0.000            0.000
+Canto da Praia                              0.000                      0.400     0.400            0.200
+Casa Branca                                 0.000                      0.385     0.615            0.000
+Centro                                      0.119                      0.451     0.337            0.093
+Ilhota                                      0.000                      0.600     0.200            0.200
+Meia Praia (beach band)                     0.160                      0.045     0.450            0.345
+Meia Praia (inland)                         0.080                      0.174     0.536            0.210
+Morretes                                    0.132                      0.309     0.485            0.074
+Tabuleiro dos Oliveiras                     0.118                      0.059     0.765            0.059
+
+(contagens)
+segment                  Alto padrão e frente-mar  Casais e escapadas curtas  Famílias  Grupos e amigos
+micro_zone                                                                                             
+Alto Sao Bento                                  0                          3         0                0
+Canto da Praia                                  0                          2         2                1
+Casa Branca                                     0                          5         8                0
+Centro                                         23                         87        65               18
+Ilhota                                          0                          3         1                1
+Meia Praia (beach band)                        75                         21       211              162
+Meia Praia (inland)                            11                         24        74               29
+Morretes                                        9                         21        33                5
+Tabuleiro dos Oliveiras                         2                          1        13                1
+
+=== [DADO] receita por zona × segmento (>=10 anúncios) ===
+             micro_zone                   segment   n    adr   occ      rev    wk
+Meia Praia (beach band)  Alto padrão e frente-mar  75 1314.0 0.756 187514.0 0.000
+                 Centro  Alto padrão e frente-mar  23 1084.0 0.898 175882.0 0.000
+    Meia Praia (inland)  Alto padrão e frente-mar  11 1235.0 0.417 121777.0 0.000
+    Meia Praia (inland)           Grupos e amigos  29  683.0 0.791 108070.0 0.000
+Meia Praia (beach band)           Grupos e amigos 162  689.0 0.873 107881.0 0.000
+                 Centro           Grupos e amigos  18  678.0 0.740 104848.0 0.000
+Meia Praia (beach band)                  Famílias 211  574.0 0.865  94109.0 0.000
+                 Centro                  Famílias  65  594.0 0.781  86077.0 0.000
+    Meia Praia (inland)                  Famílias  74  539.0 0.785  82724.0 0.000
+Tabuleiro dos Oliveiras                  Famílias  13  560.0 0.804  80728.0 0.000
+Meia Praia (beach band) Casais e escapadas curtas  21  562.0 0.850  79571.0 0.000
+                 Centro Casais e escapadas curtas  87  482.0 0.666  71602.0 0.099
+               Morretes Casais e escapadas curtas  21  499.0 0.769  71118.0 0.030
+               Morretes                  Famílias  33  449.0 0.865  70929.0 0.000
+    Meia Praia (inland) Casais e escapadas curtas  24  502.0 0.697  66818.0 0.000
+
+=== [INFERIDO] matriz de oportunidades: perfil → área → cliente → retorno ===
+                   zone  bed                  customer  customer_share  guests    adr  occ      rev     price  net_yield  payback evidence  n_ab  n_sale
+               Morretes    3  Alto padrão e frente-mar            0.40     8.0  724.0 0.85 123066.0  849560.0     0.0779     12.8     fina    10     141
+Tabuleiro dos Oliveiras    2                  Famílias            0.83     6.0  462.0 0.82  76956.0  780000.0     0.0676     14.8     fina    12     103
+               Morretes    2                  Famílias            0.59     5.0  491.0 0.77  71118.0  790000.0     0.0621     16.1    forte    51     827
+Meia Praia (beach band)    2                  Famílias            0.86     6.0  515.0 0.87  84415.0 1099200.0     0.0574     17.4    forte   132     229
+    Meia Praia (inland)    2                  Famílias            0.82     6.0  507.0 0.78  70061.0  996142.0     0.0544     18.4    forte    55     121
+                 Centro    1 Casais e escapadas curtas            1.00     4.0  489.0 0.66  70345.0  895000.0     0.0452     22.1    forte    78      16
+                 Centro    2                  Famílias            0.75     6.0  621.0 0.74  84059.0 1145000.0     0.0436     22.9    forte    65      78
+Meia Praia (beach band)    3           Grupos e amigos            0.49     8.0  716.0 0.83 110013.0 1881800.0     0.0394     25.4    forte   269    1567
+    Meia Praia (inland)    3                  Famílias            0.48     8.0  702.0 0.78  99679.0 1694830.0     0.0378     26.5    forte    58     731
+Meia Praia (beach band)    4  Alto padrão e frente-mar            0.58    10.0 1157.0 0.84 178559.0 3500000.0     0.0326     30.7    forte    57    1162
+                 Centro    3  Alto padrão e frente-mar            0.36     8.0  765.0 0.82 121187.0 2100000.0     0.0311     32.1    forte    45     410

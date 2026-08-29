@@ -2,9 +2,11 @@
 and the headline investment case with sensitivity."""
 import numpy as np, pandas as pd, json
 from sklearn.linear_model import RidgeCV
-OUT='/home/claude/proj/output/'
-P=json.load(open(OUT+'assumptions.json')); rng=np.random.default_rng(3)
-l=pd.read_csv(OUT+'listing_modelfeatures.csv'); s=pd.read_csv(OUT+'sale_scored.csv',low_memory=False)
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_08_decision.txt')
+P=json.load(open(OUT/'assumptions.json')); rng=np.random.default_rng(3)
+l=pd.read_csv(OUT/'listing_modelfeatures.csv'); s=pd.read_csv(OUT/'sale_scored.csv',low_memory=False)
 
 # ---- A. is the Centro occupancy gap real once we control for what we can? --
 X=pd.DataFrame({'log_guests':np.log(l.number_of_guests),'log_dist':np.log(l.dist_beach_km.clip(0.03,5)),
@@ -41,7 +43,7 @@ print(f'   {len(r)-len(guard)} listings dropped as price outliers vs their own c
 top=guard.nlargest(20,'net_yield')[['listing_id','micro_zone','bedrooms','usable_area','sale_price',
      'ppsm','monthly_condo_fee','rev_pred','noi','net_yield','payback_yrs','advertiser_name']]
 print(top.round({'ppsm':0,'rev_pred':0,'noi':0,'net_yield':4,'payback_yrs':1}).to_string(index=False))
-guard.sort_values('net_yield',ascending=False).to_csv(OUT+'buy_list.csv',index=False)
+guard.sort_values('net_yield',ascending=False).to_csv(OUT/'buy_list.csv',index=False)
 
 # ---- D. headline case vs the hypothesis case ------------------------------
 def case(zone,bed,label,price=None):
@@ -56,13 +58,13 @@ def case(zone,bed,label,price=None):
     return dict(case=label,area=area,ask=(price or sl.sale_price.median()),capex=capex,adr=ab.adr.median(),
                 occ=occ,rev=rev,opex=opex,noi=rev-opex,net_yield=(rev-opex)/capex,payback=capex/(rev-opex),
                 n_listed=len(sl))
-cases=pd.DataFrame([case('Meia Praia (beach band)',2,'RECOMMENDED: compact 2BR, beach band'),
-                    case('Morretes',3,'compact 3BR, Morretes (higher yield, higher location risk)'),
+cases=pd.DataFrame([case('Morretes',2,'RECOMMENDED: compact 2BR, Morretes'),
                     case('Tabuleiro dos Oliveiras',2,'compact 2BR, Tabuleiro'),
+                    case('Morretes',3,'compact 3BR, Morretes (higher yield, higher location risk)'),
+                    case('Meia Praia (beach band)',2,'SLEEVE / liquidity: compact 2BR, beach band'),
                     case('Centro',1,'HYPOTHESIS: 1BR in Centro'),
-                    case('Meia Praia (beach band)',3,'standard 3BR, beach band'),
-                    case('Meia Praia (beach band)',4,'large 4BR, beach band')])
+                    case('Meia Praia (beach band)',4,'large 4BR, beach band (avoid)')])
 print('\n=== investment cases (Seazone-operated, base assumptions) ===')
 print(cases.round({'area':0,'ask':0,'capex':0,'adr':0,'occ':2,'rev':0,'opex':0,'noi':0,
                    'net_yield':4,'payback':1}).to_string(index=False))
-cases.to_csv(OUT+'investment_cases.csv',index=False)
+cases.to_csv(OUT/'investment_cases.csv',index=False)

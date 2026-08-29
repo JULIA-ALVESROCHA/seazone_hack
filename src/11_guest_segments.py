@@ -13,9 +13,9 @@ Everything printed here is tagged:
 """
 import numpy as np, pandas as pd, json, re
 from pathlib import Path
-ROOT = Path(__file__).resolve().parent.parent
-RAW  = Path('/home/claude/data/data')
-OUT  = ROOT/'output'
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_11_guest_segments.txt')
 pd.set_option('display.width', 220)
 
 # ------------------------------------------------------------------ 1. demand pattern

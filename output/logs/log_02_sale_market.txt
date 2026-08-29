@@ -1,8 +1,8 @@
 raw (8329, 22)
-near-dup groups removed: 621
+near-dup groups removed: 525
 
-quality flags: {'price<50k or >20M': np.int64(12), 'area<20 or >800 m2': np.int64(147), 'ppsm<2k or >40k': np.int64(356), 'condo fee > 5% of price/yr': np.int64(12)}
-clean apartments 6796 of 7089
+quality flags: {'price<50k or >20M': np.int64(13), 'area<20 or >800 m2': np.int64(150), 'ppsm<2k or >40k': np.int64(361), 'condo fee > 5% of price/yr': np.int64(13)}
+clean apartments 6879 of 7175
 
 -- median asking price / m2 by macro zone x bedrooms (n>=15) --
                                      n      price   area     ppsm   condo

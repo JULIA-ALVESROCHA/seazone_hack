@@ -9,11 +9,13 @@ the 70th-percentile capacity of comparable Airbnb units in the same cell.
 import numpy as np, pandas as pd, json, re
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import KFold, cross_val_predict
-OUT='/home/claude/proj/output/'
-P=json.load(open(OUT+'assumptions.json'))
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_06_screening.txt')
+P=json.load(open(OUT/'assumptions.json'))
 
-l=pd.read_csv(OUT+'listing_modelfeatures.csv')
-s=pd.read_csv(OUT+'sale_clean.csv', low_memory=False)
+l=pd.read_csv(OUT/'listing_modelfeatures.csv')
+s=pd.read_csv(OUT/'sale_clean.csv', low_memory=False)
 s['bed_bucket']=s.bedrooms.clip(0,4)
 s['micro_zone']=s.micro_zone.replace({'Andorinha (inland Meia Praia)':'Meia Praia (inland)',
     'Castelo Branco (inland Meia Praia)':'Meia Praia (inland)','Jardim Praia Mar':'Jardim Praia Mar'})
@@ -63,7 +65,7 @@ Xtr['prof']=l.is_professional; Xtr['star']=l.star; Xtr['pics']=np.log1p(l.pictur
 Xtr['logrev_host']=l.log_reviews
 y=l.log_rev.values
 gb=GradientBoostingRegressor(n_estimators=600,max_depth=3,learning_rate=0.04,subsample=0.8,random_state=1)
-pred=cross_val_pred=cross_val_predict(gb,Xtr,y,cv=KFold(5,shuffle=True,random_state=0))
+pred=cross_val_predict(gb,Xtr,y,cv=KFold(5,shuffle=True,random_state=0))
 print('revenue model CV R2 = %.3f | median abs %% error = %.1f%%'%(
       1-((y-pred)**2).sum()/((y-y.mean())**2).sum(), 100*np.median(np.abs(np.expm1(pred-y)))))
 gb.fit(Xtr,y)
@@ -98,7 +100,7 @@ s['condo_annual']=condo
 # comparability confidence: how much Airbnb evidence backs this cell
 cell_n=l.groupby(['micro_zone','bed_bucket']).size()
 s['n_comps']=pd.MultiIndex.from_frame(s[['micro_zone','bed_bucket']]).map(cell_n).fillna(0)
-s.to_csv(OUT+'sale_scored.csv',index=False)
+s.to_csv(OUT/'sale_scored.csv',index=False)
 
 print('\n=== net yield distribution by zone x bedrooms (ready-to-use stock only) ===')
 r=s[(s.is_offplan==0)&(s.n_comps>=10)]

@@ -1,13 +1,13 @@
-<svg class="chart" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 836.216219 314.203777" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg class="chart" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 946.761687 316.164746" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#ffffff" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-28T22:13:36.652194</dc:date>
+    <dc:date>2026-08-28T21:16:03.809819</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -18,21 +18,21 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 314.203777 
-L 836.216219 314.203777 
-L 836.216219 0 
+   <path d="M 0 316.164746 
+L 946.761687 316.164746 
+L 946.761687 0 
 L 0 0 
-L 0 314.203777 
+L 0 316.164746 
 z
 " style="fill: none"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 195.776219 257.302402 
-L 831.896219 257.302402 
-L 831.896219 13.366402 
-L 195.776219 13.366402 
-L 195.776219 257.302402 
+    <path d="M 243.004187 257.918527 
+L 879.124188 257.918527 
+L 879.124188 13.982527 
+L 243.004187 13.982527 
+L 243.004187 257.918527 
 z
 " style="fill: none"/>
    </g>
@@ -40,212 +40,212 @@ z
     <g id="xtick_1">
      <g id="line2d_1"/>
      <g id="text_1">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="262.736219" y="268.787714" transform="rotate(-0 262.736219 268.787714)">5,0%</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="309.964187" y="270.15673" transform="rotate(-0 309.964187 270.15673)">5,0%</text>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_2"/>
      <g id="text_2">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="346.436219" y="268.787714" transform="rotate(-0 346.436219 268.787714)">5,5%</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="393.664187" y="270.15673" transform="rotate(-0 393.664187 270.15673)">5,5%</text>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_3"/>
      <g id="text_3">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="430.136219" y="268.787714" transform="rotate(-0 430.136219 268.787714)">6,0%</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="477.364187" y="270.15673" transform="rotate(-0 477.364187 270.15673)">6,0%</text>
      </g>
     </g>
     <g id="xtick_4">
      <g id="line2d_4"/>
      <g id="text_4">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="513.836219" y="268.787714" transform="rotate(-0 513.836219 268.787714)">6,5%</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="561.064188" y="270.15673" transform="rotate(-0 561.064188 270.15673)">6,5%</text>
      </g>
     </g>
     <g id="xtick_5">
      <g id="line2d_5"/>
      <g id="text_5">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="597.536219" y="268.787714" transform="rotate(-0 597.536219 268.787714)">7,0%</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="644.764187" y="270.15673" transform="rotate(-0 644.764187 270.15673)">7,0%</text>
      </g>
     </g>
     <g id="xtick_6">
      <g id="line2d_6"/>
      <g id="text_6">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="681.236219" y="268.787714" transform="rotate(-0 681.236219 268.787714)">7,5%</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="728.464187" y="270.15673" transform="rotate(-0 728.464187 270.15673)">7,5%</text>
      </g>
     </g>
     <g id="xtick_7">
      <g id="line2d_7"/>
      <g id="text_7">
-      <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="764.936219" y="268.787714" transform="rotate(-0 764.936219 268.787714)">8,0%</text>
+      <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="812.164187" y="270.15673" transform="rotate(-0 812.164187 270.15673)">8,0%</text>
      </g>
     </g>
     <g id="text_8">
-     <text style="font-size: 11.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #535d59" x="513.836219" y="282.625605" transform="rotate(-0 513.836219 282.625605)">Retorno líquido de caixa ao ano</text>
+     <text style="fill: #535d59; font: 11.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="561.064188" y="285.746574" transform="rotate(-0 561.064188 285.746574)">Retorno líquido de caixa ao ano</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_8"/>
      <g id="text_9">
-      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="192.276219" y="240.993149" transform="rotate(-0 192.276219 240.993149)">Mobília e enxoval por m²</text>
+      <text style="fill: #535d59; font: 10.6px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="239.504187" y="241.759164" transform="rotate(-0 239.504187 241.759164)">Mobília e enxoval por m²</text>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_9"/>
      <g id="text_10">
-      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="192.276219" y="206.727567" transform="rotate(-0 192.276219 206.727567)">Desconto de negociação</text>
+      <text style="fill: #535d59; font: 10.6px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="239.504187" y="207.780942" transform="rotate(-0 239.504187 207.780942)">Desconto de negociação</text>
      </g>
     </g>
     <g id="ytick_3">
      <g id="line2d_10"/>
      <g id="text_11">
-      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="192.276219" y="172.871078" transform="rotate(-0 192.276219 172.871078)">Consumo por noite ocupada</text>
+      <text style="fill: #535d59; font: 10.6px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="239.504187" y="173.834187" transform="rotate(-0 239.504187 173.834187)">Consumo por noite ocupada</text>
      </g>
     </g>
     <g id="ytick_4">
      <g id="line2d_11"/>
      <g id="text_12">
-      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="192.276219" y="139.014589" transform="rotate(-0 192.276219 139.014589)">Taxa de administração</text>
+      <text style="fill: #535d59; font: 10.6px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="239.504187" y="139.987636" transform="rotate(-0 239.504187 139.987636)">Taxa de administração</text>
      </g>
     </g>
     <g id="ytick_5">
      <g id="line2d_12"/>
      <g id="text_13">
-      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="192.276219" y="105.158101" transform="rotate(-0 192.276219 105.158101)">Fatia da diária que fica com o anfitrião</text>
+      <text style="fill: #535d59; font: 10.6px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="239.504187" y="106.33321" transform="rotate(-0 239.504187 106.33321)">Fatia da diária que fica com o anfitrião</text>
      </g>
     </g>
     <g id="ytick_6">
      <g id="line2d_13"/>
      <g id="text_14">
-      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="192.276219" y="71.301612" transform="rotate(-0 192.276219 71.301612)">Noites indisponíveis que são reservas pagas</text>
+      <text style="fill: #535d59; font: 10.6px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="239.504187" y="72.476722" transform="rotate(-0 239.504187 72.476722)">Noites indisponíveis que são reservas pagas</text>
      </g>
     </g>
     <g id="ytick_7">
      <g id="line2d_14"/>
      <g id="text_15">
-      <text style="font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="192.276219" y="37.641389" transform="rotate(-0 192.276219 37.641389)">Baixa temporada (mai–set) vs abril</text>
+      <text style="fill: #535d59; font: 10.6px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="239.504187" y="38.408233" transform="rotate(-0 239.504187 38.408233)">Baixa temporada (mai–set) vs abril</text>
      </g>
     </g>
    </g>
    <g id="patch_3">
-    <path d="M 195.776219 257.302402 
-L 831.896219 257.302402 
+    <path d="M 243.004187 257.918527 
+L 879.124187 257.918527 
 " style="fill: none; stroke: #dae0db; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
-    <path d="M 441.83629 246.214402 
-L 526.651118 246.214402 
-L 526.651118 227.593333 
-L 441.83629 227.593333 
+    <path d="M 464.513012 246.830527 
+L 547.278524 246.830527 
+L 547.278524 228.209458 
+L 464.513012 228.209458 
 z
-" clip-path="url(#p9171326664)" style="fill: #9aa5a0"/>
+" clip-path="url(#p8a78a1550d)" style="fill: #9aa5a0"/>
    </g>
    <g id="patch_5">
-    <path d="M 413.12805 212.357913 
-L 553.580955 212.357913 
-L 553.580955 193.736845 
-L 413.12805 193.736845 
+    <path d="M 436.25325 212.974038 
+L 573.75425 212.974038 
+L 573.75425 194.35297 
+L 436.25325 194.35297 
 z
-" clip-path="url(#p9171326664)" style="fill: #9aa5a0"/>
+" clip-path="url(#p8a78a1550d)" style="fill: #9aa5a0"/>
    </g>
    <g id="patch_6">
-    <path d="M 391.524078 178.501425 
-L 565.748668 178.501425 
-L 565.748668 159.880356 
-L 391.524078 159.880356 
+    <path d="M 413.010938 179.11755 
+L 587.235528 179.11755 
+L 587.235528 160.496481 
+L 413.010938 160.496481 
 z
-" clip-path="url(#p9171326664)" style="fill: #9aa5a0"/>
+" clip-path="url(#p8a78a1550d)" style="fill: #9aa5a0"/>
    </g>
    <g id="patch_7">
-    <path d="M 392.679873 144.644936 
-L 589.4821 144.644936 
-L 589.4821 126.023868 
-L 392.679873 126.023868 
+    <path d="M 415.775552 145.261061 
+L 609.360141 145.261061 
+L 609.360141 126.639993 
+L 415.775552 126.639993 
 z
-" clip-path="url(#p9171326664)" style="fill: #9aa5a0"/>
+" clip-path="url(#p8a78a1550d)" style="fill: #9aa5a0"/>
    </g>
    <g id="patch_8">
-    <path d="M 403.61333 110.788448 
-L 666.0163 110.788448 
-L 666.0163 92.167379 
-L 403.61333 92.167379 
+    <path d="M 426.530251 111.404573 
+L 684.643037 111.404573 
+L 684.643037 92.783504 
+L 426.530251 92.783504 
 z
-" clip-path="url(#p9171326664)" style="fill: #9aa5a0"/>
+" clip-path="url(#p8a78a1550d)" style="fill: #9aa5a0"/>
    </g>
    <g id="patch_9">
-    <path d="M 341.0349 76.931959 
-L 641.127073 76.931959 
-L 641.127073 58.310891 
-L 341.0349 58.310891 
+    <path d="M 365.381883 77.548084 
+L 659.75381 77.548084 
+L 659.75381 58.927016 
+L 365.381883 58.927016 
 z
-" clip-path="url(#p9171326664)" style="fill: #9aa5a0"/>
+" clip-path="url(#p8a78a1550d)" style="fill: #9aa5a0"/>
    </g>
    <g id="patch_10">
-    <path d="M 302.150848 43.075471 
-L 680.011125 43.075471 
-L 680.011125 24.454402 
-L 302.150848 24.454402 
+    <path d="M 326.726641 43.691596 
+L 698.409052 43.691596 
+L 698.409052 25.070527 
+L 326.726641 25.070527 
 z
-" clip-path="url(#p9171326664)" style="fill: #9aa5a0"/>
+" clip-path="url(#p8a78a1550d)" style="fill: #9aa5a0"/>
    </g>
    <g id="text_16">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="426.77029" y="239.570274" transform="rotate(-0 426.77029 239.570274)">6,1</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="449.447012" y="240.279368" transform="rotate(-0 449.447012 240.279368)">5,9</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #535d59" x="541.717118" y="239.570274" transform="rotate(-0 541.717118 239.570274)">6,6%</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="562.344524" y="240.279368" transform="rotate(-0 562.344524 240.279368)">6,4%</text>
    </g>
    <g id="text_18">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="398.06205" y="205.713785" transform="rotate(-0 398.06205 205.713785)">5,9</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="421.18725" y="206.422879" transform="rotate(-0 421.18725 206.422879)">5,8</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #535d59" x="568.646955" y="205.713785" transform="rotate(-0 568.646955 205.713785)">6,7%</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="588.82025" y="206.422879" transform="rotate(-0 588.82025 206.422879)">6,6%</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="376.458078" y="171.857297" transform="rotate(-0 376.458078 171.857297)">5,8</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="397.944938" y="172.566391" transform="rotate(-0 397.944938 172.566391)">5,6</text>
    </g>
    <g id="text_21">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #535d59" x="580.814668" y="171.857297" transform="rotate(-0 580.814668 171.857297)">6,8%</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="602.301528" y="172.566391" transform="rotate(-0 602.301528 172.566391)">6,7%</text>
    </g>
    <g id="text_22">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="377.613873" y="138.000808" transform="rotate(-0 377.613873 138.000808)">5,8</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="400.709552" y="138.709902" transform="rotate(-0 400.709552 138.709902)">5,6</text>
    </g>
    <g id="text_23">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #535d59" x="604.5481" y="138.000808" transform="rotate(-0 604.5481 138.000808)">7,0%</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="624.426141" y="138.709902" transform="rotate(-0 624.426141 138.709902)">6,8%</text>
    </g>
    <g id="text_24">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="388.54733" y="104.14432" transform="rotate(-0 388.54733 104.14432)">5,8</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="411.464251" y="104.853413" transform="rotate(-0 411.464251 104.853413)">5,7</text>
    </g>
    <g id="text_25">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #535d59" x="681.0823" y="104.14432" transform="rotate(-0 681.0823 104.14432)">7,4%</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="699.709037" y="104.853413" transform="rotate(-0 699.709037 104.853413)">7,2%</text>
    </g>
    <g id="text_26">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="325.9689" y="70.287831" transform="rotate(-0 325.9689 70.287831)">5,5</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="350.315883" y="70.996925" transform="rotate(-0 350.315883 70.996925)">5,3</text>
    </g>
    <g id="text_27">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #535d59" x="656.193073" y="70.287831" transform="rotate(-0 656.193073 70.287831)">7,3%</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="674.81981" y="70.996925" transform="rotate(-0 674.81981 70.996925)">7,1%</text>
    </g>
    <g id="text_28">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #535d59" x="287.084848" y="36.431343" transform="rotate(-0 287.084848 36.431343)">5,2</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: end" x="311.660641" y="37.140436" transform="rotate(-0 311.660641 37.140436)">5,1</text>
    </g>
    <g id="text_29">
-    <text style="font-size: 10px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #535d59" x="695.077125" y="36.431343" transform="rotate(-0 695.077125 36.431343)">7,5%</text>
+    <text style="fill: #535d59; font: 10px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="713.475052" y="37.140436" transform="rotate(-0 713.475052 37.140436)">7,3%</text>
    </g>
    <g id="text_30">
-    <text style="font-weight: 600; font-size: 10.6px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #2a78d6" x="501.124986" y="11.758219" transform="rotate(-0 501.124986 11.758219)">caso base 6,4%</text>
+    <text style="fill: #2a78d6; font: 600 10.6px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="522.611846" y="12.374344" transform="rotate(-0 522.611846 12.374344)">caso base 6,2%</text>
    </g>
    <g id="line2d_15">
-    <path d="M 491.080986 257.302402 
-L 491.080986 13.366402 
-" clip-path="url(#p9171326664)" style="fill: none; stroke: #2a78d6; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 512.567846 257.918527 
+L 512.567846 13.982527 
+" clip-path="url(#p8a78a1550d)" style="fill: none; stroke: #2a78d6; stroke-width: 2; stroke-linecap: square"/>
    </g>
   </g>
   <g id="text_31">
-   <text style="font-size: 9.5px; font-family: 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7c8681" x="93.176219" y="308.250964" transform="rotate(-0 93.176219 308.250964)">Cada premissa movida sozinha até as pontas da faixa defensável, mantendo as demais no caso base. Nenhuma isolada leva o segmento recomendado abaixo de 5,2%.</text>
+   <text style="fill: #7c8681; font: 9.5px 'Carlito', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start" x="140.404187" y="309.869043" transform="rotate(-0 140.404187 309.869043)">Cada premissa movida sozinha até as pontas da faixa defensável, mantendo as demais no caso base. Nenhuma isolada leva o segmento recomendado abaixo de 5,2%.</text>
   </g>
  </g>
  <defs>
-  <clipPath id="p9171326664">
-   <rect x="195.776219" y="13.366402" width="636.12" height="243.936"/>
+  <clipPath id="p8a78a1550d">
+   <rect x="243.004187" y="13.982527" width="636.12" height="243.936"/>
   </clipPath>
  </defs>
 </svg>

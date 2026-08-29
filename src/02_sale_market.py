@@ -1,7 +1,9 @@
 """02 - VivaReal sale market: cleaning, geography normalisation, price surfaces."""
-import numpy as np, pandas as pd, re, os
-D='/home/claude/data/data/'; OUT='/home/claude/proj/output/'
-v=pd.read_csv(D+'VivaReal_Itapema.csv', low_memory=False)
+import numpy as np, pandas as pd, re
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_02_sale_market.txt')
+v=pd.read_csv(RAW/'VivaReal_Itapema.csv', low_memory=False)
 print('raw', v.shape)
 v=v.drop_duplicates('listing_id')
 # de-duplicate near-identical relistings (same advertiser, price, area, bedrooms)
@@ -53,7 +55,7 @@ for a,c in [('POOL','am_pool'),('ELEVATOR','am_elevator'),('GYM','am_gym'),
             ('PLAYGROUND','am_playground'),('SAUNA','am_sauna'),('FURNISHED','am_furnished')]:
     clean[c]=clean.amenities.fillna('').str.contains(a).astype(int)
 clean['is_beachfront_title']=clean.listing_title.str.lower().str.contains('frente mar|frente ao mar|beira mar').astype(int)
-clean.to_csv(OUT+'sale_clean.csv', index=False)
+clean.to_csv(OUT/'sale_clean.csv', index=False)
 
 print('\n-- median asking price / m2 by macro zone x bedrooms (n>=15) --')
 t=clean.groupby(['macro_zone','bedrooms']).agg(n=('sale_price','size'),price=('sale_price','median'),

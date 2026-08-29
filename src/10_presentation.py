@@ -22,16 +22,15 @@ ROOT = Path(__file__).resolve().parent.parent
 CH = ROOT/'output'/'charts'; CH.mkdir(parents=True, exist_ok=True)
 (ROOT/'docs').mkdir(exist_ok=True)
 PNG = '--png' in sys.argv
+import _paths
+_paths.tee('log_10_presentation.txt')
 
 REC, HYP, SLEEVE = ('Morretes', 2), ('Centro', 1), ('Meia Praia (beach band)', 2)
-WEEK = [("6 jan",691.6),("13 jan",711.3),("20 jan",665.5),("27 jan",567.5),("3 fev",563.4),
-        ("10 fev",519.2),("17 fev",488.2),("24 fev",512.1),("3 mar",483.6),("10 mar",396.5),
-        ("17 mar",375.1),("24 mar",324.9),("31 mar",318.6),("7 abr",338.8),("14 abr",413.5)]
 
 if PNG:
     _orig = ds.save_svg
     def _dual(fig, path):
-        fig.savefig(str(path).replace('.svg', '.png'), format='png', dpi=140, facecolor=ds.SURFACE)
+        fig.savefig(str(path).replace('.svg', '.png'), format='png', dpi=140, facecolor='#ffffff')
         return _orig(fig, path)
     ds.save_svg = _dual; C.ds.save_svg = _dual
 
@@ -44,6 +43,8 @@ def main():
     R['dstress'], R['ref'] = D.distance_stress(d, *REC, *SLEEVE)
     R['pf'], R['roll'] = D.portfolio(d)
     curve = pd.Series({int(k): v for k, v in d['curve']['h_lead'].items()}).sort_index()
+    weekly = pd.read_csv(ROOT/'output'/'weekly_revpan.csv')
+    WEEK = list(weekly[['label', 'exp_rev']].itertuples(index=False, name=None))
 
     # ---- chart catalogue: each entry declares when it is worth showing -----
     base_t, tor = R['tornado']

@@ -4,7 +4,7 @@
  "meta": {
   "date": "Agosto de 2026",
   "source": "Airbnb + VivaReal · snapshot de janeiro de 2025",
-  "scope": "6408 apartamentos prontos à venda · 1.005 anúncios com calendário"
+  "scope": "6598 apartamentos prontos à venda · 1.005 anúncios com calendário"
  },
  "slides": [
   {
@@ -12,16 +12,16 @@
    "section": "Resumo executivo",
    "headline": "Comprar 2 dormitórios compactos em Morretes — e não studios no Centro",
    "layout": "kpi",
-   "standfirst": "Apartamentos de 2 dormitórios, 69 m², capacidade para 5 a 6 pessoas, na faixa de R$ 690 mil a R$ 850 mil. Retorno líquido de caixa de 6,4% ao ano, com uma parcela na orla da Meia Praia como seguro de liquidez.",
+   "standfirst": "Apartamentos de 2 dormitórios, 69 m², capacidade para 5 a 6 pessoas, na faixa de R$ 680 mil a R$ 850 mil. Retorno líquido de caixa de 6,2% ao ano, com uma parcela na orla da Meia Praia como seguro de liquidez.",
    "kpis": [
     {
      "label": "Retorno líquido de caixa",
-     "value": "6,4%",
-     "note": "sobre o custo total, após taxa de administração, condomínio, IPTU e reservas"
+     "value": "6,2%",
+     "note": "sob operação Seazone, sobre o custo total, após gestão, condomínio, IPTU e reservas"
     },
     {
      "label": "Retorno bruto",
-     "value": "11,8%",
+     "value": "11,6%",
      "note": "receita de reservas sobre o custo total"
     },
     {
@@ -31,8 +31,8 @@
     },
     {
      "label": "Seleção disciplinada",
-     "value": "9,7%",
-     "note": "carteira de 25 unidades triadas uma a uma"
+     "value": "9,1%",
+     "note": "carteira de 31 unidades triadas uma a uma"
     },
     {
      "label": "Estoque alocável",
@@ -45,16 +45,16 @@
     "title": "A hipótese interna não se sustenta",
     "body": "“Studios e 1 dormitório no Centro” cai por três motivos independentes: não existe um único studio à venda na base; 1 dormitório é 2,0% da oferta e apenas 18 unidades no Centro; e o retorno do segmento é 4,5%, 6º entre 11 segmentos. A intuição está meio certa — pequeno é eficiente — mas o mercado já cobrou por isso."
    },
-   "notes": "Abrir pela decisão, não pelo método. Se perguntarem “por que não o Centro”, a resposta curta é: não há produto para comprar e o m² já está caro. O detalhe vem no slide 6."
+   "notes": "Abrir pela decisão, não pelo método. O retorno de 6,2% é o do operador profissional; o anfitrião mediano da célula roda perto de 4,0% — a tese é o serviço, não o prédio. Se perguntarem “por que não o Centro”, a resposta curta é: não há produto para comprar e o m² já está caro. O detalhe vem no slide posterior."
   },
   {
    "id": "mercado",
    "section": "Panorama do mercado",
    "chart": "c1_market",
-   "headline": "R$ 14.721,90 mi anunciados em Itapema — 90% em unidades grandes, que rendem menos",
+   "headline": "R$ 14,72 bi anunciados em Itapema — 90% em unidades grandes, que rendem menos",
    "bullets": [
-    "6.408 apartamentos prontos à venda em 11 segmentos com evidência suficiente dos dois lados do mercado.",
-    "Os quatro maiores segmentos por capital anunciado rendem entre 3,2% e 4,5% — são os piores da cidade.",
+    "6.408 apartamentos prontos à venda nos 21 segmentos com evidência suficiente dos dois lados do mercado.",
+    "Os segmentos de maior capital anunciado rendem entre 3,1% e 3,9% — são os piores da cidade.",
     "O perfil recomendado concentra R$ 733,71 mi de estoque pronto: capital suficiente para uma tese, não uma raridade."
    ],
    "notes": "O ponto desta lâmina é a inversão: o mercado anuncia o que rende menos. É aí que está a oportunidade."
@@ -66,7 +66,7 @@
     "c2_season",
     "c3_curve"
    ],
-   "headline": "A ocupação é observada, não arbitrada — e a receita cai pela metade em onze semanas",
+   "headline": "A ocupação é observada, não arbitrada — e a receita cai 46% em onze semanas",
    "bullets": [
     "O arquivo de preços do Airbnb só traz linha quando a diária está disponível: as datas ausentes são noites indisponíveis.",
     "Três capturas do calendário enxergam a mesma estadia em horizontes diferentes, o que permite corrigir a disponibilidade vista com antecedência.",
@@ -78,11 +78,11 @@
    "id": "precos",
    "section": "Imóveis e preços",
    "chart": "c4_ppsm",
-   "headline": "O metro quadrado mais caro da cidade é o de 1 dormitório",
+   "headline": "O metro quadrado mais caro do estoque com escala é o de 1 dormitório",
    "bullets": [
-    "R$ 17.045/m² no Centro e R$ 18.900/m² na Meia Praia para 1 dormitório, contra R$ 11.719/m² num 2 dormitórios compacto em Morretes.",
+    "O metro quadrado de 1 dormitório é o mais caro entre os segmentos com escala — R$ 17.045/m² no Centro e 20.616/m² na orla da Meia Praia (nicho de 42 unidades), contra R$ 11.719/m² num 2 dormitórios compacto em Morretes.",
     "A eficiência do imóvel pequeno é real — ele rende mais por m² — mas já está integralmente no preço.",
-    "Somente 136 unidades de 1 dormitório e 0 studios à venda em toda a cidade."
+    "Somente 137 unidades de 1 dormitório e 0 studios à venda em toda a cidade."
    ],
    "notes": "Esta lâmina é o cerne da refutação. O erro da hipótese não é a intuição, é ignorar o lado do custo."
   },
@@ -122,7 +122,7 @@
     ],
     [
      "Faixa de preço",
-     "R$ 690 mil a R$ 850 mil de pedido"
+     "R$ 680 mil a R$ 850 mil de pedido — mediana do segmento em R$ 790 mil"
     ],
     [
      "Condomínio",
@@ -140,22 +140,22 @@
    "compare": [
     {
      "label": "Morretes · 2 dorm",
-     "yield_": 0.0636406671248109,
+     "yield_": 0.0621029664841576,
      "tag": "recomendado"
     },
     {
      "label": "Meia Praia · orla · 2 dorm",
-     "yield_": 0.0578894899022295,
+     "yield_": 0.0573578196034721,
      "tag": "parcela de liquidez"
     },
     {
      "label": "Centro · 1 dorm",
-     "yield_": 0.045332988764587,
+     "yield_": 0.0451547485902355,
      "tag": "a hipótese"
     },
     {
      "label": "Meia Praia · orla · 4 dorm",
-     "yield_": 0.0327206393439766,
+     "yield_": 0.0325785739831068,
      "tag": "evitar"
     }
    ],
@@ -255,7 +255,7 @@
       "85%",
       "R$ 123 mil",
       "R$ 850 mil",
-      "7,9%",
+      "7,8%",
       "fina"
      ],
      "tone": ""
@@ -269,7 +269,7 @@
       "82%",
       "R$ 77 mil",
       "R$ 780 mil",
-      "6,9%",
+      "6,8%",
       "fina"
      ],
      "tone": ""
@@ -283,7 +283,7 @@
       "77%",
       "R$ 71 mil",
       "R$ 790 mil",
-      "6,4%",
+      "6,2%",
       "forte"
      ],
      "tone": "rec"
@@ -297,7 +297,7 @@
       "87%",
       "R$ 84 mil",
       "R$ 1,10 mi",
-      "5,8%",
+      "5,7%",
       "forte"
      ],
      "tone": "slv"
@@ -311,7 +311,7 @@
       "78%",
       "R$ 70 mil",
       "R$ 996 mil",
-      "5,5%",
+      "5,4%",
       "forte"
      ],
      "tone": ""
@@ -360,11 +360,11 @@
     ],
     [
      "Demanda",
-     "Ocupação de 77% na alta, sem prêmio de fim de semana"
+     "Ocupação projetada de 77% (bruta · 90% de reservas pagas) · sem prêmio de fim de semana"
     ],
     [
      "Retorno",
-     "6,4% líquido · payback de 16 anos"
+     "6,2% líquido · payback de 16 anos"
     ]
    ],
    "notes": "A linha de baixo é a tese em cinco caixas. Morretes 3 dorm rende mais, mas se apoia em 10 comparáveis; a orla tem evidência forte e menos retorno. O 2 dorm em Morretes é o único com os três."
@@ -373,14 +373,14 @@
    "id": "financeiro",
    "section": "Análise financeira",
    "chart": "c7_bridge",
-   "headline": "De R$ 100 mil de receita a R$ 54 mil de resultado — 6,4% sobre R$ 854 mil",
+   "headline": "De R$ 99 mil de receita a R$ 53 mil de resultado — 6,2% sobre R$ 854 mil",
    "secondary": "c6_yields",
    "bullets": [
-    "Custo total = pedido menos 7% de negociação. mais 5% de fechamento. mais R$ 1.200/m² de mobília e enxoval.",
-    "A diferença entre bruto (11,8%) e líquido (6,4%) é de 5,4%. Qualquer retorno prometido nessa faixa é bruto vestido de líquido.",
+    "Custo total = pedido menos 7% de negociação, mais 5% de fechamento, mais R$ 1.200/m² de mobília e enxoval.",
+    "A diferença entre bruto (11,6%) e líquido (6,2%) é de 5,4%. Qualquer retorno prometido nessa faixa é bruto vestido de líquido.",
     "Custos fixos pesam desproporcionalmente em unidades pequenas — a segunda razão pela qual o studio não fecha."
    ],
-   "notes": "O número para levar: 11,8% bruto, 6,4% líquido. Se alguém citar “13% a 23% ao ano”, é bruto ou inclui valorização — e vale dizer isso na reunião."
+   "notes": "O número para levar: 11,6% bruto, 6,2% líquido (o do operador profissional; o anfitrião mediano roda ~4,0%). Se alguém citar “13% a 23% ao ano”, é bruto ou inclui valorização — e vale dizer isso na reunião."
   },
   {
    "id": "riscos",
@@ -391,9 +391,9 @@
    ],
    "headline": "Nenhuma premissa isolada derruba a tese — a única ameaça real é geográfica",
    "bullets": [
-    "2.187 combinações de premissas: os três primeiros segmentos mantêm a ordem em todas. O pior caso de qualquer premissa isolada é 5,2%.",
+    "2.187 combinações de premissas: os três primeiros segmentos mantêm a ordem em todas. O pior caso de qualquer premissa isolada é 5,1%.",
     "O VivaReal não traz coordenadas. Se o estoque fora da orla estiver mais longe do mar do que os comparáveis do Airbnb, a receita está superestimada.",
-    "A parcela na orla existe exatamente para isso: custa cerca de 60 pontos-base de retorno e elimina a única incerteza capaz de inverter a ordem."
+    "A parcela na orla existe exatamente para isso: custa cerca de 47 pontos-base de retorno e elimina a única incerteza capaz de inverter a ordem."
    ],
    "limits": [
     "Oito meses do ano não são observados — sazonalidade é premissa declarada, com sensibilidade.",
@@ -406,11 +406,11 @@
    "id": "recomendacao",
    "section": "Recomendação e próximos passos",
    "chart": "c10_portfolio",
-   "headline": "R$ 19,59 mi em 25 unidades — 9,7% líquido, payback de 10,3 anos",
+   "headline": "R$ 19,69 mi em 31 unidades — 9,1% líquido, payback de 11,0 anos",
    "steps": [
     [
      "Validar em campo",
-     "Visitar as 25 unidades da lista triada. São os m² mais baratos das suas células — é onde também moram anúncio velho e área errada."
+     "Visitar as 31 unidades da lista triada — começando pelas 25 de maior retorno. São os m² mais baratos das suas células — é onde também moram anúncio velho e área errada."
     ],
     [
      "Confirmar condomínio e IPTU",
@@ -422,10 +422,11 @@
     ],
     [
      "Fechar a primeira tranche",
-     "6 a 8 unidades em Morretes, cerca de R$ 5,00 mi, para validar a operação antes de escalar."
+     "6 a 8 unidades em Morretes, cerca de R$ 5,13 mi, para validar a operação antes de escalar."
     ]
    ],
    "notes": "Terminar pedindo uma decisão concreta: autorização da primeira tranche, não do plano inteiro."
   }
- ]
+ ],
+ "_comment": "Revise textos do deck sem tocar em código. Chaves espelham output/deck_spec.json; slides sao indexados por posicao."
 }

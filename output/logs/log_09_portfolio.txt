@@ -10,46 +10,61 @@ rev_bucket
 
 validation 2 - out-of-sample error of the revenue model (5-fold, by listing): see 06 output
 
-validation 3 - sale-price gradient: d log(price/m2) / d log(distance to sea) = -0.154
-   Airbnb revenue gradient on the same variable was about -0.46 to -0.51.
-   => the sale market discounts distance LESS than the rental market rewards proximity
+validation 3 - sale-price gradient: d log(price/m2) / d log(distance to sea) = -0.152
+   Airbnb revenue gradient on the same variable was -0.09 (revenue) / -0.07 (ADR).
+   => the sale market discounts distance MORE than (-0.152 vs -0.09) the rental market rewards proximity.
 
 === quality-adjusted shortlist (top 15) ===
  listing_id              micro_zone  bedrooms  usable_area  sale_price    ppsm  ppsm_ratio  monthly_condo_fee  rev_adj  noi_adj  net_yield_adj  payback_adj
- 2767581974                Morretes         2           50    495000.0  9900.0        0.84              100.0 103421.0  62502.0         0.1150          8.7
- 2762836313                Morretes         2           55    420000.0  7636.0        0.65              300.0  94438.0  53614.0         0.1126          8.9
- 2714533420                Morretes         2           53    571143.0 10776.0        0.92                1.0 109063.0  67496.0         0.1086          9.2
- 2752513113                Morretes         2           60    420000.0  7000.0        0.60              300.0  91605.0  51347.0         0.1065          9.4
- 2749772401                Morretes         2           58    450000.0  7759.0        0.66              270.0  94964.0  54116.0         0.1063          9.4
- 2669009410                Morretes         2           61    445000.0  7295.0        0.62              330.0  92939.0  51822.0         0.1021          9.8
- 2712356298 Meia Praia (beach band)         3           61    920000.0 15082.0        1.17                NaN 159329.0  98190.0         0.1011          9.9
- 2628487193 Meia Praia (beach band)         4          102   1265000.0 12402.0        1.07                NaN 210392.0 135706.0         0.1000         10.0
- 2763593920                Morretes         2           53    572070.0 10794.0        0.92                NaN 109124.0  62149.0         0.0999         10.0
- 2729537625                Morretes         2           70    450000.0  6429.0        0.55              320.0  93121.0  52041.0         0.0994         10.1
- 2575451379                Morretes         2           42    680000.0 16190.0        1.38                NaN 120630.0  70349.0         0.0985         10.2
- 2607855783                Morretes         2           51    580000.0 11373.0        0.97                NaN 108564.0  61627.0         0.0982         10.2
- 2769186854                Morretes         2           56    459640.0  8208.0        0.70                1.0  86547.0  50520.0         0.0979         10.2
- 2676718894                  Centro         3           69    685000.0  9928.0        0.73              350.0 124140.0  73562.0         0.0979         10.2
- 2729536463                Morretes         2           70    461000.0  6586.0        0.56              370.0  93911.0  51971.0         0.0973         10.3
+ 2767581974                Morretes         2           50    495000.0  9900.0        0.84              100.0 101087.0  60635.0         0.1116          9.0
+ 2762836313                Morretes         2           55    420000.0  7636.0        0.65              300.0  92307.0  51909.0         0.1090          9.2
+ 2714533420                Morretes         2           53    571143.0 10776.0        0.92                1.0 106347.0  65323.0         0.1051          9.5
+ 2752513113                Morretes         2           60    420000.0  7000.0        0.60              300.0  89538.0  49694.0         0.1031          9.7
+ 2749772401                Morretes         2           58    450000.0  7759.0        0.66              270.0  92821.0  52401.0         0.1029          9.7
+ 2712356298 Meia Praia (beach band)         3           61    920000.0 15082.0        1.17                NaN 160705.0  99291.0         0.1022          9.8
+ 2628487193 Meia Praia (beach band)         4          102   1265000.0 12402.0        1.07                NaN 208837.0 134462.0         0.0990         10.1
+ 2669009410                Morretes         2           61    445000.0  7295.0        0.62              330.0  90841.0  50144.0         0.0988         10.1
+ 2676718894                  Centro         3           69    685000.0  9928.0        0.73              350.0 123939.0  73402.0         0.0976         10.2
+ 2763593920                Morretes         2           53    572070.0 10794.0        0.92                NaN 106407.0  59975.0         0.0964         10.4
+ 2729537625                Morretes         2           70    450000.0  6429.0        0.55              320.0  91065.0  50396.0         0.0963         10.4
+ 2575451379                Morretes         2           42    680000.0 16190.0        1.38                NaN 118154.0  68368.0         0.0957         10.4
+ 2769186854                Morretes         2           56    459640.0  8208.0        0.70                1.0  84887.0  49192.0         0.0953         10.5
+ 2607855783                Morretes         2           51    580000.0 11373.0        0.97                NaN 106114.0  59667.0         0.0951         10.5
+ 2673147348                Morretes         2           70    700000.0 10000.0        0.85              310.0 121239.0  72331.0         0.0942         10.6
 
 === quality-adjusted net yield by segment ===
                                       n      price      ny  ny_p75
 micro_zone              bed_bucket                                
-Meia Praia (beach band) 4           104  1700000.0  0.0684  0.0740
-Morretes                2           820   790000.0  0.0657  0.0722
-Meia Praia (beach band) 2           226  1094500.0  0.0561  0.0627
-Meia Praia (inland)     2           120   997571.0  0.0538  0.0631
-Meia Praia (beach band) 3           944  1649585.0  0.0480  0.0536
-Centro                  2            77  1140000.0  0.0435  0.0552
-Meia Praia (inland)     3           565  1589000.0  0.0426  0.0474
-Centro                  3           184  1750000.0  0.0403  0.0435
+Meia Praia (beach band) 4           104  1700000.0  0.0679  0.0733
+Morretes                2           820   790000.0  0.0638  0.0700
+Meia Praia (beach band) 2           226  1094500.0  0.0557  0.0622
+Meia Praia (inland)     2           120   997571.0  0.0532  0.0619
+Meia Praia (beach band) 3           944  1649585.0  0.0475  0.0535
+Centro                  2            77  1140000.0  0.0432  0.0548
+Meia Praia (inland)     3           565  1589000.0  0.0421  0.0469
+Centro                  3           184  1750000.0  0.0401  0.0434
 
 === R$20M deployment, greedy on adjusted yield with concentration caps ===
-   25 units, capital deployed R$19.6M, blended net yield 9.67%, payback 10.3 years, annual NOI R$1.89M
-                                    units    capital       noi     yld
-micro_zone              bed_bucket                                    
-Centro                  3               1   751702.0   73562.0  0.0979
-Meia Praia (beach band) 3               4  3986710.0  373412.0  0.0937
-                        4               4  5473471.0  501308.0  0.0916
-Meia Praia (inland)     3               1   757785.0   71244.0  0.0940
-Morretes                2              15  8618120.0  875217.0  0.1016
+    restricted to the recommended compact-2BR profile, honoring the
+    recommended weights: core Morretes/Tabuleiro 55-60% (the bet),
+    compact 2BR sleeve on the Meia Praia split as insurance.
+   31 units, capital deployed R$19.7M, blended net yield 9.07%, payback 11.0 years, annual NOI R$1.79M
+   core share 61% (target 55-60%), sleeve share 39%
+   asking-price range R$420.000–R$880.000 · median R$571.143 · 23% within the R$680–850k band
+                                    units     capital        noi     yld
+micro_zone              bed_bucket                                      
+Meia Praia (beach band) 2               7   5291193.0   435848.0  0.0824
+Meia Praia (inland)     2               3   2434701.0   203797.0  0.0837
+Morretes                2              21  11961737.0  1146842.0  0.0959
+
+=== appendix: unconstrained mix (any cell, incl. cheap 3-4BR orla) for contrast ===
+   26 units, R$20.0M, blended 9.46%, payback 10.6y, NOI R$1.89M
+                                    units    capital
+micro_zone              bed_bucket                  
+Centro                  2               1   580485.0
+                        3               1   751702.0
+Meia Praia (beach band) 3               4  3986710.0
+                        4               3  4481428.0
+Meia Praia (inland)     2               1   815398.0
+                        3               1   757785.0
+Morretes                2              15  8618120.0

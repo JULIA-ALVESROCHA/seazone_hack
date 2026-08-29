@@ -1,4 +1,4 @@
-GBM CV R2 on log annual revenue: 0.248 (+/- 0.057)
+GBM CV R2 on log annual revenue: 0.246 (+/- 0.049)
 
 Top revenue drivers (GBM importance):
 dist_beach_km          0.153
@@ -27,7 +27,7 @@ Partial effect of key features (median % change in revenue when moved p25 -> p75
   log_reviews                2.40 ->     3.50 :  +10.7%
   is_superhost               0.00 ->     1.00 :   +2.4%
   is_professional            0.00 ->     1.00 :  +16.4%
-  am_pool                    0.00 ->     1.00 :   -0.4%
+  am_pool                    0.00 ->     1.00 :   -0.3%
   am_seaview                 0.00 ->     1.00 :   +9.3%
   picture_count             13.00 ->    30.00 :   +9.7%
   comp_300m                178.00 ->   363.50 :   +5.8%
@@ -49,9 +49,9 @@ H0 test: "compact (studio/1BR) units in Centro are the most efficient investment
 ==============================================================================
 
 [1] Does the product exist on the acquisition market?
-   apartments for sale by bedrooms: {1: 136, 2: 1603, 3: 3034, 4: 2023}
+   apartments for sale by bedrooms: {1: 137, 2: 1628, 3: 3063, 4: 2051}
    studios (0 BR) for sale: 0
-   1BR for sale in Centro: 18 | 1BR city-wide: 136 (2.0% of listed apartments)
+   1BR for sale in Centro: 18 | 1BR city-wide: 137 (2.0% of listed apartments)
 
 [2] Raw revenue and occupancy, Centro vs rest, by bedroom count:
                         n   occ      adr        rev

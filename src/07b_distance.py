@@ -1,8 +1,11 @@
 """07b - Correct estimate of the distance-to-sea gradient on BOTH sides of the
 market, holding product constant, and a corrected location stress test."""
 import numpy as np, pandas as pd, json, numpy.linalg as la
-OUT='/home/claude/proj/output/'; P=json.load(open(OUT+'assumptions.json'))
-l=pd.read_csv(OUT+'listing_modelfeatures.csv'); s=pd.read_csv(OUT+'sale_scored.csv',low_memory=False)
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_07b_distance.txt')
+P=json.load(open(OUT/'assumptions.json'))
+l=pd.read_csv(OUT/'listing_modelfeatures.csv'); s=pd.read_csv(OUT/'sale_scored.csv',low_memory=False)
 
 def ols(X,y):
     b=la.lstsq(X,y,rcond=None)[0]; e=y-X@b

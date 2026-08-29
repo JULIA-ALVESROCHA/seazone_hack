@@ -17,12 +17,11 @@ import numpy as np, pandas as pd
 from scipy import sparse
 from sklearn.linear_model import LogisticRegression, Ridge
 import json, os
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_01_airbnb_demand.txt')
 
-D = '/home/claude/data/data/'
-OUT = '/home/claude/proj/output/'
-os.makedirs(OUT, exist_ok=True)
-
-price = pd.read_csv(D+'Price_AV_Itapema.csv', low_memory=False)
+price = pd.read_csv(RAW/'Price_AV_Itapema.csv', low_memory=False)
 price['date'] = pd.to_datetime(price['date'])
 price['cap']  = pd.to_datetime(price['aquisition_date']).dt.normalize()
 price = price.drop_duplicates(['airbnb_listing_id','date','cap'])
@@ -93,7 +92,7 @@ grid['p_avail_final'] = 1/(1+np.exp(-grid.lin))
 grid['occ'] = 1 - grid.p_avail_final
 grid['price_hat'] = np.exp(grid.airbnb_listing_id.map(p_i) + grid.date.map(p_d) + sig2/2)
 grid['exp_rev'] = grid.occ * grid.price_hat
-grid.to_csv(OUT+'listing_date_grid.csv.gz', index=False)
+grid.to_csv(OUT/'listing_date_grid.csv.gz', index=False)
 
 lst_sum = grid.groupby('airbnb_listing_id').agg(
     nights=('date','size'), occ=('occ','mean'),
@@ -103,10 +102,22 @@ lst_sum = grid.groupby('airbnb_listing_id').agg(
 w = grid.groupby('airbnb_listing_id').apply(
         lambda g: np.average(g.price_hat, weights=g.occ), include_groups=False)
 lst_sum['adr_booked'] = lst_sum.airbnb_listing_id.map(w)
-lst_sum.to_csv(OUT+'listing_demand.csv', index=False)
+lst_sum.to_csv(OUT/'listing_demand.csv', index=False)
 print(lst_sum[['occ','adr','adr_booked','revpan','rev_window']].describe().round(1).to_string())
+
+# weekly revenue-per-available-night series for the demand slide (model-projected,
+# lead-3, so the seasonal shape is comparable across the whole window)
+MES = {1: 'jan', 2: 'fev', 3: 'mar', 4: 'abr', 5: 'mai', 6: 'jun',
+       7: 'jul', 8: 'ago', 9: 'set', 10: 'out', 11: 'nov', 12: 'dez'}
+week = (grid.groupby(grid.date.dt.to_period('W').dt.start_time)
+            .exp_rev.mean().reset_index().rename(columns={'date': 'week_start'}))
+week['label'] = week.week_start.dt.day.astype(str) + ' ' + \
+    week.week_start.dt.month.map(MES)
+week.to_csv(OUT/'weekly_revpan.csv', index=False)
+print('weekly model RevPAN (label, revpan):')
+print(week[['label', 'exp_rev']].round(0).to_string(index=False))
 
 json.dump({'h_lead': {str(k): float(v) for k, v in h_L.items()},
            'window_start': str(all_dates.min().date()),
            'window_end': str(all_dates.max().date()),
-           'n_nights': int(len(all_dates))}, open(OUT+'booking_curve.json','w'), indent=1)
+           'n_nights': int(len(all_dates))}, open(OUT/'booking_curve.json','w'), indent=1)

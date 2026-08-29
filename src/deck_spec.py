@@ -21,8 +21,11 @@ def build(d, R):
     rec_z, rec_b = R['rec']; hyp_z, hyp_b = R['hyp']; slv_z, slv_b = R['sleeve']
     ci_i = ci.set_index(['zone','bed'])
     rec = ci_i.loc[(rec_z, rec_b)]; hyp = ci_i.loc[(hyp_z, hyp_b)]; slv = ci_i.loc[(slv_z, slv_b)]
+    mkt = d['segm'].set_index(['zone', 'bed_bucket'])
+    rec_mkt = float(mkt.loc[(rec_z, rec_b), 'net_yield']) if (rec_z, rec_b) in mkt.index else None
     rank = ci.sort_values('net_yield', ascending=False).reset_index(drop=True)
     hyp_rank = int(rank.index[(rank.zone == hyp_z) & (rank.bed == hyp_b)][0]) + 1
+    sleeve_cost_bp = (rec.net_yield - slv.net_yield) * 100 * 100  # in basis points
     pf, roll = R['pf'], R['roll']
     sale = d['sale']; total_value = ms.value.sum()
     n_studio = int((sale.bedrooms == 0).sum())
@@ -40,9 +43,9 @@ def build(d, R):
         headline=f'Comprar {int(rec_b)} dormitórios compactos em {zpt(rec_z)} — e não studios no Centro',
         layout='kpi',
         standfirst=(f'Apartamentos de {int(rec_b)} dormitórios, {cb["area"]:.0f} m², capacidade para 5 a 6 pessoas, '
-                    f'na faixa de {brl(690000)} a {brl(850000)}. Retorno líquido de caixa de {pct(rec.net_yield)} ao ano, '
+                    f'na faixa de {brl(680000)} a {brl(850000)}. Retorno líquido de caixa de {pct(rec.net_yield)} ao ano, '
                     f'com uma parcela na orla da Meia Praia como seguro de liquidez.'),
-        kpis=[dict(label='Retorno líquido de caixa', value=pct(rec.net_yield), note='sobre o custo total, após taxa de administração, condomínio, IPTU e reservas'),
+        kpis=[dict(label='Retorno líquido de caixa', value=pct(rec.net_yield), note='sob operação Seazone, sobre o custo total, após gestão, condomínio, IPTU e reservas'),
               dict(label='Retorno bruto', value=pct(cb['gross_yield']), note='receita de reservas sobre o custo total'),
               dict(label='Payback', value=f'{cb["payback"]:.0f} anos'.replace('.', ','), note='sem alavancagem e sem valorização'),
               dict(label='Seleção disciplinada', value=pct(pf.noi_adj.sum()/pf.capex.sum()), note=f'carteira de {len(pf)} unidades triadas uma a uma'),
@@ -54,28 +57,51 @@ def build(d, R):
                   f'{n_1br_c} unidades no Centro; e o retorno do segmento é {pct(hyp.net_yield)}, '
                   f'{hyp_rank}º entre {len(ci)} segmentos. A intuição está meio certa — pequeno é eficiente — '
                   f'mas o mercado já cobrou por isso.')),
-        notes=('Abrir pela decisão, não pelo método. Se perguntarem “por que não o Centro”, a resposta curta '
-               'é: não há produto para comprar e o m² já está caro. O detalhe vem no slide 6.')))
+        notes=(f'Abrir pela decisão, não pelo método. O retorno de {pct(rec.net_yield)} é o do operador '
+               f'profissional; o anfitrião mediano da célula roda perto de '
+               f'{pct(rec_mkt) if rec_mkt is not None else "—"} — a tese é o serviço, não o prédio. '
+               f'Se perguntarem “por que não o Centro”, a resposta curta é: não há produto para comprar e o m² já está caro. '
+               f'O detalhe vem no slide posterior.')))
     # ---------------------------------------------------------------- 2
+    big4 = ms.dropna(subset=['net_yield']).nlargest(4, 'value')
+    big4_lo, big4_hi = big4.net_yield.min(), big4.net_yield.max()
     S.append(dict(id='mercado', section='Panorama do mercado', chart='c1_market',
         headline=f'{brl(total_value)} anunciados em Itapema — {pct(big_share,0)} em unidades grandes, que rendem menos',
-        bullets=[f'{int(ms.n.sum()):,}'.replace(',', '.') + ' apartamentos prontos à venda em 11 segmentos com evidência suficiente dos dois lados do mercado.',
-                 f'Os quatro maiores segmentos por capital anunciado rendem entre {pct(ci.net_yield.min())} e {pct(0.045)} — são os piores da cidade.',
+        bullets=[f'{int(ms.n.sum()):,}'.replace(',', '.') + ' apartamentos prontos à venda nos ' + f'{len(ms)} segmentos com evidência suficiente dos dois lados do mercado.',
+                 f'Os segmentos de maior capital anunciado rendem entre {pct(big4_lo)} e {pct(big4_hi)} — são os piores da cidade.',
                  f'O perfil recomendado concentra {brl(core_stock)} de estoque pronto: capital suficiente para uma tese, não uma raridade.'],
         notes='O ponto desta lâmina é a inversão: o mercado anuncia o que rende menos. É aí que está a oportunidade.'))
     # ---------------------------------------------------------------- 3
+    wk = _pd.read_csv(ROOT/'output'/'weekly_revpan.csv')
+    drop_pc = 100*(1 - wk.exp_rev.min()/wk.exp_rev.max())
     S.append(dict(id='demanda', section='Demanda · Airbnb', charts=['c2_season','c3_curve'],
-        headline='A ocupação é observada, não arbitrada — e a receita cai pela metade em onze semanas',
+        headline=f'A ocupação é observada, não arbitrada — e a receita cai {drop_pc:.0f}% em onze semanas',
         bullets=['O arquivo de preços do Airbnb só traz linha quando a diária está disponível: as datas ausentes são noites indisponíveis.',
                  'Três capturas do calendário enxergam a mesma estadia em horizontes diferentes, o que permite corrigir a disponibilidade vista com antecedência.',
                  f'Base observada: {d["curve"]["n_nights"]} noites, de 06/jan a 20/abr/2025. Os outros oito meses entram como premissa declarada, não como dado.'],
         notes=('Se um diretor questionar a ocupação, esta é a lâmina. Ocupação de 73% na alta temporada com '
                'corte de 10% para bloqueios do proprietário. O que não temos é o inverno, e isso está dito.')))
     # ---------------------------------------------------------------- 4
+    def ppsm_cell(zone, bed):
+        sub = sale[(sale.micro_zone == zone) & (sale.bed_bucket == bed) & (sale.is_offplan == 0)]
+        if sub.empty: return None
+        return float(sub.ppsm.median())
+    ppsm_hyp_centro = ppsm_cell('Centro', 1)
+    ppsm_hyp_mp     = ppsm_cell('Meia Praia (beach band)', 1)
+    ppsm_rec        = ppsm_cell('Morretes', 2)
+    def fpp(x):
+        return f'{x:,.0f}'.replace(',', '.') if x else None
+    ppsm_1br_mp = fpp(ppsm_hyp_mp) or 'data insuficiente'
+    n_mp_1br = int(sale[(sale.micro_zone == 'Meia Praia (beach band)') & (sale.bed_bucket == 1) & (sale.is_offplan == 0)].shape[0])
+    first_1br = (f'O metro quadrado de 1 dormitório é o mais caro entre os segmentos com escala — '
+                 f'{brl(ppsm_hyp_centro, False)}/m² no Centro'
+                 f'{f" e {ppsm_1br_mp}/m² na orla da Meia Praia (nicho de {n_mp_1br} unidades)" if ppsm_hyp_mp else ""}, '
+                 f'contra {brl(ppsm_rec, False)}/m² num 2 dormitórios compacto em Morretes.' if ppsm_hyp_mp else
+                 f'{brl(ppsm_hyp_centro, False)}/m² no Centro para 1 dormitório, contra {brl(ppsm_rec, False)}/m² '
+                 f'num 2 dormitórios compacto em Morretes.')
     S.append(dict(id='precos', section='Imóveis e preços', chart='c4_ppsm',
-        headline='O metro quadrado mais caro da cidade é o de 1 dormitório',
-        bullets=[f'{brl(17045, False)}/m² no Centro e {brl(18900, False)}/m² na Meia Praia para 1 dormitório, contra '
-                 f'{brl(11719, False)}/m² num 2 dormitórios compacto em Morretes.',
+        headline='O metro quadrado mais caro do estoque com escala é o de 1 dormitório',
+        bullets=[first_1br,
                  'A eficiência do imóvel pequeno é real — ele rende mais por m² — mas já está integralmente no preço.',
                  f'Somente {n_1br} unidades de 1 dormitório e {n_studio} studios à venda em toda a cidade.'],
         notes='Esta lâmina é o cerne da refutação. O erro da hipótese não é a intuição, é ignorar o lado do custo.'))
@@ -94,7 +120,7 @@ def build(d, R):
               ('Área útil', f'60 a 72 m² — mediana de {cb["area"]:.0f} m²'),
               ('Capacidade', '5 a 6 hóspedes, com sofá-cama na sala'),
               ('Localização', 'Morretes e Tabuleiro dos Oliveiras, 300 a 800 m da Meia Praia'),
-              ('Faixa de preço', f'{brl(690000)} a {brl(850000)} de pedido'),
+              ('Faixa de preço', f'{brl(680000)} a {brl(850000)} de pedido — mediana do segmento em {brl(cb["price"])}'),
               ('Condomínio', 'até R$ 400 por mês — acima disso o retorno some'),
               ('Prédio', 'piscina e elevador; uma vaga de garagem'),
               ('Evitar', '3 e 4 dormitórios na orla e no Centro; unidades sem vaga')],
@@ -136,23 +162,25 @@ def build(d, R):
                          'slv' if (r.zone, int(r.bed)) == (slv_z, slv_b) else
                          'hyp' if (r.zone, int(r.bed)) == (hyp_z, hyp_b) else ''))
               for _, r in om2.iterrows()],
-        chain=[('Compra', f'2 dorm compacto, {cb["area"]:.0f} m², {brl(790000)}'),
+        chain=[('Compra', f'2 dorm compacto, {cb["area"]:.0f} m², {brl(cb["price"])}'),
                ('Local', f'{zpt(rec_z)}, 300–800 m da Meia Praia'),
                ('Cliente', 'Família de 5–6 em semana de férias'),
-               ('Demanda', 'Ocupação de 77% na alta, sem prêmio de fim de semana'),
+               ('Demanda', f'Ocupação projetada de {pct(cb["occ"]/P["booked_share"],0)} (bruta · {pct(P["booked_share"],0)} de reservas pagas) · sem prêmio de fim de semana'),
                ('Retorno', f'{pct(rec.net_yield)} líquido · payback de {cb["payback"]:.0f} anos')],
         notes=('A linha de baixo é a tese em cinco caixas. Morretes 3 dorm rende mais, mas se apoia em 10 comparáveis; '
                'a orla tem evidência forte e menos retorno. O 2 dorm em Morretes é o único com os três.')))
     # ---------------------------------------------------------------- 7
+    FURN = f"{int(P['furnish_per_m2']):,}".replace(',', '.')
     S.append(dict(id='financeiro', section='Análise financeira', chart='c7_bridge',
         headline=f'De {brl(cb["rev"])} de receita a {brl(cb["noi"])} de resultado — {pct(cb["net_yield"])} sobre {brl(cb["capex"])}',
         secondary='c6_yields',
         bullets=[f'Custo total = pedido menos {pct(P["negotiation_disc"],0)} de negociação, mais {pct(P["closing_costs"],0)} de fechamento, '
-                 f'mais R$ {P["furnish_per_m2"]:,}/m² de mobília e enxoval.'.replace(',', '.'),
+                 f'mais R$ {FURN}/m² de mobília e enxoval.',
                  f'A diferença entre bruto ({pct(cb["gross_yield"])}) e líquido ({pct(cb["net_yield"])}) é de {pct(cb["gross_yield"]-cb["net_yield"])}. '
                  'Qualquer retorno prometido nessa faixa é bruto vestido de líquido.',
                  'Custos fixos pesam desproporcionalmente em unidades pequenas — a segunda razão pela qual o studio não fecha.'],
-        notes=('O número para levar: 11,8% bruto, 6,4% líquido. Se alguém citar “13% a 23% ao ano”, é bruto ou '
+        notes=('O número para levar: 11,6% bruto, 6,2% líquido (o do operador profissional; o anfitrião '
+               'mediano roda ~4,0%). Se alguém citar “13% a 23% ao ano”, é bruto ou '
                'inclui valorização — e vale dizer isso na reunião.')))
     # ---------------------------------------------------------------- 8
     S.append(dict(id='riscos', section='Riscos e sensibilidades', charts=['c8_tornado','c9_distance'],
@@ -160,7 +188,7 @@ def build(d, R):
         bullets=[f'2.187 combinações de premissas: os três primeiros segmentos mantêm a ordem em todas. '
                  f'O pior caso de qualquer premissa isolada é {pct(worst)}.',
                  'O VivaReal não traz coordenadas. Se o estoque fora da orla estiver mais longe do mar do que os comparáveis do Airbnb, a receita está superestimada.',
-                 'A parcela na orla existe exatamente para isso: custa cerca de 60 pontos-base de retorno e elimina a única incerteza capaz de inverter a ordem.'],
+                 f'A parcela na orla existe exatamente para isso: custa cerca de {sleeve_cost_bp:.0f} pontos-base de retorno e elimina a única incerteza capaz de inverter a ordem.'],
         limits=['Oito meses do ano não são observados — sazonalidade é premissa declarada, com sensibilidade.',
                 'Preços são pedidos, não transações. Valorização e imposto de renda estão fora.',
                 f'Apenas 1.005 dos 4.441 anúncios têm calendário, e o subconjunto pende para anúncios profissionais.'],
@@ -168,10 +196,10 @@ def build(d, R):
     # ---------------------------------------------------------------- 9
     S.append(dict(id='recomendacao', section='Recomendação e próximos passos', chart='c10_portfolio',
         headline=f'{brl(pf.capex.sum())} em {len(pf)} unidades — {pct(pf.noi_adj.sum()/pf.capex.sum())} líquido, payback de {pf.capex.sum()/pf.noi_adj.sum():.1f} anos'.replace('.', ','),
-        steps=[('Validar em campo', f'Visitar as {min(25, len(pf))} unidades da lista triada. São os m² mais baratos das suas células — é onde também moram anúncio velho e área errada.'),
+        steps=[('Validar em campo', f'Visitar as {len(pf)} unidades da lista triada — começando pelas {min(25, len(pf))} de maior retorno. São os m² mais baratos das suas células — é onde também moram anúncio velho e área errada.'),
                ('Confirmar condomínio e IPTU', f'Valores declarados em apenas {pct(sale.monthly_condo_fee.notna().mean(),0)} dos anúncios. Acima de R$ 400/mês a tese muda.'),
                ('Testar a premissa de baixa temporada', 'É a premissa mais sensível da análise. Um mês de dados reais de maio resolve.'),
-               ('Fechar a primeira tranche', f'6 a 8 unidades em {zpt(rec_z)}, cerca de {brl(5000000)}, para validar a operação antes de escalar.')],
+               ('Fechar a primeira tranche', f'6 a 8 unidades em {zpt(rec_z)}, cerca de {brl(6*cb["capex"])}, para validar a operação antes de escalar.')],
         notes='Terminar pedindo uma decisão concreta: autorização da primeira tranche, não do plano inteiro.'))
 
     spec = dict(
@@ -179,7 +207,7 @@ def build(d, R):
         subtitle='Onde a Seazone deveria comprar, e por quê',
         meta=dict(date='Agosto de 2026',
                   source='Airbnb + VivaReal · snapshot de janeiro de 2025',
-                  scope=f'{int(ms.n.sum())} apartamentos prontos à venda · 1.005 anúncios com calendário'),
+                  scope=f'{int((sale.is_offplan == 0).sum())} apartamentos prontos à venda · 1.005 anúncios com calendário'),
         slides=S)
     ov = ROOT/'presentation'/'overrides.json'
     if ov.exists():

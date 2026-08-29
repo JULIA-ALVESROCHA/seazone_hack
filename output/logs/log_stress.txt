@@ -1,0 +1,39 @@
+======================================================================
+BASE
+Morretes 3BR 0.078, Tabuleiro dos 2BR 0.068, Morretes 2BR 0.062, Meia Praia (b 2BR 0.057, Meia Praia (i 2BR 0.054
+
+[1] cheap tail excluded (asking >= R$550k, ~segment median for Morretes 2BR)
+Morretes 3BR 0.077, Tabuleiro dos 2BR 0.068, Morretes 2BR 0.061, Meia Praia (b 2BR 0.057, Meia Praia (i 2BR 0.054
+
+[2] strict target band only (R$600k–R$900k asking)
+Morretes 3BR 0.087, Meia Praia (b 2BR 0.073, Meia Praia (i 2BR 0.069, Tabuleiro dos 2BR 0.068, Morretes 2BR 0.063
+
+[3] Morretes 3BR dropped (10 comparables — thin evidence)
+Tabuleiro dos 2BR 0.068, Morretes 2BR 0.062, Meia Praia (b 2BR 0.057, Meia Praia (i 2BR 0.054, Centro 1BR 0.045
+
+[4] realistic-revenue view (median EXISTING host, not professional operator)
+Tabuleiro dos 2BR 0.041, Morretes 2BR 0.036, Centro 1BR 0.032, Meia Praia (b 2BR 0.030, Centro 2BR 0.030
+
+[5] conservative assumptions (pessimistic corners)
+Tabuleiro dos 2BR 0.029, Morretes 2BR 0.026, Meia Praia (b 2BR 0.025, Meia Praia (i 2BR 0.023, Centro 2BR 0.017
+
+[6] optimistic-but-realistic assumptions
+Tabuleiro dos 2BR 0.090, Morretes 2BR 0.083, Meia Praia (b 2BR 0.077, Meia Praia (i 2BR 0.073, Centro 1BR 0.062
+
+[7] revenue inflated +30% (revenue upside) — does any large/orla cell jump ahead?
+   with +30% revenue on ALL cells:
+Tabuleiro dos 2BR 0.097, Morretes 2BR 0.090, Meia Praia (b 2BR 0.083, Meia Praia (i 2BR 0.079, Centro 1BR 0.067
+
+[8] revenue DOWN -25% (broad demand miss) — does the ranking survive?
+Tabuleiro dos 2BR 0.043, Morretes 2BR 0.039, Meia Praia (b 2BR 0.036, Meia Praia (i 2BR 0.034, Centro 1BR 0.027
+
+[9] recompute investment cases with market-revenue (honesty view)
+                                                      case  net_yield  payback
+                        RECOMMENDED: compact 2BR, Morretes     0.0621  16.1023
+                                    compact 2BR, Tabuleiro     0.0676  14.7957
+compact 3BR, Morretes (higher yield, higher location risk)     0.0779  12.8302
+               SLEEVE / liquidity: compact 2BR, beach band     0.0574  17.4344
+                                 HYPOTHESIS: 1BR in Centro     0.0452  22.1461
+                             large 4BR, beach band (avoid)     0.0326  30.6950
+
+Note: professional-operator yields are the deck headline; market (median host) yields are shown separately in the docs.

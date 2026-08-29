@@ -1,12 +1,14 @@
 """07 - Bootstrap confidence intervals and assumption sweeps on the segment ranking."""
 import numpy as np, pandas as pd, json, itertools
-OUT='/home/claude/proj/output/'
-P=json.load(open(OUT+'assumptions.json'))
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_07_robustness.txt')
+P=json.load(open(OUT/'assumptions.json'))
 rng=np.random.default_rng(11)
-l=pd.read_csv(OUT+'listing_modelfeatures.csv')
-s=pd.read_csv(OUT+'sale_scored.csv',low_memory=False)
-g=pd.read_csv(OUT+'listing_date_grid.csv.gz',parse_dates=['date'])
-h=pd.Series({int(k):v for k,v in json.load(open(OUT+'booking_curve.json'))['h_lead'].items()})
+l=pd.read_csv(OUT/'listing_modelfeatures.csv')
+s=pd.read_csv(OUT/'sale_scored.csv',low_memory=False)
+g=pd.read_csv(OUT/'listing_date_grid.csv.gz',parse_dates=['date'])
+h=pd.Series({int(k):v for k,v in json.load(open(OUT/'booking_curve.json'))['h_lead'].items()})
 
 SEGS=[('Morretes',3),('Morretes',2),('Tabuleiro dos Oliveiras',2),('Meia Praia (beach band)',2),
       ('Meia Praia (inland)',2),('Centro',1),('Centro',2),('Meia Praia (beach band)',3),
@@ -94,4 +96,4 @@ for extra in [1.0,1.5,2.0,3.0]:
 print('\n=== same ranking using the MEDIAN EXISTING listing instead of a professional operator ===')
 y2=seg_yield(P,use_prof=False).sort_values(ascending=False)
 print(y2.round(4).to_string())
-tab.to_csv(OUT+'segment_yields_ci.csv'); sw.to_csv(OUT+'assumption_sweep.csv'); R.to_csv(OUT+'capacity_density.csv',index=False)
+tab.to_csv(OUT/'segment_yields_ci.csv'); sw.to_csv(OUT/'assumption_sweep.csv'); R.to_csv(OUT/'capacity_density.csv',index=False)

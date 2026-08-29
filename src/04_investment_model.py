@@ -5,8 +5,10 @@ Joins the Airbnb demand side (revenue per listing) with the VivaReal supply side
 gross yield, net yield (cap rate) and payback under explicit assumptions.
 Every assumption is a named parameter so it can be swept in 06_robustness.py.
 """
-import numpy as np, pandas as pd, json, itertools, os
-OUT='/home/claude/proj/output/'; D='/home/claude/data/data/'
+import numpy as np, pandas as pd, json, itertools
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_04_investment_model.txt')
 
 # ----------------------------- ASSUMPTIONS ---------------------------------
 P = dict(
@@ -28,8 +30,8 @@ P = dict(
 )
 
 # ----------------------------- DEMAND SIDE ---------------------------------
-g=pd.read_csv(OUT+'listing_date_grid.csv.gz', parse_dates=['date'])
-h=pd.Series({int(k):v for k,v in json.load(open(OUT+'booking_curve.json'))['h_lead'].items()})
+g=pd.read_csv(OUT/'listing_date_grid.csv.gz', parse_dates=['date'])
+h=pd.Series({int(k):v for k,v in json.load(open(OUT/'booking_curve.json'))['h_lead'].items()})
 g['lin_s']=g.lin - h.loc[0] + h.loc[P['lead_star']]
 g['occ']=1-1/(1+np.exp(-g.lin_s))
 g['rev']=g.occ*g.price_hat
@@ -52,8 +54,8 @@ print(f'annualisation factor (annual / observed 105-night window) = {AF:.2f}')
 
 lst=g.groupby('airbnb_listing_id').agg(occ=('occ','mean'), rev_window=('rev','sum'),
                                        adr=('price_hat','mean'), nights=('date','size')).reset_index()
-det=pd.read_csv(D+'Details_Itapema.csv', low_memory=False)
-geo=pd.read_csv(OUT+'geo_features.csv')
+det=pd.read_csv(RAW/'Details_Itapema.csv', low_memory=False)
+geo=pd.read_csv(OUT/'geo_features.csv')
 lst=lst.merge(det[['airbnb_listing_id','number_of_bedrooms','number_of_guests','listing_type',
                    'number_of_reviews','star_rating','is_professional','cleaning_fee','picture_count',
                    'min_nights','number_of_bathrooms','is_guest_favorite','can_instant_book']],
@@ -64,11 +66,11 @@ lst=lst[lst.listing_type=='apartamento'].copy()          # the investable asset 
 lst['rev_annual_gross']=lst.rev_window*AF*P['booked_share']*P['host_take']
 lst['occ_paid']=lst.occ*P['booked_share']
 lst['bed_bucket']=lst.number_of_bedrooms.clip(0,4)
-lst.to_csv(OUT+'listing_investable.csv', index=False)
+lst.to_csv(OUT/'listing_investable.csv', index=False)
 print('investable Airbnb listings with demand data:', len(lst))
 
 # ----------------------------- SUPPLY SIDE ---------------------------------
-sale=pd.read_csv(OUT+'sale_clean.csv', low_memory=False)
+sale=pd.read_csv(OUT/'sale_clean.csv', low_memory=False)
 sale['bed_bucket']=sale.bedrooms.clip(0,4)
 sale['micro_zone']=sale.micro_zone.replace({'Meia Praia (beach band)':'Meia Praia (beach band)',
     'Andorinha (inland Meia Praia)':'Meia Praia (inland)','Castelo Branco (inland Meia Praia)':'Meia Praia (inland)',
@@ -111,5 +113,5 @@ for zc in ['suburb','micro_zone']:
           'capex','noi','gross_yield','net_yield','payback_yrs','rev_per_m2']
     print(t[cols].round({'occ':2,'adr':0,'rev_med':0,'area':0,'price':0,'condo':0,'capex':0,'noi':0,
                          'gross_yield':4,'net_yield':4,'payback_yrs':1,'rev_per_m2':0}).to_string(index=False))
-    t.to_csv(OUT+f'segments_{zc}.csv', index=False)
-json.dump(P, open(OUT+'assumptions.json','w'), indent=1)
+    t.to_csv(OUT/f'segments_{zc}.csv', index=False)
+json.dump(P, open(OUT/'assumptions.json','w'), indent=1)

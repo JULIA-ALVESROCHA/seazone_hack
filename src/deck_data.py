@@ -31,6 +31,7 @@ def load():
     ci = pd.read_csv(OUT/'segment_yields_ci.csv')
     ci.columns = ['zone','bed'] + list(ci.columns[2:])
     d['ci']       = ci
+    d['segm']     = pd.read_csv(OUT/'segments_micro_zone.csv')
     return d
 
 # ---------------------------------------------------------------- market structure
@@ -46,8 +47,9 @@ def market_structure(d):
     ab = (d['listing'].groupby(['micro_zone','bed_bucket']).size()
             .rename('n_airbnb').reset_index())
     g = g.merge(ab, on=['micro_zone','bed_bucket'], how='left').fillna({'n_airbnb':0})
-    ci = d['ci'].rename(columns={'zone':'micro_zone','bed':'bed_bucket'})
-    g = g.merge(ci[['micro_zone','bed_bucket','net_yield']], on=['micro_zone','bed_bucket'], how='left')
+    g['net_yield'] = [None if r.n_airbnb < 8 else
+                      _yield_with(d, r.micro_zone, int(r.bed_bucket), d['P'])
+                      for r in g.itertuples()]
     g['size_class'] = np.where(g.bed_bucket <= 2, 'compacto (até 2 dorm)', 'grande (3+ dorm)')
     return g.sort_values('value', ascending=False)
 

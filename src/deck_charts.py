@@ -52,7 +52,7 @@ def place_labels(ax, pts, texts, colors, bold, radii, fontsize=10.2, pad=4):
         boxes.append((chosen[0]-pad, chosen[1]-pad, chosen[0]+w+pad, chosen[1]+h+pad))
         ax.annotate(texts[i], xy=(chosen[0], chosen[1]), xycoords='figure pixels',
                     fontsize=fontsize, color=colors[i], linespacing=1.25,
-                    fontweight=600 if bold[i] else 400, ha='left', va='bottom',
+                    fontweight="semibold" if bold[i] else "normal", ha='left', va='bottom',
                     annotation_clip=False, zorder=6)
         if chosen is not cands[0]:
             cx, cy = chosen[0]+w/2, chosen[1]+h/2
@@ -62,8 +62,6 @@ def place_labels(ax, pts, texts, colors, bold, radii, fontsize=10.2, pad=4):
             ex, ey = cx - dx/L*(w/2+3), cy - dy/L*(h/2+3)
             fig.add_artist(plt.Line2D([sx, ex], [sy, ey], transform=None,
                                       color=LINE_STR, lw=0.9, zorder=1))
-
-def _w(z, b):  return 700 if (z, b) in (REC, HYP, SLEEVE) else 400
 
 # ---------------------------------------------------------------- 1. market
 def market(ms, path):
@@ -90,7 +88,7 @@ def market(ms, path):
     share = ms[ms.net_yield < 0.045].value.sum()/ms.value.sum()
     ax.text(2.68, ms.value.min()/1e6*0.62,
             f'{share*100:.0f}% do capital anunciado da cidade está\nnesta faixa — a de pior retorno',
-            fontsize=10.4, color=BAD, va='bottom', ha='left', fontweight=600)
+            fontsize=10.4, color=BAD, va='bottom', ha='left', fontweight="semibold")
     place_labels(ax, pts, txt, cols, bold, rad)
     ds.footnote(fig, 'Cada bolha é um segmento (zona × dormitórios) com pelo menos 15 unidades prontas à venda; '
                      'o tamanho é o número de unidades. Retorno líquido sob operação Seazone, premissas base.')
@@ -109,14 +107,14 @@ def seasonality(week, path):
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f'{v:,.0f}'.replace(',', '.')))
     lo = int(np.argmin(y))
     ax.annotate(f'R$ {y[1]:.0f}\npico de janeiro', (1, y[1]), xytext=(1.6, max(y)*1.13),
-                fontsize=10.5, color=INK, fontweight=600,
+                fontsize=10.5, color=INK, fontweight="semibold",
                 arrowprops=dict(arrowstyle='-', color=INK_3, lw=1))
     ax.annotate(f'R$ {y[lo]:.0f}\nfim de março', (lo, y[lo]), xytext=(lo-3.4, y[lo]*0.42),
-                fontsize=10.5, color=INK, fontweight=600,
+                fontsize=10.5, color=INK, fontweight="semibold",
                 arrowprops=dict(arrowstyle='-', color=INK_3, lw=1))
     drop = 1 - y[lo]/max(y); wks = lo - int(np.argmax(y))
     ax.text(len(x)-0.3, max(y)*1.16, f'queda de {drop*100:.0f}%\nem {wks} semanas', fontsize=10.2,
-            color=S2, ha='right', fontweight=600)
+            color=S2, ha='right', fontweight="semibold")
     ds.footnote(fig, 'Ocupação × diária, semana a semana, para os 1.005 anúncios com calendário. '
                      'Base observada: 06/jan a 20/abr/2025 — os outros oito meses são premissa declarada.')
     return ds.save_svg(fig, path)
@@ -131,7 +129,7 @@ def booking_curve(curve, path):
     ax.set_ylabel('Disponibilidade aparente (log-odds)')
     ax.invert_xaxis()
     ax.annotate('projetamos todos os anúncios\npara 3 dias de antecedência',
-                (3, c.loc[3]), xytext=(26, c.loc[3]-1.15), fontsize=10.4, color=S2, fontweight=600,
+                (3, c.loc[3]), xytext=(26, c.loc[3]-1.15), fontsize=10.4, color=S2, fontweight="semibold",
                 arrowprops=dict(arrowstyle='-', color=S2, lw=1))
     ax.annotate('abaixo de 3 dias a queda é o corte\nde reserva da plataforma, não demanda',
                 (0.6, c.loc[0]), xytext=(20, c.loc[0]+0.15), fontsize=9.8, color=INK_2,
@@ -153,20 +151,20 @@ def ppsm(cap, path):
     ax.set_yticks(y); ax.set_yticklabels(labels, fontsize=10.6)
     for i, (v, col) in enumerate(zip(c.ppsm, colors)):
         ax.text(v+230, i, f'R$ {v:,.0f}'.replace(',', '.'), va='center', fontsize=10.4,
-                color=INK, fontweight=600 if col != NEUTRAL else 400)
+                color=INK, fontweight="semibold" if col != NEUTRAL else "normal")
     ax.set_xlim(0, c.ppsm.max()*1.16)
     ax.set_xlabel('Preço pedido por m² (R$)')
     ax.grid(axis='x'); ax.grid(axis='y', visible=False)
     ax.set_xticks([0, 5000, 10000, 15000, 20000])
     ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f'{v/1000:.0f} mil'))
-    hyp_i = [i for i, (z, b) in enumerate(zip(c.zone, c.bed)) if (z, b) == HYP]
-    if hyp_i:
-        ax.annotate('o m² mais caro da cidade é\njustamente o de 1 dormitório',
-                    (c.ppsm.iloc[hyp_i[0]]*0.62, hyp_i[0]), xytext=(c.ppsm.max()*0.80, hyp_i[0]-3.4),
-                    fontsize=10.8, color=S2, fontweight=600, ha='center', va='center',
-                    arrowprops=dict(arrowstyle='-', color=S2, lw=1.1,
-                                    connectionstyle='arc3,rad=0.24'))
-    ds.footnote(fig, 'Mediana do preço pedido por m² entre as unidades prontas à venda em cada segmento (VivaReal, jan/2025).')
+    dest = c.ppsm.idxmax()
+    ax.annotate('o m² mais caro do estoque\ncom escala é o de 1 dormitório',
+                (c.ppsm.loc[dest]*0.62, dest), xytext=(c.ppsm.max()*0.80, dest-3.4),
+                fontsize=10.8, color=S2, fontweight="semibold", ha='center', va='center',
+                arrowprops=dict(arrowstyle='-', color=S2, lw=1.1,
+                                connectionstyle='arc3,rad=0.24'))
+    ds.footnote(fig, 'Mediana do preço pedido por m² entre as unidades prontas à venda em cada segmento avaliado '
+                     '(VivaReal, jan/2025).')
     return ds.save_svg(fig, path)
 
 # ---------------------------------------------------------------- 5. frontier
@@ -208,7 +206,7 @@ def yields(ci, path):
         ax.vlines(xx, y-.16, y+.16, color=INK_2, lw=1.6, zorder=4)
     for i, (v, hi, col) in enumerate(zip(c.net_yield, c.hi, colors)):
         ax.text(hi*100+0.14, i, f'{v*100:.1f}%'.replace('.', ',') + f'   ·   {1/v:.0f} anos',
-                va='center', fontsize=10.3, color=INK, fontweight=600 if col != NEUTRAL else 400)
+                va='center', fontsize=10.3, color=INK, fontweight="semibold" if col != NEUTRAL else "normal")
     ax.set_yticks(y); ax.set_yticklabels(labels, fontsize=10.6)
     ax.set_xlim(0, 11.4); ax.set_xlabel('Retorno líquido de caixa ao ano · e payback')
     ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f'{v:.0f}%'))
@@ -240,14 +238,14 @@ def bridge(cb, path):
         ax.text(i, l+h+2600, ('+' if i == 0 else '') + txt if i == 0 else
                 (txt if i == len(labels)-1 else f'−{abs(v):,.0f}'.replace(',', '.')),
                 ha='center', fontsize=10.4, color=INK,
-                fontweight=600 if i in (0, len(labels)-1) else 400)
+                fontweight="semibold" if i in (0, len(labels)-1) else "normal")
     ax.set_xticks(x); ax.set_xticklabels([l.replace(' ', '\n', 1) for l in labels], fontsize=10)
     ax.set_ylabel('R$ por ano')
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f'{v:,.0f}'.replace(',', '.')))
     ax.grid(axis='y'); ax.grid(axis='x', visible=False)
     ax.set_ylim(0, cb['rev']*1.18)
     ax.text(len(labels)-1, run*0.5, f'{run/cb["rev"]*100:.0f}%\nda receita', ha='center',
-            va='center', fontsize=11, color='white', fontweight=700)
+            va='center', fontsize=11, color='white', fontweight="bold")
     price_s = f'{cb["price"]:,.0f}'.replace(',', '.')
     capex_s = f'{cb["capex"]/1000:,.0f}'.replace(',', '.')
     gy = f'{cb["gross_yield"]*100:.1f}'.replace('.', ',')
@@ -275,7 +273,7 @@ def tornado(base, tor, path):
     ax.grid(axis='x'); ax.grid(axis='y', visible=False)
     ax.set_xlim(4.6, 8.4)
     ax.text(base*100+0.06, len(tor)-0.35, f'caso base {base*100:.1f}%'.replace('.', ','),
-            color=S1, fontsize=10.6, fontweight=600)
+            color=S1, fontsize=10.6, fontweight="semibold")
     ds.footnote(fig, 'Cada premissa movida sozinha até as pontas da faixa defensável, mantendo as demais no caso base. '
                      'Nenhuma isolada leva o segmento recomendado abaixo de 5,2%.')
     return ds.save_svg(fig, path)
@@ -289,7 +287,7 @@ def distance(dstress, ref, path):
         ax.plot(s.mult, s.net_yield*100, color=S1, lw=2.3, ls=style, zorder=3, label=lab)
     ax.axhline(ref*100, color=S3, lw=2, zorder=2)
     ax.text(3.02, ref*100+0.13, f'Meia Praia · orla · 2 dorm  {ref*100:.1f}%'.replace('.', ','),
-            fontsize=10.3, color=S3, ha='right', va='bottom', fontweight=600)
+            fontsize=10.3, color=S3, ha='right', va='bottom', fontweight="semibold")
     ax.set_xlabel('Quanto mais longe do mar o estoque à venda pode estar\n(múltiplo da distância assumida)')
     ax.set_ylabel('Retorno líquido — Morretes 2 dorm')
     ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f'{v:.1f}×'.replace('.', ',')))
@@ -308,7 +306,7 @@ def distance(dstress, ref, path):
     msg = (f'entre {lo_c:.1f}× e {xc:.1f}× de distância a mais, a orla passa à frente'
            .replace('.', ',')) if lo_c else f'a partir de {xc:.1f}× a orla passa à frente'.replace('.', ',')
     ax.text((min(lo_c or xc, xc)+3.05)/2, ax.get_ylim()[0]+0.12, msg,
-            fontsize=10.2, color=S2, ha='center', fontweight=600)
+            fontsize=10.2, color=S2, ha='center', fontweight="semibold")
     ds.footnote(fig, 'O VivaReal não traz coordenadas: esta é a única incerteza capaz de inverter a ordem dos segmentos. '
                      'É exatamente por isso que a recomendação carrega uma parcela na orla.')
     return ds.save_svg(fig, path)
@@ -327,7 +325,7 @@ def portfolio(roll, path):
         txt = f'{r.label}\n{r.units} un · R$ {cap_s} mi · {yld_s}%'
         if w > 2.6:
             ax.text(left+w/2, 0, txt, ha='center', va='center', fontsize=10,
-                    color='white', fontweight=600, zorder=4)
+                    color='white', fontweight="semibold", zorder=4)
         else:
             ax.annotate(txt, xy=(left+w/2, -.25), xytext=(left+w/2, -.62),
                         ha='center', va='top', fontsize=9.6, color=INK_2,

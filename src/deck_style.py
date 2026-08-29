@@ -49,6 +49,7 @@ def apply():
 def brl(v, short=True):
     if v is None: return '—'
     a = abs(v)
+    if short and a >= 1e9: return f'R$ {v/1e9:,.2f} bi'.replace(',', 'X').replace('.', ',').replace('X', '.')
     if short and a >= 1e6:  return f'R$ {v/1e6:,.2f} mi'.replace(',', 'X').replace('.', ',').replace('X', '.')
     if short and a >= 1e3:  return f'R$ {v/1e3:,.0f} mil'.replace(',', '.')
     return f'R$ {v:,.0f}'.replace(',', '.')
@@ -71,6 +72,12 @@ def save_svg(fig, path):
     svg = re.sub(r'font-family:\s*(Carlito|Liberation Sans|DejaVu Sans)[^;"]*', f'font-family: {FONT}', svg)
     svg = svg.replace('<svg ', '<svg class="chart" preserveAspectRatio="xMidYMid meet" ', 1)
     svg = re.sub(r'width="[\d.]+pt" height="[\d.]+pt"', '', svg, count=1)
+    # explicit white background so the chart reads cleanly on any host surface
+    anchor = 'xmlns="http://www.w3.org/2000/svg"'
+    if anchor in svg:
+        svg = svg.replace(anchor, anchor + '><rect width="100%" height="100%" fill="#ffffff"', 1)
+    elif '<svg' in svg:
+        svg = svg.replace('>', '><rect width="100%" height="100%" fill="#ffffff"/>', 1)
     with open(path, 'w') as f: f.write(svg)
     return path
 
@@ -85,5 +92,5 @@ def footnote(fig, text):
 
 
 def save_png(fig, path):
-    fig.savefig(path, format='png', dpi=125, facecolor='#fbfcfa')
+    fig.savefig(path, format='png', dpi=125, facecolor='#ffffff')
     return path

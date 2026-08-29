@@ -3,9 +3,11 @@ beach, local competition density (KD-tree), and micro-zone assignment that lines
 up with the finer VivaReal neighbourhood taxonomy."""
 import numpy as np, pandas as pd
 from scipy.spatial import cKDTree
-D='/home/claude/data/data/'; OUT='/home/claude/proj/output/'
-mesh=pd.read_csv(D+'Mesh_Ids_Data_Itapema.csv')
-det=pd.read_csv(D+'Details_Itapema.csv', low_memory=False)
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_03_spatial.txt')
+mesh=pd.read_csv(RAW/'Mesh_Ids_Data_Itapema.csv')
+det=pd.read_csv(RAW/'Details_Itapema.csv', low_memory=False)
 
 # --- coastline estimated as the eastern envelope of the listing point cloud
 mm=mesh.copy()
@@ -32,7 +34,7 @@ def micro(r):
     if r.suburb!='Meia Praia': return r.suburb
     return 'Meia Praia (beach band)' if r.dist_beach_km<=0.35 else 'Meia Praia (inland)'
 mesh['micro_zone']=mesh.apply(micro, axis=1)
-mesh.to_csv(OUT+'geo_features.csv', index=False)
+mesh.to_csv(OUT/'geo_features.csv', index=False)
 print(mesh.groupby('suburb').dist_beach_km.describe()[['count','25%','50%','75%']].round(2).to_string())
 print('\nmicro zone counts:'); print(mesh.micro_zone.value_counts().head(8).to_string())
 print('\ndist_beach deciles vs comp_300m:')

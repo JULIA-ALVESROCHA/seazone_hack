@@ -1,0 +1,13 @@
+  ok    c1_market
+  ok    c2_season
+  ok    c3_curve
+  ok    c4_ppsm
+  ok    c5_frontier
+  ok    c6_yields
+  ok    c7_bridge
+  ok    c8_tornado
+  ok    c9_distance
+  ok    c10_portfolio
+
+11 lâminas · 10 gráficos · 165 KB → docs/apresentacao.html
+output/deck_spec.json guardado — edite presentation/overrides.json para revisar textos.

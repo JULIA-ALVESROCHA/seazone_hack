@@ -3,12 +3,14 @@ import numpy as np, pandas as pd, json, re
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.linear_model import RidgeCV
-OUT='/home/claude/proj/output/'; D='/home/claude/data/data/'
+import _paths
+RAW, OUT = _paths.setup()
+_paths.tee('log_05_drivers_hypothesis.txt')
 rng=np.random.default_rng(7)
 
-l=pd.read_csv(OUT+'listing_investable.csv')
-det=pd.read_csv(D+'Details_Itapema.csv', low_memory=False)[['airbnb_listing_id','amenities','ad_description','space','owner_id']]
-hosts=pd.read_csv(D+'Hosts_ids_Itapema.csv', low_memory=False).drop_duplicates('owner_id')
+l=pd.read_csv(OUT/'listing_investable.csv')
+det=pd.read_csv(RAW/'Details_Itapema.csv', low_memory=False)[['airbnb_listing_id','amenities','ad_description','space','owner_id']]
+hosts=pd.read_csv(RAW/'Hosts_ids_Itapema.csv', low_memory=False).drop_duplicates('owner_id')
 l=l.merge(det,on='airbnb_listing_id',how='left').merge(
     hosts[['owner_id','is_superhost','years_host','number_of_reviews_host','response_rate_shown']],
     on='owner_id',how='left')
@@ -69,8 +71,8 @@ print(pd.Series(r.coef_,index=Xl.columns).round(3).head(9).to_string())
 print('\n'+'='*78)
 print('H0 test: "compact (studio/1BR) units in Centro are the most efficient investment"')
 print('='*78)
-seg=pd.read_csv(OUT+'segments_micro_zone.csv')
-sale=pd.read_csv(OUT+'sale_clean.csv',low_memory=False)
+seg=pd.read_csv(OUT/'segments_micro_zone.csv')
+sale=pd.read_csv(OUT/'sale_clean.csv',low_memory=False)
 
 print('\n[1] Does the product exist on the acquisition market?')
 ap=sale.groupby(sale.bedrooms.clip(0,4)).size()
@@ -110,4 +112,4 @@ print('\n[4] Efficiency (gross revenue / acquisition price) by segment, ranked:'
 seg['rev_to_price']=seg.rev_med/(seg.price*(1-0.07))
 sel=seg[(seg.n_ab>=8)&(seg.n_sale>=15)][['zone','bed_bucket','n_ab','n_sale','rev_med','price','rev_to_price','net_yield','payback_yrs']]
 print(sel.sort_values('rev_to_price',ascending=False).round({'rev_med':0,'price':0,'rev_to_price':4,'net_yield':4,'payback_yrs':1}).to_string(index=False))
-l.to_csv(OUT+'listing_modelfeatures.csv',index=False)
+l.to_csv(OUT/'listing_modelfeatures.csv',index=False)
